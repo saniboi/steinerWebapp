@@ -1,1 +1,164 @@
-[]
+[
+    {
+        "id": "ba7a781f2b9fb93c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "38301100e08f6f78",
+        "type": "ui_gauge",
+        "z": "ba7a781f2b9fb93c",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00B500",
+            "#E6E600",
+            "#CA3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 390,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "1fc387c2801f84b1",
+        "type": "ui_text",
+        "z": "ba7a781f2b9fb93c",
+        "group": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 430,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "79d8c1742f4527e5",
+        "type": "ui_dropdown",
+        "z": "ba7a781f2b9fb93c",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "value": "",
+                "label": ""
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 240,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f346f372bb7bee75",
+        "type": "ui_button",
+        "z": "ba7a781f2b9fb93c",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d46dd7c54ad3835b",
+        "type": "ui_switch",
+        "z": "ba7a781f2b9fb93c",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": true,
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": false,
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 270,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "65fab3ec89ec7717",
+        "type": "ui_numeric",
+        "z": "ba7a781f2b9fb93c",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 420,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    }
+]
