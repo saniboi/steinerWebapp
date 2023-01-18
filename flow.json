@@ -145,94 +145,9 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 730,
-        "y": 200,
+        "x": 790,
+        "y": 280,
         "wires": []
-    },
-    {
-        "id": "79d8c1742f4527e5",
-        "type": "ui_dropdown",
-        "z": "ba7a781f2b9fb93c",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "place": "Select option",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "value": "",
-                "label": ""
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 240,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f346f372bb7bee75",
-        "type": "ui_button",
-        "z": "ba7a781f2b9fb93c",
-        "name": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 230,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d46dd7c54ad3835b",
-        "type": "ui_switch",
-        "z": "ba7a781f2b9fb93c",
-        "name": "",
-        "label": "switch",
-        "tooltip": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": true,
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": false,
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 270,
-        "y": 520,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "65fab3ec89ec7717",
@@ -253,10 +168,12 @@
         "max": 10,
         "step": 1,
         "className": "",
-        "x": 420,
-        "y": 500,
+        "x": 540,
+        "y": 280,
         "wires": [
-            []
+            [
+                "38301100e08f6f78"
+            ]
         ]
     },
     {
@@ -277,9 +194,7 @@
         "x": 520,
         "y": 200,
         "wires": [
-            [
-                "38301100e08f6f78"
-            ]
+            []
         ]
     },
     {
@@ -292,6 +207,35 @@
         "y": 200,
         "wires": [
             [
+                "4f1373dd66d664d2",
+                "79fd6d73673e2998"
+            ]
+        ]
+    },
+    {
+        "id": "79fd6d73673e2998",
+        "type": "ui_button",
+        "z": "ba7a781f2b9fb93c",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 280,
+        "wires": [
+            [
+                "65fab3ec89ec7717",
                 "4f1373dd66d664d2"
             ]
         ]
