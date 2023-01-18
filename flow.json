@@ -145,25 +145,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 390,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "1fc387c2801f84b1",
-        "type": "ui_text",
-        "z": "ba7a781f2b9fb93c",
-        "group": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 530,
-        "y": 220,
+        "x": 730,
+        "y": 200,
         "wires": []
     },
     {
@@ -192,9 +175,7 @@
         "x": 240,
         "y": 380,
         "wires": [
-            [
-                "1fc387c2801f84b1"
-            ]
+            []
         ]
     },
     {
@@ -219,9 +200,7 @@
         "x": 230,
         "y": 440,
         "wires": [
-            [
-                "38301100e08f6f78"
-            ]
+            []
         ]
     },
     {
@@ -295,10 +274,26 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 300,
+        "x": 520,
         "y": 200,
         "wires": [
-            []
+            [
+                "38301100e08f6f78"
+            ]
+        ]
+    },
+    {
+        "id": "95856f15e7251f33",
+        "type": "ui_ui_control",
+        "z": "ba7a781f2b9fb93c",
+        "name": "",
+        "events": "all",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "4f1373dd66d664d2"
+            ]
         ]
     }
 ]
