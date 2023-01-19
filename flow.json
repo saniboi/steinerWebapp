@@ -123,38 +123,73 @@
         "className": ""
     },
     {
-        "id": "4f1373dd66d664d2",
-        "type": "ui_template",
+        "id": "e203c583f90c008d",
+        "type": "inject",
         "z": "ba7a781f2b9fb93c",
-        "group": "5eaab60a9dffa816",
         "name": "",
-        "order": 0,
-        "width": "6",
-        "height": "7",
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 520,
-        "y": 200,
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 340,
         "wires": [
+            [
+                "fca8a0cf33ac7c5a"
+            ]
+        ]
+    },
+    {
+        "id": "fca8a0cf33ac7c5a",
+        "type": "uibuilder",
+        "z": "ba7a781f2b9fb93c",
+        "name": "",
+        "topic": "",
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "blank",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": false,
+        "sourceFolder": "src",
+        "showMsgUib": false,
+        "x": 440,
+        "y": 340,
+        "wires": [
+            [
+                "88e61122c950cec9"
+            ],
             []
         ]
     },
     {
-        "id": "95856f15e7251f33",
-        "type": "ui_ui_control",
+        "id": "88e61122c950cec9",
+        "type": "debug",
         "z": "ba7a781f2b9fb93c",
-        "name": "",
-        "events": "all",
-        "x": 160,
-        "y": 200,
-        "wires": [
-            [
-                "4f1373dd66d664d2"
-            ]
-        ]
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 340,
+        "wires": []
     }
 ]
