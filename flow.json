@@ -60,12 +60,17 @@
             "77fb90fbfec9f1b4",
             "f978a1b4a814017c",
             "042b0ce14dcaaaf6",
-            "6dd39da8d8485f97"
+            "6dd39da8d8485f97",
+            "e81459c8fffc1c55",
+            "dce0db5e7f112720",
+            "233dda301194b828",
+            "ea2bcd67c9157115",
+            "fb0cd6efa5e7555a"
         ],
         "x": 24,
         "y": 219,
-        "w": 652,
-        "h": 162
+        "w": 692,
+        "h": 282
     },
     {
         "id": "898c69c607394c92",
@@ -84,7 +89,7 @@
             "e4018ab00d822fa7"
         ],
         "x": 24,
-        "y": 419,
+        "y": 539,
         "w": 322,
         "h": 122
     },
@@ -109,11 +114,12 @@
             "07972ffa7fffa22c",
             "5a5cea01d83b97ae",
             "5d9f826f0f216ed3",
-            "7854c790507380c2"
+            "7854c790507380c2",
+            "7f5248837f9bcab4"
         ],
-        "x": 344,
+        "x": 324,
         "y": 19,
-        "w": 462,
+        "w": 522,
         "h": 162
     },
     {
@@ -132,11 +138,12 @@
             "bd63ec7c27db9f41",
             "eefc4be8097954ca",
             "6bdc19a8496779c0",
-            "bdf848dbf296cd76"
+            "bdf848dbf296cd76",
+            "25f1d50de5bf51f0"
         ],
-        "x": 694,
-        "y": 199,
-        "w": 212,
+        "x": 754,
+        "y": 219,
+        "w": 272,
         "h": 322
     },
     {
@@ -316,8 +323,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 830,
-        "y": 240,
+        "x": 950,
+        "y": 260,
         "wires": []
     },
     {
@@ -332,8 +339,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 830,
-        "y": 300,
+        "x": 950,
+        "y": 320,
         "wires": []
     },
     {
@@ -348,8 +355,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 830,
-        "y": 360,
+        "x": 950,
+        "y": 380,
         "wires": []
     },
     {
@@ -363,7 +370,7 @@
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Down",
+        "label": "Down button",
         "tooltip": "Tor-ab",
         "color": "grey",
         "bgcolor": "white",
@@ -393,7 +400,7 @@
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Stop",
+        "label": "Stop button",
         "tooltip": "Tor-stopp",
         "color": "grey",
         "bgcolor": "white",
@@ -423,7 +430,7 @@
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Up",
+        "label": "Up button",
         "tooltip": "Tor-Auf",
         "color": "grey",
         "bgcolor": "white",
@@ -433,7 +440,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 470,
+        "x": 460,
         "y": 60,
         "wires": [
             [
@@ -447,7 +454,7 @@
         "type": "switch",
         "z": "ba7a781f2b9fb93c",
         "g": "6d43257abb473565",
-        "name": "",
+        "name": "ButtonSwitch",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -470,7 +477,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 3,
-        "x": 150,
+        "x": 170,
         "y": 300,
         "wires": [
             [
@@ -592,7 +599,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 180,
-        "y": 460,
+        "y": 580,
         "wires": []
     },
     {
@@ -610,7 +617,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 200,
-        "y": 500,
+        "y": 620,
         "wires": []
     },
     {
@@ -633,7 +640,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
+        "x": 350,
         "y": 260,
         "wires": [
             [
@@ -661,7 +668,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
+        "x": 350,
         "y": 300,
         "wires": [
             [
@@ -689,7 +696,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
+        "x": 350,
         "y": 340,
         "wires": [
             [
@@ -715,7 +722,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 500,
+        "x": 540,
         "y": 260,
         "wires": [
             [
@@ -734,7 +741,7 @@
         "links": [
             "e00dbaaf379cd317"
         ],
-        "x": 635,
+        "x": 675,
         "y": 260,
         "wires": []
     },
@@ -747,8 +754,8 @@
         "links": [
             "8adb014d2cb062cc"
         ],
-        "x": 745,
-        "y": 240,
+        "x": 795,
+        "y": 260,
         "wires": [
             [
                 "7fefb337b96dc93a"
@@ -778,7 +785,7 @@
         "links": [
             "c3a1b8ef6a0ac59a"
         ],
-        "x": 385,
+        "x": 365,
         "y": 60,
         "wires": [
             [
@@ -809,7 +816,7 @@
         "links": [
             "b3fcc71f7cc16c11"
         ],
-        "x": 385,
+        "x": 365,
         "y": 100,
         "wires": [
             [
@@ -840,7 +847,7 @@
         "links": [
             "2e6f0daf82b27ce9"
         ],
-        "x": 385,
+        "x": 365,
         "y": 140,
         "wires": [
             [
@@ -858,7 +865,7 @@
         "links": [
             "e6967e9b7ebc80eb"
         ],
-        "x": 555,
+        "x": 575,
         "y": 60,
         "wires": []
     },
@@ -872,7 +879,7 @@
             "c2ea6c62af86fbc3"
         ],
         "x": 65,
-        "y": 460,
+        "y": 580,
         "wires": [
             [
                 "45f0931fff6686c1"
@@ -889,7 +896,7 @@
         "links": [
             "ede465a2b4921e5a"
         ],
-        "x": 555,
+        "x": 575,
         "y": 100,
         "wires": []
     },
@@ -903,7 +910,7 @@
             "80959ec2a16f13f6"
         ],
         "x": 65,
-        "y": 460,
+        "y": 580,
         "wires": [
             [
                 "45f0931fff6686c1"
@@ -920,7 +927,7 @@
         "links": [
             "ac75c0ca473bf5d1"
         ],
-        "x": 555,
+        "x": 575,
         "y": 140,
         "wires": []
     },
@@ -934,7 +941,7 @@
             "1c20fb4a1fa759fe"
         ],
         "x": 65,
-        "y": 460,
+        "y": 580,
         "wires": [
             [
                 "45f0931fff6686c1"
@@ -951,7 +958,7 @@
         "links": [
             "e4018ab00d822fa7"
         ],
-        "x": 635,
+        "x": 675,
         "y": 300,
         "wires": []
     },
@@ -967,7 +974,7 @@
             "85d39265a738288d"
         ],
         "x": 65,
-        "y": 500,
+        "y": 620,
         "wires": [
             [
                 "880e8db0c3fa4e23"
@@ -984,7 +991,7 @@
         "links": [
             "e4018ab00d822fa7"
         ],
-        "x": 635,
+        "x": 675,
         "y": 260,
         "wires": []
     },
@@ -998,7 +1005,7 @@
         "links": [
             "e4018ab00d822fa7"
         ],
-        "x": 635,
+        "x": 675,
         "y": 340,
         "wires": []
     },
@@ -1012,7 +1019,7 @@
         "links": [
             "3ac1d7d890223928"
         ],
-        "x": 555,
+        "x": 575,
         "y": 60,
         "wires": []
     },
@@ -1043,7 +1050,7 @@
         "links": [
             "124a3d53cf0efa92"
         ],
-        "x": 555,
+        "x": 575,
         "y": 100,
         "wires": []
     },
@@ -1074,7 +1081,7 @@
         "links": [
             "b7e70d9c18ec500a"
         ],
-        "x": 555,
+        "x": 575,
         "y": 140,
         "wires": []
     },
@@ -1113,7 +1120,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 500,
+        "x": 540,
         "y": 300,
         "wires": [
             [
@@ -1132,7 +1139,7 @@
         "links": [
             "bd63ec7c27db9f41"
         ],
-        "x": 635,
+        "x": 675,
         "y": 300,
         "wires": []
     },
@@ -1145,8 +1152,8 @@
         "links": [
             "f978a1b4a814017c"
         ],
-        "x": 745,
-        "y": 300,
+        "x": 795,
+        "y": 320,
         "wires": [
             [
                 "b01152a8dc7b6576"
@@ -1171,7 +1178,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 500,
+        "x": 540,
         "y": 340,
         "wires": [
             [
@@ -1190,7 +1197,7 @@
         "links": [
             "eefc4be8097954ca"
         ],
-        "x": 635,
+        "x": 675,
         "y": 340,
         "wires": []
     },
@@ -1203,8 +1210,8 @@
         "links": [
             "6dd39da8d8485f97"
         ],
-        "x": 745,
-        "y": 360,
+        "x": 795,
+        "y": 380,
         "wires": [
             [
                 "1defee9aa070762f"
@@ -1225,7 +1232,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 710,
+        "x": 750,
         "y": 60,
         "wires": []
     },
@@ -1240,10 +1247,12 @@
         "debounce": "50",
         "read": true,
         "bcm": true,
-        "x": 800,
-        "y": 420,
+        "x": 860,
+        "y": 440,
         "wires": [
-            []
+            [
+                "25f1d50de5bf51f0"
+            ]
         ]
     },
     {
@@ -1257,11 +1266,196 @@
         "debounce": "50",
         "read": true,
         "bcm": true,
-        "x": 780,
-        "y": 480,
+        "x": 840,
+        "y": 500,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "e81459c8fffc1c55",
+        "type": "change",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "DoorIsClosed",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Tor geschlossen",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 380,
+        "wires": [
+            [
+                "a0a12692f3b12cbb"
+            ]
+        ]
+    },
+    {
+        "id": "dce0db5e7f112720",
+        "type": "switch",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "IsClosed",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "e81459c8fffc1c55"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "233dda301194b828",
+        "type": "change",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "Position 50%",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Tor offen",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea2bcd67c9157115",
+        "type": "change",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "DoorIsOpen",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Tor offen",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 420,
+        "wires": [
+            [
+                "fb0cd6efa5e7555a"
+            ]
+        ]
+    },
+    {
+        "id": "25f1d50de5bf51f0",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "5ec4de0559b4272d",
+        "name": "link out 16",
+        "mode": "link",
+        "links": [
+            "2959a3cfb3ddf903"
+        ],
+        "x": 985,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "2959a3cfb3ddf903",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "name": "link in 15",
+        "links": [
+            "25f1d50de5bf51f0"
+        ],
+        "x": 65,
+        "y": 400,
+        "wires": [
+            [
+                "dce0db5e7f112720"
+            ]
+        ]
+    },
+    {
+        "id": "fb0cd6efa5e7555a",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "link out 17",
+        "mode": "link",
+        "links": [
+            "7f5248837f9bcab4"
+        ],
+        "x": 475,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7f5248837f9bcab4",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link in 16",
+        "links": [
+            "fb0cd6efa5e7555a",
+            "a0a12692f3b12cbb"
+        ],
+        "x": 635,
+        "y": 60,
+        "wires": [
+            [
+                "7854c790507380c2"
+            ]
+        ]
+    },
+    {
+        "id": "a0a12692f3b12cbb",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "name": "link out 18",
+        "mode": "link",
+        "links": [
+            "7f5248837f9bcab4"
+        ],
+        "x": 475,
+        "y": 380,
+        "wires": []
     },
     {
         "id": "8963fa445255d4c1",
