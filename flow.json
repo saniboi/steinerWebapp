@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "239bb88f8646fff4",
+        "type": "tab",
+        "label": "Öl-Zähler",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3f154653a7a0dc76",
         "type": "group",
         "z": "ba7a781f2b9fb93c",
@@ -100,15 +108,16 @@
             "1c20fb4a1fa759fe",
             "07972ffa7fffa22c",
             "5a5cea01d83b97ae",
-            "5d9f826f0f216ed3"
+            "5d9f826f0f216ed3",
+            "7854c790507380c2"
         ],
         "x": 344,
         "y": 19,
-        "w": 252,
+        "w": 462,
         "h": 162
     },
     {
-        "id": "70f4864b52419944",
+        "id": "5ec4de0559b4272d",
         "type": "group",
         "z": "ba7a781f2b9fb93c",
         "name": "GPIO Control",
@@ -121,12 +130,14 @@
             "1defee9aa070762f",
             "e00dbaaf379cd317",
             "bd63ec7c27db9f41",
-            "eefc4be8097954ca"
+            "eefc4be8097954ca",
+            "6bdc19a8496779c0",
+            "bdf848dbf296cd76"
         ],
-        "x": 704,
+        "x": 694,
         "y": 199,
-        "w": 202,
-        "h": 202
+        "w": 212,
+        "h": 322
     },
     {
         "id": "a96a0b6e98809ced",
@@ -267,7 +278,7 @@
         "id": "7fefb337b96dc93a",
         "type": "rpi-gpio out",
         "z": "ba7a781f2b9fb93c",
-        "g": "70f4864b52419944",
+        "g": "5ec4de0559b4272d",
         "name": "Up",
         "pin": "21",
         "set": true,
@@ -283,7 +294,7 @@
         "id": "b01152a8dc7b6576",
         "type": "rpi-gpio out",
         "z": "ba7a781f2b9fb93c",
-        "g": "70f4864b52419944",
+        "g": "5ec4de0559b4272d",
         "name": "Stop",
         "pin": "20",
         "set": true,
@@ -299,7 +310,7 @@
         "id": "1defee9aa070762f",
         "type": "rpi-gpio out",
         "z": "ba7a781f2b9fb93c",
-        "g": "70f4864b52419944",
+        "g": "5ec4de0559b4272d",
         "name": "Down",
         "pin": "16",
         "set": true,
@@ -701,7 +712,7 @@
         "id": "e00dbaaf379cd317",
         "type": "link in",
         "z": "ba7a781f2b9fb93c",
-        "g": "70f4864b52419944",
+        "g": "5ec4de0559b4272d",
         "name": "link in 1",
         "links": [
             "8adb014d2cb062cc"
@@ -1099,7 +1110,7 @@
         "id": "bd63ec7c27db9f41",
         "type": "link in",
         "z": "ba7a781f2b9fb93c",
-        "g": "70f4864b52419944",
+        "g": "5ec4de0559b4272d",
         "name": "link in 12",
         "links": [
             "f978a1b4a814017c"
@@ -1157,7 +1168,7 @@
         "id": "eefc4be8097954ca",
         "type": "link in",
         "z": "ba7a781f2b9fb93c",
-        "g": "70f4864b52419944",
+        "g": "5ec4de0559b4272d",
         "name": "link in 13",
         "links": [
             "6dd39da8d8485f97"
@@ -1169,5 +1180,93 @@
                 "1defee9aa070762f"
             ]
         ]
+    },
+    {
+        "id": "7854c790507380c2",
+        "type": "ui_text",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "group": "bcf2a034187609c2",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Tor Position",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 710,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6bdc19a8496779c0",
+        "type": "rpi-gpio in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "5ec4de0559b4272d",
+        "name": "Tor geschlossen",
+        "pin": "19",
+        "intype": "down",
+        "debounce": "50",
+        "read": true,
+        "bcm": true,
+        "x": 800,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdf848dbf296cd76",
+        "type": "rpi-gpio in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "5ec4de0559b4272d",
+        "name": "Tor 50%",
+        "pin": "13",
+        "intype": "down",
+        "debounce": "50",
+        "read": true,
+        "bcm": true,
+        "x": 780,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8963fa445255d4c1",
+        "type": "rpi-gpio in",
+        "z": "239bb88f8646fff4",
+        "name": "Impuls Öl Zähler",
+        "pin": "26",
+        "intype": "down",
+        "debounce": "50",
+        "read": true,
+        "bcm": true,
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "fe86ae9f51486f5b"
+            ]
+        ]
+    },
+    {
+        "id": "fe86ae9f51486f5b",
+        "type": "ui_text",
+        "z": "239bb88f8646fff4",
+        "group": "bcf2a034187609c2",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Impuls",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 120,
+        "wires": [],
+        "icon": "node-red/trigger.svg"
     }
 ]
