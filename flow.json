@@ -61,8 +61,7 @@
                 "88e61122c950cec9"
             ],
             [
-                "e8e1c03c79f2fda0",
-                "2fac970da25a70ed"
+                "e8e1c03c79f2fda0"
             ]
         ]
     },
@@ -100,23 +99,48 @@
         "wires": []
     },
     {
-        "id": "2fac970da25a70ed",
-        "type": "uib-list",
+        "id": "742cd7135cf36426",
+        "type": "inject",
         "z": "ba7a781f2b9fb93c",
-        "url": "",
-        "elementid": "",
-        "elementtype": "",
-        "parent": "",
-        "passthrough": false,
-        "outputs": 0,
         "name": "",
-        "cacheOn": true,
-        "storeName": "default",
-        "storeContext": "context",
-        "varName": "uib_cache",
-        "newcache": true,
-        "x": 670,
-        "y": 400,
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 500,
+        "wires": [
+            [
+                "7f9573ab21b356e7"
+            ]
+        ]
+    },
+    {
+        "id": "7f9573ab21b356e7",
+        "type": "debug",
+        "z": "ba7a781f2b9fb93c",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 500,
         "wires": []
     }
 ]
