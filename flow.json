@@ -134,7 +134,7 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 770,
+        "x": 970,
         "y": 40,
         "wires": []
     },
@@ -149,7 +149,7 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 770,
+        "x": 970,
         "y": 160,
         "wires": []
     },
@@ -164,7 +164,7 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 770,
+        "x": 970,
         "y": 280,
         "wires": []
     },
@@ -279,23 +279,20 @@
                 "vt": "str"
             }
         ],
-        "checkall": "true",
+        "checkall": "false",
         "repair": false,
         "outputs": 3,
         "x": 530,
         "y": 160,
         "wires": [
             [
-                "7fefb337b96dc93a",
-                "880e8db0c3fa4e23"
+                "937fe221820d88e8"
             ],
             [
-                "b01152a8dc7b6576",
-                "04da7793a079e835"
+                "f2395a2dc8f4284d"
             ],
             [
-                "1defee9aa070762f",
-                "2bfad9d7c2aee0aa"
+                "5247dd81e2ed43ef"
             ]
         ]
     },
@@ -419,7 +416,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
+        "x": 980,
         "y": 100,
         "wires": []
     },
@@ -436,7 +433,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
+        "x": 980,
         "y": 220,
         "wires": []
     },
@@ -453,8 +450,92 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
+        "x": 970,
         "y": 340,
         "wires": []
+    },
+    {
+        "id": "937fe221820d88e8",
+        "type": "change",
+        "z": "ba7a781f2b9fb93c",
+        "name": "string to bool",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 80,
+        "wires": [
+            [
+                "7fefb337b96dc93a",
+                "880e8db0c3fa4e23"
+            ]
+        ]
+    },
+    {
+        "id": "f2395a2dc8f4284d",
+        "type": "change",
+        "z": "ba7a781f2b9fb93c",
+        "name": "string to bool",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 160,
+        "wires": [
+            [
+                "b01152a8dc7b6576",
+                "04da7793a079e835"
+            ]
+        ]
+    },
+    {
+        "id": "5247dd81e2ed43ef",
+        "type": "change",
+        "z": "ba7a781f2b9fb93c",
+        "name": "string to bool",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 240,
+        "wires": [
+            [
+                "1defee9aa070762f",
+                "2bfad9d7c2aee0aa"
+            ]
+        ]
     }
 ]
