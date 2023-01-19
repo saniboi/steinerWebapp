@@ -173,12 +173,13 @@
             "eefc4be8097954ca",
             "6bdc19a8496779c0",
             "bdf848dbf296cd76",
-            "25f1d50de5bf51f0"
+            "25f1d50de5bf51f0",
+            "8963fa445255d4c1"
         ],
         "x": 174,
         "y": 39,
         "w": 272,
-        "h": 322
+        "h": 382
     },
     {
         "id": "a96a0b6e98809ced",
@@ -1107,24 +1108,6 @@
         ]
     },
     {
-        "id": "8963fa445255d4c1",
-        "type": "rpi-gpio in",
-        "z": "239bb88f8646fff4",
-        "name": "Impuls Öl Zähler",
-        "pin": "26",
-        "intype": "down",
-        "debounce": "50",
-        "read": true,
-        "bcm": true,
-        "x": 180,
-        "y": 120,
-        "wires": [
-            [
-                "fe86ae9f51486f5b"
-            ]
-        ]
-    },
-    {
         "id": "fe86ae9f51486f5b",
         "type": "ui_text",
         "z": "239bb88f8646fff4",
@@ -1531,5 +1514,22 @@
         "x": 405,
         "y": 260,
         "wires": []
+    },
+    {
+        "id": "8963fa445255d4c1",
+        "type": "rpi-gpio in",
+        "z": "3a841c7cacf5e875",
+        "g": "5ec4de0559b4272d",
+        "name": "Impuls Öl Zähler",
+        "pin": "26",
+        "intype": "down",
+        "debounce": "50",
+        "read": true,
+        "bcm": true,
+        "x": 280,
+        "y": 380,
+        "wires": [
+            []
+        ]
     }
 ]
