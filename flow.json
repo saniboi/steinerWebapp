@@ -237,7 +237,7 @@
                 "primary": "indigo",
                 "accents": "blue-grey",
                 "warn": "red",
-                "background": "amber",
+                "background": "teal",
                 "palette": "light"
             }
         },
