@@ -61,7 +61,8 @@
                 "88e61122c950cec9"
             ],
             [
-                "e8e1c03c79f2fda0"
+                "e8e1c03c79f2fda0",
+                "2fac970da25a70ed"
             ]
         ]
     },
@@ -96,6 +97,26 @@
         "statusType": "auto",
         "x": 660,
         "y": 340,
+        "wires": []
+    },
+    {
+        "id": "2fac970da25a70ed",
+        "type": "uib-list",
+        "z": "ba7a781f2b9fb93c",
+        "url": "",
+        "elementid": "",
+        "elementtype": "",
+        "parent": "",
+        "passthrough": false,
+        "outputs": 0,
+        "name": "",
+        "cacheOn": true,
+        "storeName": "default",
+        "storeContext": "context",
+        "varName": "uib_cache",
+        "newcache": true,
+        "x": 670,
+        "y": 400,
         "wires": []
     }
 ]
