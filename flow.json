@@ -102,5 +102,79 @@
                 "py": 0
             }
         }
+    },
+    {
+        "id": "88c329bbb5a4c4be",
+        "type": "ui_tab",
+        "name": "SteinerApp",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9dc3709413bc9f20",
+        "type": "ui_group",
+        "name": "SteinerApp",
+        "tab": "88c329bbb5a4c4be",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c9feb50ef1aaa12c",
+        "type": "ui_gauge",
+        "z": "ba7a781f2b9fb93c",
+        "name": "",
+        "group": "9dc3709413bc9f20",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "33",
+        "seg2": "66",
+        "diff": false,
+        "className": "",
+        "x": 390,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3cc7bd4dea53fb72",
+        "type": "ui_slider",
+        "z": "ba7a781f2b9fb93c",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "9dc3709413bc9f20",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": "0.5",
+        "className": "",
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "c9feb50ef1aaa12c"
+            ]
+        ]
     }
 ]
