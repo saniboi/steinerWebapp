@@ -235,18 +235,18 @@
             },
             "angularTheme": {
                 "primary": "indigo",
-                "accents": "blue",
+                "accents": "blue-grey",
                 "warn": "red",
                 "background": "grey",
                 "palette": "light"
             }
         },
         "site": {
-            "name": "Node-RED Dashboard",
+            "name": "Steiner App",
             "hideToolbar": "false",
             "allowSwipe": "false",
             "lockMenu": "false",
-            "allowTempTheme": "true",
+            "allowTempTheme": "none",
             "dateFormat": "DD.MM.YYYY",
             "sizes": {
                 "sx": 48,
