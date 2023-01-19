@@ -2,7 +2,7 @@
     {
         "id": "ba7a781f2b9fb93c",
         "type": "tab",
-        "label": "Torsteuerung",
+        "label": "Torsteuerung - UI",
         "disabled": false,
         "info": "",
         "env": []
@@ -30,27 +30,6 @@
         "disabled": false,
         "info": "",
         "env": []
-    },
-    {
-        "id": "3f154653a7a0dc76",
-        "type": "group",
-        "z": "ba7a781f2b9fb93c",
-        "name": "Test Input",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1ca0ae33d6e1bb75",
-            "4eb05454d119fa3f",
-            "1493bcfdc89a3327",
-            "c3a1b8ef6a0ac59a",
-            "b3fcc71f7cc16c11",
-            "2e6f0daf82b27ce9"
-        ],
-        "x": 14,
-        "y": 19,
-        "w": 262,
-        "h": 162
     },
     {
         "id": "6d43257abb473565",
@@ -88,27 +67,6 @@
         "y": 199,
         "w": 692,
         "h": 302
-    },
-    {
-        "id": "898c69c607394c92",
-        "type": "group",
-        "z": "ba7a781f2b9fb93c",
-        "name": "Testing Output",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "45f0931fff6686c1",
-            "880e8db0c3fa4e23",
-            "e6967e9b7ebc80eb",
-            "ede465a2b4921e5a",
-            "ac75c0ca473bf5d1",
-            "e4018ab00d822fa7"
-        ],
-        "x": 24,
-        "y": 539,
-        "w": 322,
-        "h": 122
     },
     {
         "id": "6937e8fa0d92889a",
@@ -162,6 +120,48 @@
         "y": 219,
         "w": 272,
         "h": 322
+    },
+    {
+        "id": "898c69c607394c92",
+        "type": "group",
+        "z": "27bed9da7de43cc4",
+        "name": "Testing Output",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "45f0931fff6686c1",
+            "880e8db0c3fa4e23",
+            "e6967e9b7ebc80eb",
+            "ede465a2b4921e5a",
+            "ac75c0ca473bf5d1",
+            "e4018ab00d822fa7"
+        ],
+        "x": 444,
+        "y": 39,
+        "w": 322,
+        "h": 122
+    },
+    {
+        "id": "3f154653a7a0dc76",
+        "type": "group",
+        "z": "27bed9da7de43cc4",
+        "name": "Test Input",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1ca0ae33d6e1bb75",
+            "4eb05454d119fa3f",
+            "1493bcfdc89a3327",
+            "c3a1b8ef6a0ac59a",
+            "b3fcc71f7cc16c11",
+            "2e6f0daf82b27ce9"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 262,
+        "h": 162
     },
     {
         "id": "a96a0b6e98809ced",
@@ -510,135 +510,6 @@
         ]
     },
     {
-        "id": "1ca0ae33d6e1bb75",
-        "type": "inject",
-        "z": "ba7a781f2b9fb93c",
-        "g": "3f154653a7a0dc76",
-        "name": "Auf Befehl",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "true",
-                "vt": "bool"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 60,
-        "wires": [
-            [
-                "c3a1b8ef6a0ac59a"
-            ]
-        ]
-    },
-    {
-        "id": "4eb05454d119fa3f",
-        "type": "inject",
-        "z": "ba7a781f2b9fb93c",
-        "g": "3f154653a7a0dc76",
-        "name": "Ab Befehl",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "true",
-                "vt": "bool"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 140,
-        "wires": [
-            [
-                "2e6f0daf82b27ce9"
-            ]
-        ]
-    },
-    {
-        "id": "1493bcfdc89a3327",
-        "type": "inject",
-        "z": "ba7a781f2b9fb93c",
-        "g": "3f154653a7a0dc76",
-        "name": "Stop Befehl",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "true",
-                "vt": "bool"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 130,
-        "y": 100,
-        "wires": [
-            [
-                "b3fcc71f7cc16c11"
-            ]
-        ]
-    },
-    {
-        "id": "45f0931fff6686c1",
-        "type": "debug",
-        "z": "ba7a781f2b9fb93c",
-        "g": "898c69c607394c92",
-        "name": "Button Testing",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 180,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "880e8db0c3fa4e23",
-        "type": "debug",
-        "z": "ba7a781f2b9fb93c",
-        "g": "898c69c607394c92",
-        "name": "Relais output Testing",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 200,
-        "y": 620,
-        "wires": []
-    },
-    {
         "id": "937fe221820d88e8",
         "type": "change",
         "z": "ba7a781f2b9fb93c",
@@ -781,20 +652,6 @@
         ]
     },
     {
-        "id": "c3a1b8ef6a0ac59a",
-        "type": "link out",
-        "z": "ba7a781f2b9fb93c",
-        "g": "3f154653a7a0dc76",
-        "name": "link out 2",
-        "mode": "link",
-        "links": [
-            "587d67b8d7b4e365"
-        ],
-        "x": 235,
-        "y": 60,
-        "wires": []
-    },
-    {
         "id": "587d67b8d7b4e365",
         "type": "link in",
         "z": "ba7a781f2b9fb93c",
@@ -812,20 +669,6 @@
         ]
     },
     {
-        "id": "b3fcc71f7cc16c11",
-        "type": "link out",
-        "z": "ba7a781f2b9fb93c",
-        "g": "3f154653a7a0dc76",
-        "name": "link out 3",
-        "mode": "link",
-        "links": [
-            "ccf1e3d46ae49f5f"
-        ],
-        "x": 235,
-        "y": 100,
-        "wires": []
-    },
-    {
         "id": "ccf1e3d46ae49f5f",
         "type": "link in",
         "z": "ba7a781f2b9fb93c",
@@ -841,20 +684,6 @@
                 "ddeca750eb9f9d62"
             ]
         ]
-    },
-    {
-        "id": "2e6f0daf82b27ce9",
-        "type": "link out",
-        "z": "ba7a781f2b9fb93c",
-        "g": "3f154653a7a0dc76",
-        "name": "link out 4",
-        "mode": "link",
-        "links": [
-            "7917cec46f752804"
-        ],
-        "x": 235,
-        "y": 140,
-        "wires": []
     },
     {
         "id": "7917cec46f752804",
@@ -888,23 +717,6 @@
         "wires": []
     },
     {
-        "id": "e6967e9b7ebc80eb",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "898c69c607394c92",
-        "name": "link in 5",
-        "links": [
-            "c2ea6c62af86fbc3"
-        ],
-        "x": 65,
-        "y": 580,
-        "wires": [
-            [
-                "45f0931fff6686c1"
-            ]
-        ]
-    },
-    {
         "id": "80959ec2a16f13f6",
         "type": "link out",
         "z": "ba7a781f2b9fb93c",
@@ -917,23 +729,6 @@
         "x": 575,
         "y": 100,
         "wires": []
-    },
-    {
-        "id": "ede465a2b4921e5a",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "898c69c607394c92",
-        "name": "link in 6",
-        "links": [
-            "80959ec2a16f13f6"
-        ],
-        "x": 65,
-        "y": 580,
-        "wires": [
-            [
-                "45f0931fff6686c1"
-            ]
-        ]
     },
     {
         "id": "1c20fb4a1fa759fe",
@@ -950,23 +745,6 @@
         "wires": []
     },
     {
-        "id": "ac75c0ca473bf5d1",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "898c69c607394c92",
-        "name": "link in 7",
-        "links": [
-            "1c20fb4a1fa759fe"
-        ],
-        "x": 65,
-        "y": 580,
-        "wires": [
-            [
-                "45f0931fff6686c1"
-            ]
-        ]
-    },
-    {
         "id": "d3e6f0ad23c48998",
         "type": "link out",
         "z": "ba7a781f2b9fb93c",
@@ -979,25 +757,6 @@
         "x": 675,
         "y": 300,
         "wires": []
-    },
-    {
-        "id": "e4018ab00d822fa7",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "898c69c607394c92",
-        "name": "link in 8",
-        "links": [
-            "d3e6f0ad23c48998",
-            "ce71c7124e32cabe",
-            "85d39265a738288d"
-        ],
-        "x": 65,
-        "y": 620,
-        "wires": [
-            [
-                "880e8db0c3fa4e23"
-            ]
-        ]
     },
     {
         "id": "ce71c7124e32cabe",
@@ -1510,5 +1269,246 @@
         "y": 120,
         "wires": [],
         "icon": "node-red/trigger.svg"
+    },
+    {
+        "id": "45f0931fff6686c1",
+        "type": "debug",
+        "z": "27bed9da7de43cc4",
+        "g": "898c69c607394c92",
+        "name": "Button Testing",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "880e8db0c3fa4e23",
+        "type": "debug",
+        "z": "27bed9da7de43cc4",
+        "g": "898c69c607394c92",
+        "name": "Relais output Testing",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "e6967e9b7ebc80eb",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "898c69c607394c92",
+        "name": "link in 5",
+        "links": [
+            "c2ea6c62af86fbc3"
+        ],
+        "x": 485,
+        "y": 80,
+        "wires": [
+            [
+                "45f0931fff6686c1"
+            ]
+        ]
+    },
+    {
+        "id": "ede465a2b4921e5a",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "898c69c607394c92",
+        "name": "link in 6",
+        "links": [
+            "80959ec2a16f13f6"
+        ],
+        "x": 485,
+        "y": 80,
+        "wires": [
+            [
+                "45f0931fff6686c1"
+            ]
+        ]
+    },
+    {
+        "id": "ac75c0ca473bf5d1",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "898c69c607394c92",
+        "name": "link in 7",
+        "links": [
+            "1c20fb4a1fa759fe"
+        ],
+        "x": 485,
+        "y": 80,
+        "wires": [
+            [
+                "45f0931fff6686c1"
+            ]
+        ]
+    },
+    {
+        "id": "e4018ab00d822fa7",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "898c69c607394c92",
+        "name": "link in 8",
+        "links": [
+            "d3e6f0ad23c48998",
+            "ce71c7124e32cabe",
+            "85d39265a738288d"
+        ],
+        "x": 485,
+        "y": 120,
+        "wires": [
+            [
+                "880e8db0c3fa4e23"
+            ]
+        ]
+    },
+    {
+        "id": "1ca0ae33d6e1bb75",
+        "type": "inject",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "Auf Befehl",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "c3a1b8ef6a0ac59a"
+            ]
+        ]
+    },
+    {
+        "id": "4eb05454d119fa3f",
+        "type": "inject",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "Ab Befehl",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "2e6f0daf82b27ce9"
+            ]
+        ]
+    },
+    {
+        "id": "1493bcfdc89a3327",
+        "type": "inject",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "Stop Befehl",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "b3fcc71f7cc16c11"
+            ]
+        ]
+    },
+    {
+        "id": "c3a1b8ef6a0ac59a",
+        "type": "link out",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "587d67b8d7b4e365"
+        ],
+        "x": 255,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b3fcc71f7cc16c11",
+        "type": "link out",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "ccf1e3d46ae49f5f"
+        ],
+        "x": 255,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2e6f0daf82b27ce9",
+        "type": "link out",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "7917cec46f752804"
+        ],
+        "x": 255,
+        "y": 160,
+        "wires": []
     }
 ]
