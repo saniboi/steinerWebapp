@@ -235,7 +235,7 @@
             },
             "angularTheme": {
                 "primary": "indigo",
-                "accents": "blue-grey",
+                "accents": "deep-purple",
                 "warn": "red",
                 "background": "indigo",
                 "palette": "light"
