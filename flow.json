@@ -179,49 +179,6 @@
         ]
     },
     {
-        "id": "e1e386edf73383d6",
-        "type": "ui_ui_control",
-        "z": "ba7a781f2b9fb93c",
-        "name": "",
-        "events": "all",
-        "x": 240,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c593fe9b5c051e6f",
-        "type": "ui_form",
-        "z": "ba7a781f2b9fb93c",
-        "name": "",
-        "label": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "value": "",
-                "label": "",
-                "type": "",
-                "required": true
-            }
-        ],
-        "formValue": {},
-        "payload": "",
-        "submit": "submit",
-        "cancel": "cancel",
-        "topic": "topic",
-        "topicType": "msg",
-        "splitLayout": "",
-        "className": "",
-        "x": 250,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "7fefb337b96dc93a",
         "type": "rpi-gpio out",
         "z": "ba7a781f2b9fb93c",
@@ -255,9 +212,9 @@
         "id": "1defee9aa070762f",
         "type": "rpi-gpio out",
         "z": "ba7a781f2b9fb93c",
-        "name": "",
-        "pin": "",
-        "set": "",
+        "name": "Down",
+        "pin": "16",
+        "set": true,
         "level": "0",
         "freq": "",
         "out": "out",
