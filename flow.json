@@ -16,6 +16,22 @@
         "env": []
     },
     {
+        "id": "43d56ff9e5378e0b",
+        "type": "tab",
+        "label": "Chart",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "27bed9da7de43cc4",
+        "type": "tab",
+        "label": "Testing",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3f154653a7a0dc76",
         "type": "group",
         "z": "ba7a781f2b9fb93c",
@@ -65,12 +81,13 @@
             "dce0db5e7f112720",
             "233dda301194b828",
             "ea2bcd67c9157115",
-            "fb0cd6efa5e7555a"
+            "fb0cd6efa5e7555a",
+            "2a3532bbc3cfed56"
         ],
         "x": 24,
-        "y": 219,
+        "y": 199,
         "w": 692,
-        "h": 282
+        "h": 302
     },
     {
         "id": "898c69c607394c92",
@@ -241,7 +258,8 @@
                 "px": 0,
                 "py": 0
             }
-        }
+        },
+        "info": "`<title>Steiner App</title>`"
     },
     {
         "id": "88c329bbb5a4c4be",
