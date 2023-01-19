@@ -8,6 +8,127 @@
         "env": []
     },
     {
+        "id": "3f154653a7a0dc76",
+        "type": "group",
+        "z": "ba7a781f2b9fb93c",
+        "name": "Test Input",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1ca0ae33d6e1bb75",
+            "4eb05454d119fa3f",
+            "1493bcfdc89a3327",
+            "c3a1b8ef6a0ac59a",
+            "b3fcc71f7cc16c11",
+            "2e6f0daf82b27ce9"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 262,
+        "h": 162
+    },
+    {
+        "id": "6d43257abb473565",
+        "type": "group",
+        "z": "ba7a781f2b9fb93c",
+        "name": "Logic",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6ab740866f06df46",
+            "937fe221820d88e8",
+            "f2395a2dc8f4284d",
+            "5247dd81e2ed43ef",
+            "82a190df753051e4",
+            "8adb014d2cb062cc",
+            "d3e6f0ad23c48998",
+            "ce71c7124e32cabe",
+            "85d39265a738288d",
+            "3ac1d7d890223928",
+            "124a3d53cf0efa92",
+            "b7e70d9c18ec500a",
+            "77fb90fbfec9f1b4",
+            "f978a1b4a814017c",
+            "042b0ce14dcaaaf6",
+            "6dd39da8d8485f97"
+        ],
+        "x": 24,
+        "y": 219,
+        "w": 652,
+        "h": 162
+    },
+    {
+        "id": "898c69c607394c92",
+        "type": "group",
+        "z": "ba7a781f2b9fb93c",
+        "name": "Testing Output",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "45f0931fff6686c1",
+            "880e8db0c3fa4e23",
+            "e6967e9b7ebc80eb",
+            "ede465a2b4921e5a",
+            "ac75c0ca473bf5d1",
+            "e4018ab00d822fa7"
+        ],
+        "x": 24,
+        "y": 419,
+        "w": 322,
+        "h": 122
+    },
+    {
+        "id": "6937e8fa0d92889a",
+        "type": "group",
+        "z": "ba7a781f2b9fb93c",
+        "name": "User Interface",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5818d339c49cc5e9",
+            "ddeca750eb9f9d62",
+            "683a0dd88b9f1a1e",
+            "587d67b8d7b4e365",
+            "ccf1e3d46ae49f5f",
+            "7917cec46f752804",
+            "c2ea6c62af86fbc3",
+            "80959ec2a16f13f6",
+            "1c20fb4a1fa759fe",
+            "07972ffa7fffa22c",
+            "5a5cea01d83b97ae",
+            "5d9f826f0f216ed3"
+        ],
+        "x": 324,
+        "y": 19,
+        "w": 252,
+        "h": 162
+    },
+    {
+        "id": "70f4864b52419944",
+        "type": "group",
+        "z": "ba7a781f2b9fb93c",
+        "name": "GPIO Control",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7fefb337b96dc93a",
+            "b01152a8dc7b6576",
+            "1defee9aa070762f",
+            "e00dbaaf379cd317",
+            "bd63ec7c27db9f41",
+            "eefc4be8097954ca"
+        ],
+        "x": 704,
+        "y": 199,
+        "w": 202,
+        "h": 202
+    },
+    {
         "id": "a96a0b6e98809ced",
         "type": "ui_base",
         "theme": {
@@ -127,6 +248,7 @@
         "id": "7fefb337b96dc93a",
         "type": "rpi-gpio out",
         "z": "ba7a781f2b9fb93c",
+        "g": "70f4864b52419944",
         "name": "Up",
         "pin": "21",
         "set": true,
@@ -134,14 +256,15 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 970,
-        "y": 40,
+        "x": 830,
+        "y": 240,
         "wires": []
     },
     {
         "id": "b01152a8dc7b6576",
         "type": "rpi-gpio out",
         "z": "ba7a781f2b9fb93c",
+        "g": "70f4864b52419944",
         "name": "Stop",
         "pin": "20",
         "set": true,
@@ -149,14 +272,15 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 970,
-        "y": 160,
+        "x": 830,
+        "y": 300,
         "wires": []
     },
     {
         "id": "1defee9aa070762f",
         "type": "rpi-gpio out",
         "z": "ba7a781f2b9fb93c",
+        "g": "70f4864b52419944",
         "name": "Down",
         "pin": "16",
         "set": true,
@@ -164,14 +288,15 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 970,
-        "y": 280,
+        "x": 830,
+        "y": 360,
         "wires": []
     },
     {
         "id": "5818d339c49cc5e9",
         "type": "ui_button",
         "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
         "name": "",
         "group": "9dc3709413bc9f20",
         "order": 4,
@@ -188,12 +313,12 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 290,
-        "y": 220,
+        "x": 450,
+        "y": 140,
         "wires": [
             [
-                "6ab740866f06df46",
-                "45f0931fff6686c1"
+                "1c20fb4a1fa759fe",
+                "5d9f826f0f216ed3"
             ]
         ]
     },
@@ -201,6 +326,7 @@
         "id": "ddeca750eb9f9d62",
         "type": "ui_button",
         "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
         "name": "",
         "group": "9dc3709413bc9f20",
         "order": 3,
@@ -217,12 +343,12 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 290,
-        "y": 160,
+        "x": 450,
+        "y": 100,
         "wires": [
             [
-                "6ab740866f06df46",
-                "45f0931fff6686c1"
+                "80959ec2a16f13f6",
+                "5a5cea01d83b97ae"
             ]
         ]
     },
@@ -230,6 +356,7 @@
         "id": "683a0dd88b9f1a1e",
         "type": "ui_button",
         "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
         "name": "",
         "group": "9dc3709413bc9f20",
         "order": 2,
@@ -246,12 +373,12 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 290,
-        "y": 100,
+        "x": 450,
+        "y": 60,
         "wires": [
             [
-                "6ab740866f06df46",
-                "45f0931fff6686c1"
+                "c2ea6c62af86fbc3",
+                "07972ffa7fffa22c"
             ]
         ]
     },
@@ -259,6 +386,7 @@
         "id": "6ab740866f06df46",
         "type": "switch",
         "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -282,8 +410,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 3,
-        "x": 530,
-        "y": 160,
+        "x": 150,
+        "y": 300,
         "wires": [
             [
                 "937fe221820d88e8"
@@ -300,7 +428,8 @@
         "id": "1ca0ae33d6e1bb75",
         "type": "inject",
         "z": "ba7a781f2b9fb93c",
-        "name": "",
+        "g": "3f154653a7a0dc76",
+        "name": "Auf Befehl",
         "props": [
             {
                 "p": "payload"
@@ -318,11 +447,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 100,
+        "x": 120,
+        "y": 60,
         "wires": [
             [
-                "683a0dd88b9f1a1e"
+                "c3a1b8ef6a0ac59a"
             ]
         ]
     },
@@ -330,7 +459,8 @@
         "id": "4eb05454d119fa3f",
         "type": "inject",
         "z": "ba7a781f2b9fb93c",
-        "name": "",
+        "g": "3f154653a7a0dc76",
+        "name": "Ab Befehl",
         "props": [
             {
                 "p": "payload"
@@ -348,11 +478,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 220,
+        "x": 120,
+        "y": 140,
         "wires": [
             [
-                "5818d339c49cc5e9"
+                "2e6f0daf82b27ce9"
             ]
         ]
     },
@@ -360,7 +490,8 @@
         "id": "1493bcfdc89a3327",
         "type": "inject",
         "z": "ba7a781f2b9fb93c",
-        "name": "",
+        "g": "3f154653a7a0dc76",
+        "name": "Stop Befehl",
         "props": [
             {
                 "p": "payload"
@@ -378,11 +509,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 160,
+        "x": 130,
+        "y": 100,
         "wires": [
             [
-                "ddeca750eb9f9d62"
+                "b3fcc71f7cc16c11"
             ]
         ]
     },
@@ -390,6 +521,7 @@
         "id": "45f0931fff6686c1",
         "type": "debug",
         "z": "ba7a781f2b9fb93c",
+        "g": "898c69c607394c92",
         "name": "Button Testing",
         "active": true,
         "tosidebar": true,
@@ -399,15 +531,16 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
-        "y": 340,
+        "x": 180,
+        "y": 460,
         "wires": []
     },
     {
         "id": "880e8db0c3fa4e23",
         "type": "debug",
         "z": "ba7a781f2b9fb93c",
-        "name": "Tor-Auf",
+        "g": "898c69c607394c92",
+        "name": "Relais output Testing",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -416,48 +549,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 980,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "04da7793a079e835",
-        "type": "debug",
-        "z": "ba7a781f2b9fb93c",
-        "name": "Tor-Stop",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "2bfad9d7c2aee0aa",
-        "type": "debug",
-        "z": "ba7a781f2b9fb93c",
-        "name": "Tor-Ab",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 970,
-        "y": 340,
+        "x": 200,
+        "y": 500,
         "wires": []
     },
     {
         "id": "937fe221820d88e8",
         "type": "change",
         "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
         "name": "string to bool",
         "rules": [
             {
@@ -473,12 +573,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 80,
+        "x": 310,
+        "y": 260,
         "wires": [
             [
-                "7fefb337b96dc93a",
-                "880e8db0c3fa4e23"
+                "82a190df753051e4"
             ]
         ]
     },
@@ -486,6 +585,7 @@
         "id": "f2395a2dc8f4284d",
         "type": "change",
         "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
         "name": "string to bool",
         "rules": [
             {
@@ -501,12 +601,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 160,
+        "x": 310,
+        "y": 300,
         "wires": [
             [
-                "b01152a8dc7b6576",
-                "04da7793a079e835"
+                "77fb90fbfec9f1b4"
             ]
         ]
     },
@@ -514,6 +613,7 @@
         "id": "5247dd81e2ed43ef",
         "type": "change",
         "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
         "name": "string to bool",
         "rules": [
             {
@@ -529,12 +629,525 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "042b0ce14dcaaaf6"
+            ]
+        ]
+    },
+    {
+        "id": "82a190df753051e4",
+        "type": "trigger",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "Trigger bool to impulse",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "8adb014d2cb062cc",
+                "ce71c7124e32cabe"
+            ]
+        ]
+    },
+    {
+        "id": "8adb014d2cb062cc",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "e00dbaaf379cd317"
+        ],
+        "x": 635,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e00dbaaf379cd317",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "70f4864b52419944",
+        "name": "link in 1",
+        "links": [
+            "8adb014d2cb062cc"
+        ],
+        "x": 745,
         "y": 240,
         "wires": [
             [
-                "1defee9aa070762f",
-                "2bfad9d7c2aee0aa"
+                "7fefb337b96dc93a"
+            ]
+        ]
+    },
+    {
+        "id": "c3a1b8ef6a0ac59a",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "3f154653a7a0dc76",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "587d67b8d7b4e365"
+        ],
+        "x": 235,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "587d67b8d7b4e365",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link in 2",
+        "links": [
+            "c3a1b8ef6a0ac59a"
+        ],
+        "x": 365,
+        "y": 60,
+        "wires": [
+            [
+                "683a0dd88b9f1a1e"
+            ]
+        ]
+    },
+    {
+        "id": "b3fcc71f7cc16c11",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "3f154653a7a0dc76",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "ccf1e3d46ae49f5f"
+        ],
+        "x": 235,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ccf1e3d46ae49f5f",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link in 3",
+        "links": [
+            "b3fcc71f7cc16c11"
+        ],
+        "x": 365,
+        "y": 100,
+        "wires": [
+            [
+                "ddeca750eb9f9d62"
+            ]
+        ]
+    },
+    {
+        "id": "2e6f0daf82b27ce9",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "3f154653a7a0dc76",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "7917cec46f752804"
+        ],
+        "x": 235,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7917cec46f752804",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link in 4",
+        "links": [
+            "2e6f0daf82b27ce9"
+        ],
+        "x": 365,
+        "y": 140,
+        "wires": [
+            [
+                "5818d339c49cc5e9"
+            ]
+        ]
+    },
+    {
+        "id": "c2ea6c62af86fbc3",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [
+            "e6967e9b7ebc80eb"
+        ],
+        "x": 535,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e6967e9b7ebc80eb",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "898c69c607394c92",
+        "name": "link in 5",
+        "links": [
+            "c2ea6c62af86fbc3"
+        ],
+        "x": 65,
+        "y": 460,
+        "wires": [
+            [
+                "45f0931fff6686c1"
+            ]
+        ]
+    },
+    {
+        "id": "80959ec2a16f13f6",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link out 6",
+        "mode": "link",
+        "links": [
+            "ede465a2b4921e5a"
+        ],
+        "x": 535,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ede465a2b4921e5a",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "898c69c607394c92",
+        "name": "link in 6",
+        "links": [
+            "80959ec2a16f13f6"
+        ],
+        "x": 65,
+        "y": 460,
+        "wires": [
+            [
+                "45f0931fff6686c1"
+            ]
+        ]
+    },
+    {
+        "id": "1c20fb4a1fa759fe",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link out 7",
+        "mode": "link",
+        "links": [
+            "ac75c0ca473bf5d1"
+        ],
+        "x": 535,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ac75c0ca473bf5d1",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "898c69c607394c92",
+        "name": "link in 7",
+        "links": [
+            "1c20fb4a1fa759fe"
+        ],
+        "x": 65,
+        "y": 460,
+        "wires": [
+            [
+                "45f0931fff6686c1"
+            ]
+        ]
+    },
+    {
+        "id": "d3e6f0ad23c48998",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "link out 8",
+        "mode": "link",
+        "links": [
+            "e4018ab00d822fa7"
+        ],
+        "x": 635,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e4018ab00d822fa7",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "898c69c607394c92",
+        "name": "link in 8",
+        "links": [
+            "d3e6f0ad23c48998",
+            "ce71c7124e32cabe",
+            "85d39265a738288d"
+        ],
+        "x": 65,
+        "y": 500,
+        "wires": [
+            [
+                "880e8db0c3fa4e23"
+            ]
+        ]
+    },
+    {
+        "id": "ce71c7124e32cabe",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "link out 9",
+        "mode": "link",
+        "links": [
+            "e4018ab00d822fa7"
+        ],
+        "x": 635,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "85d39265a738288d",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "link out 10",
+        "mode": "link",
+        "links": [
+            "e4018ab00d822fa7"
+        ],
+        "x": 635,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "07972ffa7fffa22c",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link out 11",
+        "mode": "link",
+        "links": [
+            "3ac1d7d890223928"
+        ],
+        "x": 535,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "3ac1d7d890223928",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "link in 9",
+        "links": [
+            "07972ffa7fffa22c"
+        ],
+        "x": 65,
+        "y": 300,
+        "wires": [
+            [
+                "6ab740866f06df46"
+            ]
+        ]
+    },
+    {
+        "id": "5a5cea01d83b97ae",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link out 12",
+        "mode": "link",
+        "links": [
+            "124a3d53cf0efa92"
+        ],
+        "x": 535,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "124a3d53cf0efa92",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "link in 10",
+        "links": [
+            "5a5cea01d83b97ae"
+        ],
+        "x": 65,
+        "y": 300,
+        "wires": [
+            [
+                "6ab740866f06df46"
+            ]
+        ]
+    },
+    {
+        "id": "5d9f826f0f216ed3",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link out 13",
+        "mode": "link",
+        "links": [
+            "b7e70d9c18ec500a"
+        ],
+        "x": 535,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b7e70d9c18ec500a",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "link in 11",
+        "links": [
+            "5d9f826f0f216ed3"
+        ],
+        "x": 65,
+        "y": 300,
+        "wires": [
+            [
+                "6ab740866f06df46"
+            ]
+        ]
+    },
+    {
+        "id": "77fb90fbfec9f1b4",
+        "type": "trigger",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "Trigger bool to impulse",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "d3e6f0ad23c48998",
+                "f978a1b4a814017c"
+            ]
+        ]
+    },
+    {
+        "id": "f978a1b4a814017c",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "link out 14",
+        "mode": "link",
+        "links": [
+            "bd63ec7c27db9f41"
+        ],
+        "x": 635,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "bd63ec7c27db9f41",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "70f4864b52419944",
+        "name": "link in 12",
+        "links": [
+            "f978a1b4a814017c"
+        ],
+        "x": 745,
+        "y": 300,
+        "wires": [
+            [
+                "b01152a8dc7b6576"
+            ]
+        ]
+    },
+    {
+        "id": "042b0ce14dcaaaf6",
+        "type": "trigger",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "Trigger bool to impulse",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 500,
+        "y": 340,
+        "wires": [
+            [
+                "85d39265a738288d",
+                "6dd39da8d8485f97"
+            ]
+        ]
+    },
+    {
+        "id": "6dd39da8d8485f97",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6d43257abb473565",
+        "name": "link out 15",
+        "mode": "link",
+        "links": [
+            "eefc4be8097954ca"
+        ],
+        "x": 635,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "eefc4be8097954ca",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "70f4864b52419944",
+        "name": "link in 13",
+        "links": [
+            "6dd39da8d8485f97"
+        ],
+        "x": 745,
+        "y": 360,
+        "wires": [
+            [
+                "1defee9aa070762f"
             ]
         ]
     }
