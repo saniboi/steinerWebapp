@@ -124,61 +124,6 @@
         "className": ""
     },
     {
-        "id": "c9feb50ef1aaa12c",
-        "type": "ui_gauge",
-        "z": "ba7a781f2b9fb93c",
-        "name": "",
-        "group": "9dc3709413bc9f20",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "gauge",
-        "label": "units",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "33",
-        "seg2": "66",
-        "diff": false,
-        "className": "",
-        "x": 390,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "3cc7bd4dea53fb72",
-        "type": "ui_slider",
-        "z": "ba7a781f2b9fb93c",
-        "name": "",
-        "label": "slider",
-        "tooltip": "",
-        "group": "9dc3709413bc9f20",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": 0,
-        "max": "100",
-        "step": "0.5",
-        "className": "",
-        "x": 190,
-        "y": 300,
-        "wires": [
-            [
-                "c9feb50ef1aaa12c"
-            ]
-        ]
-    },
-    {
         "id": "7fefb337b96dc93a",
         "type": "rpi-gpio out",
         "z": "ba7a781f2b9fb93c",
@@ -189,8 +134,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 630,
-        "y": 60,
+        "x": 770,
+        "y": 40,
         "wires": []
     },
     {
@@ -204,8 +149,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 630,
-        "y": 120,
+        "x": 770,
+        "y": 160,
         "wires": []
     },
     {
@@ -219,8 +164,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 630,
-        "y": 180,
+        "x": 770,
+        "y": 280,
         "wires": []
     },
     {
@@ -243,11 +188,12 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 270,
-        "y": 180,
+        "x": 290,
+        "y": 220,
         "wires": [
             [
-                "6ab740866f06df46"
+                "6ab740866f06df46",
+                "45f0931fff6686c1"
             ]
         ]
     },
@@ -271,11 +217,12 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 270,
-        "y": 120,
+        "x": 290,
+        "y": 160,
         "wires": [
             [
-                "6ab740866f06df46"
+                "6ab740866f06df46",
+                "45f0931fff6686c1"
             ]
         ]
     },
@@ -299,11 +246,12 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 270,
-        "y": 60,
+        "x": 290,
+        "y": 100,
         "wires": [
             [
-                "6ab740866f06df46"
+                "6ab740866f06df46",
+                "45f0931fff6686c1"
             ]
         ]
     },
@@ -334,17 +282,20 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 450,
-        "y": 120,
+        "x": 530,
+        "y": 160,
         "wires": [
             [
-                "7fefb337b96dc93a"
+                "7fefb337b96dc93a",
+                "880e8db0c3fa4e23"
             ],
             [
-                "b01152a8dc7b6576"
+                "b01152a8dc7b6576",
+                "04da7793a079e835"
             ],
             [
-                "1defee9aa070762f"
+                "1defee9aa070762f",
+                "2bfad9d7c2aee0aa"
             ]
         ]
     },
@@ -370,8 +321,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
-        "y": 60,
+        "x": 140,
+        "y": 100,
         "wires": [
             [
                 "683a0dd88b9f1a1e"
@@ -400,8 +351,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
-        "y": 180,
+        "x": 140,
+        "y": 220,
         "wires": [
             [
                 "5818d339c49cc5e9"
@@ -430,12 +381,80 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
-        "y": 120,
+        "x": 140,
+        "y": 160,
         "wires": [
             [
                 "ddeca750eb9f9d62"
             ]
         ]
+    },
+    {
+        "id": "45f0931fff6686c1",
+        "type": "debug",
+        "z": "ba7a781f2b9fb93c",
+        "name": "Button Testing",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "880e8db0c3fa4e23",
+        "type": "debug",
+        "z": "ba7a781f2b9fb93c",
+        "name": "Tor-Auf",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "04da7793a079e835",
+        "type": "debug",
+        "z": "ba7a781f2b9fb93c",
+        "name": "Tor-Stop",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "2bfad9d7c2aee0aa",
+        "type": "debug",
+        "z": "ba7a781f2b9fb93c",
+        "name": "Tor-Ab",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 340,
+        "wires": []
     }
 ]
