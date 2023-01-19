@@ -228,7 +228,7 @@
     {
         "id": "88c329bbb5a4c4be",
         "type": "ui_tab",
-        "name": "SteinerApp",
+        "name": "Torsteuerung",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
@@ -236,12 +236,31 @@
     {
         "id": "9dc3709413bc9f20",
         "type": "ui_group",
-        "name": "SteinerApp",
+        "name": "Torsteuerung",
         "tab": "88c329bbb5a4c4be",
         "order": 1,
         "disp": true,
         "width": "6",
         "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "4acb9b674af698c2",
+        "type": "ui_tab",
+        "name": "Öl-Zähler",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bcf2a034187609c2",
+        "type": "ui_group",
+        "name": "Öl-Verbrauch",
+        "tab": "4acb9b674af698c2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
         "className": ""
     },
     {
