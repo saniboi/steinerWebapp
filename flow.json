@@ -50,7 +50,6 @@
         "templateFolder": "blank",
         "extTemplate": "",
         "showfolder": false,
-        "oldUrl": "ui",
         "reload": false,
         "sourceFolder": "src",
         "deployedVersion": "6.0.0",
