@@ -176,5 +176,17 @@
                 "c9feb50ef1aaa12c"
             ]
         ]
+    },
+    {
+        "id": "e1e386edf73383d6",
+        "type": "ui_ui_control",
+        "z": "ba7a781f2b9fb93c",
+        "name": "",
+        "events": "all",
+        "x": 240,
+        "y": 200,
+        "wires": [
+            []
+        ]
     }
 ]
