@@ -111,12 +111,14 @@
             "1493bcfdc89a3327",
             "c3a1b8ef6a0ac59a",
             "b3fcc71f7cc16c11",
-            "2e6f0daf82b27ce9"
+            "2e6f0daf82b27ce9",
+            "89bd2b36641c073f",
+            "b0f3026392b33b80"
         ],
-        "x": 34,
+        "x": 14,
         "y": 39,
-        "w": 262,
-        "h": 162
+        "w": 282,
+        "h": 202
     },
     {
         "id": "5ec4de0559b4272d",
@@ -184,7 +186,6 @@
             "2bb7bab32c030d85",
             "85d86609c7128091",
             "e1035a52fd0d665c",
-            "89bd2b36641c073f",
             "932084b5ed0deb47",
             "92af62a5cfbf9412"
         ],
@@ -1169,36 +1170,6 @@
         ]
     },
     {
-        "id": "89bd2b36641c073f",
-        "type": "inject",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 210,
-        "y": 360,
-        "wires": [
-            [
-                "932084b5ed0deb47"
-            ]
-        ]
-    },
-    {
         "id": "932084b5ed0deb47",
         "type": "trigger",
         "z": "b88fb898bd6540cc",
@@ -1241,6 +1212,22 @@
         "x": 340,
         "y": 440,
         "wires": []
+    },
+    {
+        "id": "ed1230ed8d6e3369",
+        "type": "link in",
+        "z": "b88fb898bd6540cc",
+        "name": "Test input Tor 50% in",
+        "links": [
+            "b0f3026392b33b80"
+        ],
+        "x": 85,
+        "y": 400,
+        "wires": [
+            [
+                "932084b5ed0deb47"
+            ]
+        ]
     },
     {
         "id": "fe86ae9f51486f5b",
@@ -1405,7 +1392,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
+        "x": 120,
         "y": 80,
         "wires": [
             [
@@ -1436,7 +1423,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
+        "x": 120,
         "y": 160,
         "wires": [
             [
@@ -1467,7 +1454,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
+        "x": 130,
         "y": 120,
         "wires": [
             [
@@ -1547,6 +1534,50 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 540,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "89bd2b36641c073f",
+        "type": "inject",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "Tor Position 50%",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "b0f3026392b33b80"
+            ]
+        ]
+    },
+    {
+        "id": "b0f3026392b33b80",
+        "type": "link out",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "Test input Tor 50% out",
+        "mode": "link",
+        "links": [
+            "ed1230ed8d6e3369"
+        ],
+        "x": 255,
         "y": 200,
         "wires": []
     },
