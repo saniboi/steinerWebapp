@@ -190,7 +190,8 @@
             "6bdc19a8496779c0",
             "bdf848dbf296cd76",
             "25f1d50de5bf51f0",
-            "8963fa445255d4c1"
+            "8963fa445255d4c1",
+            "e4bf02a746d30178"
         ],
         "x": 174,
         "y": 39,
@@ -1460,6 +1461,22 @@
         "icon": "node-red/trigger.svg"
     },
     {
+        "id": "91c2cddf67c80ae3",
+        "type": "link in",
+        "z": "239bb88f8646fff4",
+        "name": "impulse Eingang",
+        "links": [
+            "e4bf02a746d30178"
+        ],
+        "x": 355,
+        "y": 120,
+        "wires": [
+            [
+                "fe86ae9f51486f5b"
+            ]
+        ]
+    },
+    {
         "id": "45f0931fff6686c1",
         "type": "debug",
         "z": "27bed9da7de43cc4",
@@ -1863,7 +1880,23 @@
         "x": 280,
         "y": 380,
         "wires": [
-            []
+            [
+                "e4bf02a746d30178"
+            ]
         ]
+    },
+    {
+        "id": "e4bf02a746d30178",
+        "type": "link out",
+        "z": "3a841c7cacf5e875",
+        "g": "5ec4de0559b4272d",
+        "name": "Impuls Ausgang",
+        "mode": "link",
+        "links": [
+            "91c2cddf67c80ae3"
+        ],
+        "x": 405,
+        "y": 380,
+        "wires": []
     }
 ]
