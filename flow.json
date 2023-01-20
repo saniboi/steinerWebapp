@@ -172,7 +172,6 @@
             "6dd39da8d8485f97",
             "e81459c8fffc1c55",
             "dce0db5e7f112720",
-            "233dda301194b828",
             "ea2bcd67c9157115",
             "fb0cd6efa5e7555a",
             "a0a12692f3b12cbb",
@@ -184,14 +183,14 @@
             "0dc7eccc6a9a6254",
             "ff38d486fdef74f9",
             "2bb7bab32c030d85",
-            "85d86609c7128091",
             "e1035a52fd0d665c",
             "932084b5ed0deb47",
-            "92af62a5cfbf9412"
+            "92af62a5cfbf9412",
+            "ed1230ed8d6e3369"
         ],
-        "x": 94,
+        "x": 154,
         "y": 119,
-        "w": 922,
+        "w": 862,
         "h": 582
     },
     {
@@ -980,32 +979,6 @@
         ]
     },
     {
-        "id": "233dda301194b828",
-        "type": "change",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "Position >= 50%",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Tor 50%",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 560,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "ea2bcd67c9157115",
         "type": "change",
         "z": "b88fb898bd6540cc",
@@ -1121,32 +1094,6 @@
         ]
     },
     {
-        "id": "85d86609c7128091",
-        "type": "switch",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "IsClosed",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "false"
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 2,
-        "x": 320,
-        "y": 660,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
         "id": "e1035a52fd0d665c",
         "type": "toggle",
         "z": "b88fb898bd6540cc",
@@ -1161,8 +1108,8 @@
         "toggleValue": "false",
         "toggleType": "bool",
         "passOnOff": "ifChanged",
-        "x": 210,
-        "y": 440,
+        "x": 530,
+        "y": 660,
         "wires": [
             [
                 "92af62a5cfbf9412"
@@ -1187,8 +1134,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 220,
-        "y": 400,
+        "x": 360,
+        "y": 660,
         "wires": [
             [
                 "e1035a52fd0d665c"
@@ -1209,20 +1156,21 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 340,
-        "y": 440,
+        "x": 660,
+        "y": 660,
         "wires": []
     },
     {
         "id": "ed1230ed8d6e3369",
         "type": "link in",
         "z": "b88fb898bd6540cc",
+        "g": "6d43257abb473565",
         "name": "Test input Tor 50% in",
         "links": [
             "b0f3026392b33b80"
         ],
-        "x": 85,
-        "y": 400,
+        "x": 215,
+        "y": 660,
         "wires": [
             [
                 "932084b5ed0deb47"
