@@ -1680,7 +1680,7 @@
         "type": "link out",
         "z": "27bed9da7de43cc4",
         "g": "3f154653a7a0dc76",
-        "name": "link out 2",
+        "name": "Test auf out",
         "mode": "link",
         "links": [
             "587d67b8d7b4e365"
@@ -1694,7 +1694,7 @@
         "type": "link out",
         "z": "27bed9da7de43cc4",
         "g": "3f154653a7a0dc76",
-        "name": "link out 3",
+        "name": "Test stopp out",
         "mode": "link",
         "links": [
             "ccf1e3d46ae49f5f"
@@ -1708,7 +1708,7 @@
         "type": "link out",
         "z": "27bed9da7de43cc4",
         "g": "3f154653a7a0dc76",
-        "name": "link out 4",
+        "name": "Test ab out",
         "mode": "link",
         "links": [
             "7917cec46f752804"
