@@ -744,7 +744,7 @@
         "type": "link out",
         "z": "b88fb898bd6540cc",
         "g": "6d43257abb473565",
-        "name": "link out 1",
+        "name": "GPIO Tor auf out",
         "mode": "link",
         "links": [
             "e00dbaaf379cd317"
@@ -878,7 +878,7 @@
         "type": "link out",
         "z": "b88fb898bd6540cc",
         "g": "6d43257abb473565",
-        "name": "link out 14",
+        "name": "GPIO Tor stop out",
         "mode": "link",
         "links": [
             "bd63ec7c27db9f41"
@@ -919,7 +919,7 @@
         "type": "link out",
         "z": "b88fb898bd6540cc",
         "g": "6d43257abb473565",
-        "name": "link out 15",
+        "name": "GPIO Tor ab out",
         "mode": "link",
         "links": [
             "eefc4be8097954ca"
@@ -1045,7 +1045,7 @@
         "type": "link out",
         "z": "b88fb898bd6540cc",
         "g": "6d43257abb473565",
-        "name": "link out 17",
+        "name": "Tor offen out",
         "mode": "link",
         "links": [
             "7f5248837f9bcab4"
@@ -1059,7 +1059,7 @@
         "type": "link out",
         "z": "b88fb898bd6540cc",
         "g": "6d43257abb473565",
-        "name": "link out 18",
+        "name": "Tor geschlossen out",
         "mode": "link",
         "links": [
             "7f5248837f9bcab4"
@@ -1073,7 +1073,7 @@
         "type": "link in",
         "z": "b88fb898bd6540cc",
         "g": "6d43257abb473565",
-        "name": "link in 15",
+        "name": "GPIO Tor geschlossen in",
         "links": [
             "25f1d50de5bf51f0"
         ],
@@ -1770,7 +1770,7 @@
         "type": "link in",
         "z": "3a841c7cacf5e875",
         "g": "5ec4de0559b4272d",
-        "name": "link in 1",
+        "name": "GPIO Tor auf in",
         "links": [
             "8adb014d2cb062cc"
         ],
@@ -1787,7 +1787,7 @@
         "type": "link in",
         "z": "3a841c7cacf5e875",
         "g": "5ec4de0559b4272d",
-        "name": "link in 12",
+        "name": "GPIO Tor stop in",
         "links": [
             "f978a1b4a814017c"
         ],
@@ -1804,7 +1804,7 @@
         "type": "link in",
         "z": "3a841c7cacf5e875",
         "g": "5ec4de0559b4272d",
-        "name": "link in 13",
+        "name": "GPIO Tor ab in",
         "links": [
             "6dd39da8d8485f97"
         ],
@@ -1857,7 +1857,7 @@
         "type": "link out",
         "z": "3a841c7cacf5e875",
         "g": "5ec4de0559b4272d",
-        "name": "link out 16",
+        "name": "GPIO Tor geschlossen out",
         "mode": "link",
         "links": [
             "2959a3cfb3ddf903"
