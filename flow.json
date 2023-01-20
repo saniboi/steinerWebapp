@@ -148,9 +148,7 @@
             "e4bf02a746d30178"
         ],
         "x": 174,
-        "y": 39,
-        "w": 272,
-        "h": 382
+        "y": 39
     },
     {
         "id": "6d43257abb473565",
@@ -368,7 +366,7 @@
         "order": 4,
         "width": 0,
         "height": 0,
-        "passthru": false,
+        "passthru": true,
         "label": "Down button",
         "tooltip": "Tor-ab",
         "color": "grey",
@@ -398,7 +396,7 @@
         "order": 3,
         "width": 0,
         "height": 0,
-        "passthru": false,
+        "passthru": true,
         "label": "Stop button",
         "tooltip": "Tor-stopp",
         "color": "grey",
@@ -428,7 +426,7 @@
         "order": 2,
         "width": 0,
         "height": 0,
-        "passthru": false,
+        "passthru": true,
         "label": "Up button",
         "tooltip": "Tor-Auf",
         "color": "grey",
