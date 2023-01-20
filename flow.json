@@ -69,12 +69,14 @@
             "5a5cea01d83b97ae",
             "5d9f826f0f216ed3",
             "7854c790507380c2",
-            "7f5248837f9bcab4"
+            "7f5248837f9bcab4",
+            "7d516493fe893cca",
+            "c1f5f92421b1bc70"
         ],
         "x": 184,
         "y": 19,
-        "w": 302,
-        "h": 342
+        "w": 322,
+        "h": 382
     },
     {
         "id": "898c69c607394c92",
@@ -90,12 +92,14 @@
             "e6967e9b7ebc80eb",
             "ede465a2b4921e5a",
             "ac75c0ca473bf5d1",
-            "e4018ab00d822fa7"
+            "e4018ab00d822fa7",
+            "1cf008a2d74cb052",
+            "92af62a5cfbf9412"
         ],
         "x": 444,
         "y": 39,
         "w": 322,
-        "h": 122
+        "h": 162
     },
     {
         "id": "3f154653a7a0dc76",
@@ -185,13 +189,14 @@
             "2bb7bab32c030d85",
             "e1035a52fd0d665c",
             "932084b5ed0deb47",
-            "92af62a5cfbf9412",
-            "ed1230ed8d6e3369"
+            "ed1230ed8d6e3369",
+            "904702cc397300e9",
+            "b4c223c7a1d98d7f"
         ],
         "x": 154,
         "y": 119,
         "w": 862,
-        "h": 582
+        "h": 622
     },
     {
         "id": "a96a0b6e98809ced",
@@ -617,6 +622,41 @@
         "wires": [
             [
                 "7854c790507380c2"
+            ]
+        ]
+    },
+    {
+        "id": "7d516493fe893cca",
+        "type": "ui_text",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "group": "52847f51b22205df",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Tor in % Offen",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 400,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "c1f5f92421b1bc70",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "Text Torposition in % in",
+        "links": [
+            "904702cc397300e9"
+        ],
+        "x": 225,
+        "y": 360,
+        "wires": [
+            [
+                "7d516493fe893cca"
             ]
         ]
     },
@@ -1109,10 +1149,11 @@
         "toggleType": "bool",
         "passOnOff": "ifChanged",
         "x": 530,
-        "y": 660,
+        "y": 680,
         "wires": [
             [
-                "92af62a5cfbf9412"
+                "904702cc397300e9",
+                "b4c223c7a1d98d7f"
             ]
         ]
     },
@@ -1135,30 +1176,12 @@
         "topic": "topic",
         "outputs": 1,
         "x": 360,
-        "y": 660,
+        "y": 680,
         "wires": [
             [
                 "e1035a52fd0d665c"
             ]
         ]
-    },
-    {
-        "id": "92af62a5cfbf9412",
-        "type": "debug",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "position",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 660,
-        "wires": []
     },
     {
         "id": "ed1230ed8d6e3369",
@@ -1170,12 +1193,40 @@
             "b0f3026392b33b80"
         ],
         "x": 215,
-        "y": 660,
+        "y": 680,
         "wires": [
             [
                 "932084b5ed0deb47"
             ]
         ]
+    },
+    {
+        "id": "904702cc397300e9",
+        "type": "link out",
+        "z": "b88fb898bd6540cc",
+        "g": "6d43257abb473565",
+        "name": "Text Torposition in % out",
+        "mode": "link",
+        "links": [
+            "c1f5f92421b1bc70"
+        ],
+        "x": 705,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "b4c223c7a1d98d7f",
+        "type": "link out",
+        "z": "b88fb898bd6540cc",
+        "g": "6d43257abb473565",
+        "name": "Debugg Text Position % out",
+        "mode": "link",
+        "links": [
+            "1cf008a2d74cb052"
+        ],
+        "x": 705,
+        "y": 700,
+        "wires": []
     },
     {
         "id": "fe86ae9f51486f5b",
@@ -1217,7 +1268,7 @@
         "z": "27bed9da7de43cc4",
         "g": "898c69c607394c92",
         "name": "Button Testing",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1235,7 +1286,7 @@
         "z": "27bed9da7de43cc4",
         "g": "898c69c607394c92",
         "name": "Relais output Testing",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1529,6 +1580,41 @@
         ],
         "x": 255,
         "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1cf008a2d74cb052",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "898c69c607394c92",
+        "name": "Debugg Text Position % in",
+        "links": [
+            "b4c223c7a1d98d7f"
+        ],
+        "x": 485,
+        "y": 160,
+        "wires": [
+            [
+                "92af62a5cfbf9412"
+            ]
+        ]
+    },
+    {
+        "id": "92af62a5cfbf9412",
+        "type": "debug",
+        "z": "27bed9da7de43cc4",
+        "g": "898c69c607394c92",
+        "name": "position",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 160,
         "wires": []
     },
     {
