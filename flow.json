@@ -984,7 +984,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Tor offen",
+                "to": "Tor >=50%",
                 "tot": "str"
             }
         ],
