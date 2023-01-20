@@ -71,12 +71,13 @@
             "7854c790507380c2",
             "7f5248837f9bcab4",
             "7d516493fe893cca",
-            "c1f5f92421b1bc70"
+            "c1f5f92421b1bc70",
+            "eb3a84752caeb753"
         ],
         "x": 184,
         "y": 19,
         "w": 322,
-        "h": 382
+        "h": 422
     },
     {
         "id": "898c69c607394c92",
@@ -117,12 +118,13 @@
             "b3fcc71f7cc16c11",
             "2e6f0daf82b27ce9",
             "89bd2b36641c073f",
-            "b0f3026392b33b80"
+            "b0f3026392b33b80",
+            "2dfb7ff480250ff1"
         ],
         "x": 14,
         "y": 39,
         "w": 282,
-        "h": 202
+        "h": 242
     },
     {
         "id": "5ec4de0559b4272d",
@@ -604,7 +606,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 390,
-        "y": 320,
+        "y": 360,
         "wires": []
     },
     {
@@ -618,7 +620,7 @@
             "fb0cd6efa5e7555a"
         ],
         "x": 225,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "7854c790507380c2"
@@ -640,7 +642,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 400,
-        "y": 360,
+        "y": 400,
         "wires": []
     },
     {
@@ -653,10 +655,27 @@
             "904702cc397300e9"
         ],
         "x": 225,
-        "y": 360,
+        "y": 400,
         "wires": [
             [
                 "7d516493fe893cca"
+            ]
+        ]
+    },
+    {
+        "id": "eb3a84752caeb753",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "Test Text Position in",
+        "links": [
+            "3fd276e42915a427"
+        ],
+        "x": 225,
+        "y": 300,
+        "wires": [
+            [
+                "7854c790507380c2"
             ]
         ]
     },
@@ -1615,6 +1634,96 @@
         "statusType": "auto",
         "x": 580,
         "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ca95a0d826c87b1a",
+        "type": "toggle",
+        "z": "27bed9da7de43cc4",
+        "name": "",
+        "onOffTopic": "",
+        "onValue": "Tor ist geschlossen",
+        "onType": "str",
+        "offValue": "Tor ist offen",
+        "offType": "str",
+        "toggleTopic": "",
+        "toggleValue": "false",
+        "toggleType": "bool",
+        "passOnOff": "ifChanged",
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "3fd276e42915a427"
+            ]
+        ]
+    },
+    {
+        "id": "a56fa122f7274c94",
+        "type": "trigger",
+        "z": "27bed9da7de43cc4",
+        "name": "Trigger bool to impulse",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "ca95a0d826c87b1a"
+            ]
+        ]
+    },
+    {
+        "id": "2dfb7ff480250ff1",
+        "type": "inject",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "Tor Position ",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "a56fa122f7274c94"
+            ]
+        ]
+    },
+    {
+        "id": "3fd276e42915a427",
+        "type": "link out",
+        "z": "27bed9da7de43cc4",
+        "name": "Test Text Position out",
+        "mode": "link",
+        "links": [
+            "eb3a84752caeb753"
+        ],
+        "x": 415,
+        "y": 320,
         "wires": []
     },
     {
