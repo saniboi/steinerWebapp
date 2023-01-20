@@ -119,6 +119,32 @@
         "h": 162
     },
     {
+        "id": "5ec4de0559b4272d",
+        "type": "group",
+        "z": "3a841c7cacf5e875",
+        "name": "GPIO Control",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7fefb337b96dc93a",
+            "b01152a8dc7b6576",
+            "1defee9aa070762f",
+            "e00dbaaf379cd317",
+            "bd63ec7c27db9f41",
+            "eefc4be8097954ca",
+            "6bdc19a8496779c0",
+            "bdf848dbf296cd76",
+            "25f1d50de5bf51f0",
+            "8963fa445255d4c1",
+            "e4bf02a746d30178"
+        ],
+        "x": 174,
+        "y": 39,
+        "w": 272,
+        "h": 382
+    },
+    {
         "id": "6d43257abb473565",
         "type": "group",
         "z": "b88fb898bd6540cc",
@@ -149,54 +175,13 @@
             "fb0cd6efa5e7555a",
             "a0a12692f3b12cbb",
             "2959a3cfb3ddf903",
-            "18f898e606af0a17",
-            "b763152102eda4c1",
-            "be03a33af3c81623",
-            "2f199ba76047b68f",
-            "73d090afc4e60953",
-            "4bf34ac5d78bf49e",
-            "56634d9eaba45c1b",
-            "9409b1d54b13c7b6",
-            "b79ad5e42d7cea77",
-            "7bf0ac3be53289e6",
-            "2452350c43315599",
-            "314c6ff85b659a59",
-            "570a3fa27d765425",
-            "d0ef334c80521a0e",
-            "44e7a5b16a856c17",
             "2774cb4b4b64f553",
             "a8d111e9e4f2601f"
         ],
         "x": 134,
-        "y": 39,
+        "y": 119,
         "w": 842,
-        "h": 662
-    },
-    {
-        "id": "5ec4de0559b4272d",
-        "type": "group",
-        "z": "3a841c7cacf5e875",
-        "name": "GPIO Control",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "7fefb337b96dc93a",
-            "b01152a8dc7b6576",
-            "1defee9aa070762f",
-            "e00dbaaf379cd317",
-            "bd63ec7c27db9f41",
-            "eefc4be8097954ca",
-            "6bdc19a8496779c0",
-            "bdf848dbf296cd76",
-            "25f1d50de5bf51f0",
-            "8963fa445255d4c1",
-            "e4bf02a746d30178"
-        ],
-        "x": 174,
-        "y": 39,
-        "w": 272,
-        "h": 382
+        "h": 582
     },
     {
         "id": "a96a0b6e98809ced",
@@ -626,6 +611,29 @@
         ]
     },
     {
+        "id": "a3c1577363498293",
+        "type": "trigger",
+        "z": "b88fb898bd6540cc",
+        "name": "Trigger bool to impulse",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 500,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "937fe221820d88e8",
         "type": "change",
         "z": "b88fb898bd6540cc",
@@ -649,8 +657,7 @@
         "y": 180,
         "wires": [
             [
-                "82a190df753051e4",
-                "18f898e606af0a17"
+                "82a190df753051e4"
             ]
         ]
     },
@@ -678,8 +685,7 @@
         "y": 340,
         "wires": [
             [
-                "77fb90fbfec9f1b4",
-                "4bf34ac5d78bf49e"
+                "77fb90fbfec9f1b4"
             ]
         ]
     },
@@ -707,8 +713,7 @@
         "y": 500,
         "wires": [
             [
-                "042b0ce14dcaaaf6",
-                "2452350c43315599"
+                "042b0ce14dcaaaf6"
             ]
         ]
     },
@@ -758,7 +763,7 @@
         "type": "link out",
         "z": "b88fb898bd6540cc",
         "g": "6d43257abb473565",
-        "name": "link out 8",
+        "name": "Debugg Relais stopp out",
         "mode": "link",
         "links": [
             "e4018ab00d822fa7"
@@ -772,7 +777,7 @@
         "type": "link out",
         "z": "b88fb898bd6540cc",
         "g": "6d43257abb473565",
-        "name": "link out 9",
+        "name": "Debugg Relais auf out",
         "mode": "link",
         "links": [
             "e4018ab00d822fa7"
@@ -786,7 +791,7 @@
         "type": "link out",
         "z": "b88fb898bd6540cc",
         "g": "6d43257abb473565",
-        "name": "link out 10",
+        "name": "Debugg Relais ab out",
         "mode": "link",
         "links": [
             "e4018ab00d822fa7"
@@ -1086,296 +1091,6 @@
         ]
     },
     {
-        "id": "18f898e606af0a17",
-        "type": "delay",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "Delay 2s",
-        "pauseType": "delay",
-        "timeout": "2",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 760,
-        "y": 100,
-        "wires": [
-            [
-                "73d090afc4e60953",
-                "2f199ba76047b68f"
-            ]
-        ]
-    },
-    {
-        "id": "73d090afc4e60953",
-        "type": "link out",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link out 19",
-        "mode": "link",
-        "links": [
-            "b763152102eda4c1"
-        ],
-        "x": 935,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "b763152102eda4c1",
-        "type": "link in",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link in 17",
-        "links": [
-            "73d090afc4e60953"
-        ],
-        "x": 665,
-        "y": 320,
-        "wires": [
-            [
-                "77fb90fbfec9f1b4"
-            ]
-        ]
-    },
-    {
-        "id": "2f199ba76047b68f",
-        "type": "link out",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link out 20",
-        "mode": "link",
-        "links": [
-            "be03a33af3c81623"
-        ],
-        "x": 935,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "be03a33af3c81623",
-        "type": "link in",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link in 18",
-        "links": [
-            "2f199ba76047b68f"
-        ],
-        "x": 665,
-        "y": 480,
-        "wires": [
-            [
-                "042b0ce14dcaaaf6"
-            ]
-        ]
-    },
-    {
-        "id": "4bf34ac5d78bf49e",
-        "type": "delay",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "Delay 2s",
-        "pauseType": "delay",
-        "timeout": "2",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 760,
-        "y": 260,
-        "wires": [
-            [
-                "56634d9eaba45c1b",
-                "7bf0ac3be53289e6"
-            ]
-        ]
-    },
-    {
-        "id": "56634d9eaba45c1b",
-        "type": "link out",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link out 21",
-        "mode": "link",
-        "links": [
-            "b79ad5e42d7cea77"
-        ],
-        "x": 935,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "b79ad5e42d7cea77",
-        "type": "link in",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link in 19",
-        "links": [
-            "56634d9eaba45c1b"
-        ],
-        "x": 665,
-        "y": 160,
-        "wires": [
-            [
-                "82a190df753051e4"
-            ]
-        ]
-    },
-    {
-        "id": "7bf0ac3be53289e6",
-        "type": "link out",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link out 22",
-        "mode": "link",
-        "links": [
-            "9409b1d54b13c7b6"
-        ],
-        "x": 935,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "9409b1d54b13c7b6",
-        "type": "link in",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link in 20",
-        "links": [
-            "7bf0ac3be53289e6"
-        ],
-        "x": 665,
-        "y": 520,
-        "wires": [
-            [
-                "042b0ce14dcaaaf6"
-            ]
-        ]
-    },
-    {
-        "id": "2452350c43315599",
-        "type": "delay",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "Delay 2s",
-        "pauseType": "delay",
-        "timeout": "2",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 760,
-        "y": 420,
-        "wires": [
-            [
-                "570a3fa27d765425",
-                "d0ef334c80521a0e"
-            ]
-        ]
-    },
-    {
-        "id": "570a3fa27d765425",
-        "type": "link out",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link out 23",
-        "mode": "link",
-        "links": [
-            "314c6ff85b659a59"
-        ],
-        "x": 935,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "314c6ff85b659a59",
-        "type": "link in",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link in 21",
-        "links": [
-            "570a3fa27d765425"
-        ],
-        "x": 665,
-        "y": 200,
-        "wires": [
-            [
-                "82a190df753051e4"
-            ]
-        ]
-    },
-    {
-        "id": "d0ef334c80521a0e",
-        "type": "link out",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link out 24",
-        "mode": "link",
-        "links": [
-            "44e7a5b16a856c17"
-        ],
-        "x": 935,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "44e7a5b16a856c17",
-        "type": "link in",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "link in 22",
-        "links": [
-            "d0ef334c80521a0e"
-        ],
-        "x": 665,
-        "y": 360,
-        "wires": [
-            [
-                "77fb90fbfec9f1b4"
-            ]
-        ]
-    },
-    {
-        "id": "a3c1577363498293",
-        "type": "trigger",
-        "z": "b88fb898bd6540cc",
-        "name": "Trigger bool to impulse",
-        "op1": "1",
-        "op2": "0",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "500",
-        "extend": false,
-        "overrideDelay": false,
-        "units": "ms",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 500,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "2774cb4b4b64f553",
         "type": "and-gate",
         "z": "b88fb898bd6540cc",
@@ -1551,7 +1266,7 @@
         "type": "link in",
         "z": "27bed9da7de43cc4",
         "g": "898c69c607394c92",
-        "name": "link in 7",
+        "name": "Debugg Button in",
         "links": [
             "1c20fb4a1fa759fe"
         ],
@@ -1568,11 +1283,11 @@
         "type": "link in",
         "z": "27bed9da7de43cc4",
         "g": "898c69c607394c92",
-        "name": "link in 8",
+        "name": "Debugg Relais in",
         "links": [
-            "d3e6f0ad23c48998",
+            "85d39265a738288d",
             "ce71c7124e32cabe",
-            "85d39265a738288d"
+            "d3e6f0ad23c48998"
         ],
         "x": 485,
         "y": 120,
