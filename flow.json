@@ -176,7 +176,8 @@
             "a0a12692f3b12cbb",
             "2959a3cfb3ddf903",
             "2774cb4b4b64f553",
-            "a8d111e9e4f2601f"
+            "a8d111e9e4f2601f",
+            "9c215e6624a351b3"
         ],
         "x": 134,
         "y": 119,
@@ -1109,8 +1110,8 @@
         "outputTopic": "",
         "gateType": "and",
         "emitOnlyIfTrue": false,
-        "x": 250,
-        "y": 440,
+        "x": 650,
+        "y": 240,
         "wires": [
             []
         ]
