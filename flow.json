@@ -177,11 +177,15 @@
             "2959a3cfb3ddf903",
             "2774cb4b4b64f553",
             "a8d111e9e4f2601f",
-            "9c215e6624a351b3"
+            "9c215e6624a351b3",
+            "9870cb49a750f10d",
+            "03ef2a95b658f224",
+            "0dc7eccc6a9a6254",
+            "ff38d486fdef74f9"
         ],
-        "x": 134,
+        "x": 114,
         "y": 119,
-        "w": 842,
+        "w": 862,
         "h": 582
     },
     {
@@ -1156,6 +1160,30 @@
             [
                 "5247dd81e2ed43ef"
             ]
+        ]
+    },
+    {
+        "id": "ff38d486fdef74f9",
+        "type": "BooleanLogicUltimate",
+        "z": "b88fb898bd6540cc",
+        "g": "6d43257abb473565",
+        "name": "Gate",
+        "payloadPropName": "payload",
+        "filtertrue": "both",
+        "persist": false,
+        "sInitializeWith": "false",
+        "triggertopic": "trigger",
+        "outputtriggeredby": "all",
+        "inputCount": 2,
+        "topic": "result",
+        "restrictinputevaluation": false,
+        "delayEvaluation": "900",
+        "x": 360,
+        "y": 420,
+        "wires": [
+            [],
+            [],
+            []
         ]
     },
     {
