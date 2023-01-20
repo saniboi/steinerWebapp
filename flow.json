@@ -1115,7 +1115,7 @@
         "outputTopic": "",
         "gateType": "and",
         "emitOnlyIfTrue": false,
-        "x": 650,
+        "x": 750,
         "y": 240,
         "wires": [
             []
