@@ -68,13 +68,12 @@
             "7854c790507380c2",
             "7f5248837f9bcab4",
             "7d516493fe893cca",
-            "c1f5f92421b1bc70",
-            "eb3a84752caeb753"
+            "c1f5f92421b1bc70"
         ],
-        "x": 184,
+        "x": 164,
         "y": 39,
         "w": 322,
-        "h": 382
+        "h": 322
     },
     {
         "id": "898c69c607394c92",
@@ -94,7 +93,7 @@
             "102ef19d223bfac6",
             "36de064e932c1e66"
         ],
-        "x": 444,
+        "x": 634,
         "y": 39,
         "w": 322,
         "h": 202
@@ -116,12 +115,15 @@
             "2e6f0daf82b27ce9",
             "89bd2b36641c073f",
             "b0f3026392b33b80",
-            "2dfb7ff480250ff1"
+            "2dfb7ff480250ff1",
+            "b26e8c241907237d",
+            "ca95a0d826c87b1a",
+            "277601cb5aba1cc6"
         ],
-        "x": 14,
+        "x": 34,
         "y": 39,
-        "w": 282,
-        "h": 242
+        "w": 482,
+        "h": 282
     },
     {
         "id": "5ec4de0559b4272d",
@@ -146,9 +148,7 @@
             "d91e309ade317d74"
         ],
         "x": 174,
-        "y": 39,
-        "w": 272,
-        "h": 382
+        "y": 39
     },
     {
         "id": "6d43257abb473565",
@@ -199,11 +199,17 @@
             "e7973a176069d818",
             "1847a2dc460be837",
             "f944eb7e12431d64",
-            "7dd736897875e4a7"
+            "7dd736897875e4a7",
+            "6ddb19a93dfa59ae",
+            "4c02978533a2d408",
+            "943e71717ce07ede",
+            "edd5055ec58cadd3",
+            "03761f12106ecc48",
+            "5097b1c94cae1e9d"
         ],
-        "x": 224,
+        "x": 164,
         "y": 59,
-        "w": 1422,
+        "w": 1342,
         "h": 662
     },
     {
@@ -394,7 +400,7 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 330,
+        "x": 310,
         "y": 200,
         "wires": [
             [
@@ -423,7 +429,7 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 330,
+        "x": 310,
         "y": 140,
         "wires": [
             [
@@ -452,7 +458,7 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 320,
+        "x": 300,
         "y": 80,
         "wires": [
             [
@@ -469,7 +475,7 @@
         "links": [
             "c3a1b8ef6a0ac59a"
         ],
-        "x": 225,
+        "x": 205,
         "y": 80,
         "wires": [
             [
@@ -486,7 +492,7 @@
         "links": [
             "b3fcc71f7cc16c11"
         ],
-        "x": 225,
+        "x": 205,
         "y": 140,
         "wires": [
             [
@@ -503,7 +509,7 @@
         "links": [
             "2e6f0daf82b27ce9"
         ],
-        "x": 225,
+        "x": 205,
         "y": 200,
         "wires": [
             [
@@ -521,7 +527,7 @@
         "links": [
             "3ac1d7d890223928"
         ],
-        "x": 465,
+        "x": 445,
         "y": 80,
         "wires": []
     },
@@ -535,7 +541,7 @@
         "links": [
             "124a3d53cf0efa92"
         ],
-        "x": 465,
+        "x": 445,
         "y": 140,
         "wires": []
     },
@@ -549,7 +555,7 @@
         "links": [
             "b7e70d9c18ec500a"
         ],
-        "x": 465,
+        "x": 445,
         "y": 200,
         "wires": []
     },
@@ -563,11 +569,11 @@
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "Tor open/closed",
+        "label": "Tor ist",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 400,
+        "x": 350,
         "y": 320,
         "wires": []
     },
@@ -581,8 +587,8 @@
             "a0a12692f3b12cbb",
             "fb0cd6efa5e7555a"
         ],
-        "x": 225,
-        "y": 380,
+        "x": 205,
+        "y": 320,
         "wires": [
             [
                 "7854c790507380c2"
@@ -603,7 +609,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 400,
+        "x": 380,
         "y": 260,
         "wires": []
     },
@@ -616,28 +622,11 @@
         "links": [
             "904702cc397300e9"
         ],
-        "x": 225,
+        "x": 205,
         "y": 260,
         "wires": [
             [
                 "7d516493fe893cca"
-            ]
-        ]
-    },
-    {
-        "id": "eb3a84752caeb753",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "Test Text Position in",
-        "links": [
-            "3fd276e42915a427"
-        ],
-        "x": 225,
-        "y": 320,
-        "wires": [
-            [
-                "7854c790507380c2"
             ]
         ]
     },
@@ -668,7 +657,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 630,
         "y": 100,
         "wires": [
             [
@@ -694,7 +683,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 360,
+        "x": 300,
         "y": 120,
         "wires": [
             [
@@ -713,7 +702,7 @@
             "b80323ba59d16c67",
             "bd63ec7c27db9f41"
         ],
-        "x": 1605,
+        "x": 1465,
         "y": 260,
         "wires": []
     },
@@ -727,7 +716,7 @@
         "links": [
             "e00dbaaf379cd317"
         ],
-        "x": 1605,
+        "x": 1465,
         "y": 120,
         "wires": []
     },
@@ -742,7 +731,7 @@
             "53201b311b22b5a7",
             "eefc4be8097954ca"
         ],
-        "x": 1605,
+        "x": 1465,
         "y": 420,
         "wires": []
     },
@@ -755,7 +744,7 @@
         "links": [
             "07972ffa7fffa22c"
         ],
-        "x": 265,
+        "x": 205,
         "y": 120,
         "wires": [
             [
@@ -772,7 +761,7 @@
         "links": [
             "5a5cea01d83b97ae"
         ],
-        "x": 265,
+        "x": 205,
         "y": 260,
         "wires": [
             [
@@ -789,7 +778,7 @@
         "links": [
             "5d9f826f0f216ed3"
         ],
-        "x": 265,
+        "x": 205,
         "y": 420,
         "wires": [
             [
@@ -815,7 +804,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 370,
+        "x": 310,
         "y": 260,
         "wires": [
             [
@@ -841,7 +830,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 370,
+        "x": 310,
         "y": 420,
         "wires": [
             [
@@ -860,7 +849,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Tor geschlossen",
+                "to": "GESCHLOSSEN",
                 "tot": "str"
             }
         ],
@@ -869,7 +858,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 680,
+        "x": 620,
         "y": 640,
         "wires": [
             [
@@ -896,7 +885,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 360,
+        "x": 300,
         "y": 660,
         "wires": [
             [
@@ -918,7 +907,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Tor offen",
+                "to": "OFFEN",
                 "tot": "str"
             }
         ],
@@ -927,7 +916,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 670,
+        "x": 610,
         "y": 680,
         "wires": [
             [
@@ -945,7 +934,7 @@
         "links": [
             "7f5248837f9bcab4"
         ],
-        "x": 845,
+        "x": 785,
         "y": 680,
         "wires": []
     },
@@ -959,7 +948,7 @@
         "links": [
             "7f5248837f9bcab4"
         ],
-        "x": 845,
+        "x": 785,
         "y": 640,
         "wires": []
     },
@@ -970,9 +959,10 @@
         "g": "6d43257abb473565",
         "name": "GPIO Tor geschlossen in",
         "links": [
-            "25f1d50de5bf51f0"
+            "25f1d50de5bf51f0",
+            "b26e8c241907237d"
         ],
-        "x": 265,
+        "x": 205,
         "y": 660,
         "wires": [
             [
@@ -995,7 +985,7 @@
         "toggleValue": "false",
         "toggleType": "bool",
         "passOnOff": "ifChanged",
-        "x": 700,
+        "x": 640,
         "y": 540,
         "wires": [
             [
@@ -1022,7 +1012,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 400,
+        "x": 340,
         "y": 540,
         "wires": [
             [
@@ -1040,7 +1030,7 @@
             "b0f3026392b33b80",
             "d91e309ade317d74"
         ],
-        "x": 265,
+        "x": 205,
         "y": 540,
         "wires": [
             [
@@ -1058,7 +1048,7 @@
         "links": [
             "c1f5f92421b1bc70"
         ],
-        "x": 845,
+        "x": 785,
         "y": 520,
         "wires": []
     },
@@ -1072,7 +1062,7 @@
         "links": [
             "1cf008a2d74cb052"
         ],
-        "x": 845,
+        "x": 785,
         "y": 560,
         "wires": []
     },
@@ -1088,7 +1078,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
+        "x": 850,
         "y": 120,
         "wires": [
             [
@@ -1115,7 +1105,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
+        "x": 470,
         "y": 120,
         "wires": [
             [
@@ -1153,7 +1143,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 630,
         "y": 140,
         "wires": [
             [
@@ -1188,7 +1178,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 630,
         "y": 240,
         "wires": [
             [
@@ -1223,7 +1213,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 630,
         "y": 280,
         "wires": [
             [
@@ -1250,7 +1240,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
+        "x": 470,
         "y": 260,
         "wires": [
             [
@@ -1288,7 +1278,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 630,
         "y": 400,
         "wires": [
             [
@@ -1323,7 +1313,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 630,
         "y": 440,
         "wires": [
             [
@@ -1350,7 +1340,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
+        "x": 470,
         "y": 420,
         "wires": [
             [
@@ -1373,7 +1363,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
+        "x": 870,
         "y": 260,
         "wires": [
             [
@@ -1393,7 +1383,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
+        "x": 870,
         "y": 420,
         "wires": [
             [
@@ -1420,7 +1410,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1200,
+        "x": 1060,
         "y": 120,
         "wires": [
             [
@@ -1450,7 +1440,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1210,
+        "x": 1070,
         "y": 260,
         "wires": [
             [
@@ -1480,7 +1470,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1210,
+        "x": 1070,
         "y": 420,
         "wires": [
             [
@@ -1512,7 +1502,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1420,
+        "x": 1280,
         "y": 100,
         "wires": [
             [
@@ -1542,7 +1532,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1420,
+        "x": 1280,
         "y": 140,
         "wires": [
             [
@@ -1572,7 +1562,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1420,
+        "x": 1280,
         "y": 240,
         "wires": [
             [
@@ -1602,7 +1592,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1430,
+        "x": 1290,
         "y": 280,
         "wires": [
             [
@@ -1632,7 +1622,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1430,
+        "x": 1290,
         "y": 400,
         "wires": [
             [
@@ -1662,7 +1652,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1430,
+        "x": 1290,
         "y": 440,
         "wires": [
             [
@@ -1675,12 +1665,13 @@
         "id": "6ddb19a93dfa59ae",
         "type": "link out",
         "z": "b88fb898bd6540cc",
+        "g": "6d43257abb473565",
         "name": "link out 14",
         "mode": "link",
         "links": [
             "102ef19d223bfac6"
         ],
-        "x": 1515,
+        "x": 1395,
         "y": 140,
         "wires": []
     },
@@ -1688,12 +1679,13 @@
         "id": "4c02978533a2d408",
         "type": "link out",
         "z": "b88fb898bd6540cc",
+        "g": "6d43257abb473565",
         "name": "link out 15",
         "mode": "link",
         "links": [
             "102ef19d223bfac6"
         ],
-        "x": 1515,
+        "x": 1395,
         "y": 100,
         "wires": []
     },
@@ -1701,12 +1693,13 @@
         "id": "943e71717ce07ede",
         "type": "link out",
         "z": "b88fb898bd6540cc",
+        "g": "6d43257abb473565",
         "name": "link out 16",
         "mode": "link",
         "links": [
             "79d33fe3d1be3b58"
         ],
-        "x": 1515,
+        "x": 1395,
         "y": 240,
         "wires": []
     },
@@ -1714,12 +1707,13 @@
         "id": "edd5055ec58cadd3",
         "type": "link out",
         "z": "b88fb898bd6540cc",
+        "g": "6d43257abb473565",
         "name": "link out 17",
         "mode": "link",
         "links": [
             "79d33fe3d1be3b58"
         ],
-        "x": 1535,
+        "x": 1395,
         "y": 280,
         "wires": []
     },
@@ -1727,12 +1721,13 @@
         "id": "03761f12106ecc48",
         "type": "link out",
         "z": "b88fb898bd6540cc",
+        "g": "6d43257abb473565",
         "name": "link out 18",
         "mode": "link",
         "links": [
             "8e1c5ef3a23dec4c"
         ],
-        "x": 1535,
+        "x": 1395,
         "y": 400,
         "wires": []
     },
@@ -1740,12 +1735,13 @@
         "id": "5097b1c94cae1e9d",
         "type": "link out",
         "z": "b88fb898bd6540cc",
+        "g": "6d43257abb473565",
         "name": "link out 19",
         "mode": "link",
         "links": [
             "8e1c5ef3a23dec4c"
         ],
-        "x": 1535,
+        "x": 1395,
         "y": 440,
         "wires": []
     },
@@ -1806,7 +1802,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
+        "x": 140,
         "y": 80,
         "wires": [
             [
@@ -1837,7 +1833,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
+        "x": 140,
         "y": 160,
         "wires": [
             [
@@ -1868,7 +1864,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
+        "x": 150,
         "y": 120,
         "wires": [
             [
@@ -1886,7 +1882,7 @@
         "links": [
             "587d67b8d7b4e365"
         ],
-        "x": 255,
+        "x": 275,
         "y": 80,
         "wires": []
     },
@@ -1900,7 +1896,7 @@
         "links": [
             "ccf1e3d46ae49f5f"
         ],
-        "x": 255,
+        "x": 275,
         "y": 120,
         "wires": []
     },
@@ -1914,7 +1910,7 @@
         "links": [
             "7917cec46f752804"
         ],
-        "x": 255,
+        "x": 275,
         "y": 160,
         "wires": []
     },
@@ -1940,7 +1936,7 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 140,
+        "x": 160,
         "y": 200,
         "wires": [
             [
@@ -1958,7 +1954,7 @@
         "links": [
             "ed1230ed8d6e3369"
         ],
-        "x": 255,
+        "x": 275,
         "y": 200,
         "wires": []
     },
@@ -1971,7 +1967,7 @@
         "links": [
             "b4c223c7a1d98d7f"
         ],
-        "x": 485,
+        "x": 675,
         "y": 200,
         "wires": [
             [
@@ -1993,63 +1989,16 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 590,
+        "x": 780,
         "y": 200,
         "wires": []
-    },
-    {
-        "id": "ca95a0d826c87b1a",
-        "type": "toggle",
-        "z": "27bed9da7de43cc4",
-        "name": "",
-        "onOffTopic": "",
-        "onValue": "Tor ist geschlossen",
-        "onType": "str",
-        "offValue": "Tor ist offen",
-        "offType": "str",
-        "toggleTopic": "",
-        "toggleValue": "false",
-        "toggleType": "bool",
-        "passOnOff": "ifChanged",
-        "x": 330,
-        "y": 320,
-        "wires": [
-            [
-                "3fd276e42915a427"
-            ]
-        ]
-    },
-    {
-        "id": "a56fa122f7274c94",
-        "type": "trigger",
-        "z": "27bed9da7de43cc4",
-        "name": "Trigger bool to impulse",
-        "op1": "1",
-        "op2": "0",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "500",
-        "extend": false,
-        "overrideDelay": false,
-        "units": "ms",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 160,
-        "y": 320,
-        "wires": [
-            [
-                "ca95a0d826c87b1a"
-            ]
-        ]
     },
     {
         "id": "2dfb7ff480250ff1",
         "type": "inject",
         "z": "27bed9da7de43cc4",
         "g": "3f154653a7a0dc76",
-        "name": "Tor Position ",
+        "name": "Tor Position Geschlossen",
         "props": [
             {
                 "p": "payload"
@@ -2066,26 +2015,13 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 130,
+        "x": 190,
         "y": 240,
         "wires": [
             [
-                "a56fa122f7274c94"
+                "ca95a0d826c87b1a"
             ]
         ]
-    },
-    {
-        "id": "3fd276e42915a427",
-        "type": "link out",
-        "z": "27bed9da7de43cc4",
-        "name": "Test Text Position out",
-        "mode": "link",
-        "links": [
-            "eb3a84752caeb753"
-        ],
-        "x": 415,
-        "y": 320,
-        "wires": []
     },
     {
         "id": "102ef19d223bfac6",
@@ -2097,7 +2033,7 @@
             "6ddb19a93dfa59ae",
             "4c02978533a2d408"
         ],
-        "x": 485,
+        "x": 675,
         "y": 80,
         "wires": [
             [
@@ -2119,7 +2055,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 610,
+        "x": 800,
         "y": 80,
         "wires": []
     },
@@ -2133,7 +2069,7 @@
             "943e71717ce07ede",
             "edd5055ec58cadd3"
         ],
-        "x": 485,
+        "x": 675,
         "y": 120,
         "wires": [
             [
@@ -2155,7 +2091,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 620,
+        "x": 810,
         "y": 120,
         "wires": []
     },
@@ -2169,7 +2105,7 @@
             "03761f12106ecc48",
             "5097b1c94cae1e9d"
         ],
-        "x": 485,
+        "x": 675,
         "y": 160,
         "wires": [
             [
@@ -2191,9 +2127,76 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 620,
+        "x": 810,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "b26e8c241907237d",
+        "type": "link out",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "Testing DoorIsClosed",
+        "mode": "link",
+        "links": [
+            "2959a3cfb3ddf903"
+        ],
+        "x": 475,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ca95a0d826c87b1a",
+        "type": "toggle",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "",
+        "onOffTopic": "",
+        "onValue": "true",
+        "onType": "bool",
+        "offValue": "false",
+        "offType": "bool",
+        "toggleTopic": "",
+        "toggleValue": "false",
+        "toggleType": "bool",
+        "passOnOff": "ifChanged",
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "b26e8c241907237d"
+            ]
+        ]
+    },
+    {
+        "id": "277601cb5aba1cc6",
+        "type": "inject",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "Tor Position Offen",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "ca95a0d826c87b1a"
+            ]
+        ]
     },
     {
         "id": "7fefb337b96dc93a",
