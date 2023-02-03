@@ -2701,7 +2701,7 @@
             },
             {
                 "t": "set",
-                "p": "tags.timestamp",
+                "p": "tags.timestampVerbrauch",
                 "pt": "msg",
                 "to": "",
                 "tot": "date"
@@ -2786,8 +2786,8 @@
         "precision": "",
         "retentionPolicy": "",
         "org": "Steiner",
-        "x": 830,
-        "y": 640,
+        "x": 950,
+        "y": 660,
         "wires": [
             [
                 "d00a588f2072bf89"
@@ -2807,8 +2807,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1000,
-        "y": 640,
+        "x": 1140,
+        "y": 660,
         "wires": []
     },
     {
@@ -2828,11 +2828,13 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 430,
+        "x": 330,
         "y": 640,
         "wires": [
             [
-                "c2798e7ae02c7565"
+                "c2798e7ae02c7565",
+                "7a9b6f1d3c61c954",
+                "19c77b09ee9613b7"
             ]
         ]
     },
@@ -2840,15 +2842,15 @@
         "id": "c2798e7ae02c7565",
         "type": "function",
         "z": "43d56ff9e5378e0b",
-        "name": "function 2",
-        "func": "msg.query=`from(bucket: \"steinerapp\")\n  |> range(start: -5h, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == \"steinerMessung\")\n  |> filter(fn: (r) => r[\"_field\"] == \"fuellstand\" or r[\"_field\"] == \"verbrauch\" or r[\"_field\"] == \"zaehlerstand\")`;\nreturn msg;",
+        "name": "Get Verbrauch",
+        "func": "msg.query=`from(bucket: \"steinerapp\")\n  |> range(start: -1m, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == \"steinerMessung\")\n  |> filter(fn: (r) => r[\"_field\"] == \"verbrauch\")`;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 640,
-        "y": 640,
+        "x": 760,
+        "y": 620,
         "wires": [
             [
                 "317d97494d81ec91"
@@ -2910,7 +2912,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 640,
+        "x": 620,
         "y": 780,
         "wires": [
             [
@@ -2944,8 +2946,8 @@
         "group": "9dc3709413bc9f20",
         "name": "Influx Test",
         "order": 1,
-        "width": 0,
-        "height": 0,
+        "width": "7",
+        "height": "9",
         "columns": [
             {
                 "field": "temperature",
@@ -2988,7 +2990,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 680,
-        "y": 320,
+        "y": 380,
         "wires": []
     },
     {
@@ -3006,7 +3008,7 @@
             },
             {
                 "t": "set",
-                "p": "tags.timestamp",
+                "p": "tags.timestampFuellstand",
                 "pt": "msg",
                 "to": "",
                 "tot": "date"
@@ -3036,7 +3038,7 @@
         "id": "e5f2e961fd33ab26",
         "type": "change",
         "z": "43d56ff9e5378e0b",
-        "name": "Füllstand",
+        "name": "Zählerstand",
         "rules": [
             {
                 "t": "set",
@@ -3047,7 +3049,7 @@
             },
             {
                 "t": "set",
-                "p": "tags.timestamp",
+                "p": "tags.timestampZaehler",
                 "pt": "msg",
                 "to": "",
                 "tot": "date"
@@ -3065,7 +3067,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 680,
+        "x": 690,
         "y": 500,
         "wires": [
             [
@@ -3174,6 +3176,44 @@
         "x": 350,
         "y": 840,
         "wires": []
+    },
+    {
+        "id": "7a9b6f1d3c61c954",
+        "type": "function",
+        "z": "43d56ff9e5378e0b",
+        "name": "Get Zähler",
+        "func": "msg.query=`from(bucket: \"steinerapp\")\n  |> range(start: -1m, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == \"steinerMessung\")\n  |> filter(fn: (r) => r[\"_field\"] == \"zaehlerstand\")`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 660,
+        "wires": [
+            [
+                "317d97494d81ec91"
+            ]
+        ]
+    },
+    {
+        "id": "19c77b09ee9613b7",
+        "type": "function",
+        "z": "43d56ff9e5378e0b",
+        "name": "Get Füllstand",
+        "func": "msg.query=`from(bucket: \"steinerapp\")\n  |> range(start: -1m, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == \"steinerMessung\")\n  |> filter(fn: (r) => r[\"_field\"] == \"fuellstand\")`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 700,
+        "wires": [
+            [
+                "317d97494d81ec91"
+            ]
+        ]
     },
     {
         "id": "1ca0ae33d6e1bb75",
