@@ -16,9 +16,17 @@
         "env": []
     },
     {
+        "id": "592587e2ebab5ef8",
+        "type": "tab",
+        "label": "Öl-Zähler - UI",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "239bb88f8646fff4",
         "type": "tab",
-        "label": "Öl-Zähler",
+        "label": "Öl-Zähler - Logic",
         "disabled": false,
         "info": "",
         "env": []
@@ -65,15 +73,14 @@
             "07972ffa7fffa22c",
             "5a5cea01d83b97ae",
             "5d9f826f0f216ed3",
-            "7854c790507380c2",
             "7f5248837f9bcab4",
             "7d516493fe893cca",
-            "c1f5f92421b1bc70"
+            "c1f5f92421b1bc70",
+            "6ef7b5c675c1bd5e",
+            "7854c790507380c2"
         ],
-        "x": 164,
-        "y": 39,
-        "w": 322,
-        "h": 322
+        "x": 384,
+        "y": 59
     },
     {
         "id": "898c69c607394c92",
@@ -84,19 +91,13 @@
             "label": true
         },
         "nodes": [
-            "1cf008a2d74cb052",
-            "92af62a5cfbf9412",
-            "bdd9474cc4d961f6",
-            "8e1c5ef3a23dec4c",
-            "79d33fe3d1be3b58",
-            "d3e4d185621e8110",
-            "102ef19d223bfac6",
-            "36de064e932c1e66"
+            "cbf1b5f7222a47fa",
+            "24872851a923b49a"
         ],
-        "x": 634,
-        "y": 39,
-        "w": 322,
-        "h": 202
+        "x": 728,
+        "y": 13,
+        "w": 384,
+        "h": 654
     },
     {
         "id": "3f154653a7a0dc76",
@@ -107,23 +108,13 @@
             "label": true
         },
         "nodes": [
-            "1ca0ae33d6e1bb75",
-            "4eb05454d119fa3f",
-            "1493bcfdc89a3327",
-            "c3a1b8ef6a0ac59a",
-            "b3fcc71f7cc16c11",
-            "2e6f0daf82b27ce9",
-            "89bd2b36641c073f",
-            "b0f3026392b33b80",
-            "2dfb7ff480250ff1",
-            "b26e8c241907237d",
-            "ca95a0d826c87b1a",
-            "277601cb5aba1cc6"
+            "42d6849f0a45a65f",
+            "f727b33e4afcb3fe"
         ],
-        "x": 34,
-        "y": 39,
-        "w": 482,
-        "h": 282
+        "x": 8,
+        "y": 13,
+        "w": 564,
+        "h": 454
     },
     {
         "id": "5ec4de0559b4272d",
@@ -148,7 +139,9 @@
             "d91e309ade317d74"
         ],
         "x": 174,
-        "y": 39
+        "y": 39,
+        "w": 272,
+        "h": 382
     },
     {
         "id": "6d43257abb473565",
@@ -208,9 +201,165 @@
             "5097b1c94cae1e9d"
         ],
         "x": 164,
-        "y": 59,
-        "w": 1342,
-        "h": 662
+        "y": 59
+    },
+    {
+        "id": "42a13c3d567c0107",
+        "type": "group",
+        "z": "592587e2ebab5ef8",
+        "name": "Öl-Zähler",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "194dba582c24a7d9",
+            "747760ddd014277e",
+            "25b19d8d0f90da73",
+            "15d365a67894c0f8",
+            "5df02341525b3fb5",
+            "8dfd976f30ed9451",
+            "8e19868771bcb9a0",
+            "c5aa42967e57fa9f",
+            "19fb7bea7b73a682",
+            "744fda99c9cd08e1",
+            "4780da5c792f79eb",
+            "ed7578714192d0f4",
+            "18455fe9dcd205b8",
+            "fa3f833e43ca4408",
+            "f36718e13f9390d3"
+        ],
+        "x": 174,
+        "y": 39
+    },
+    {
+        "id": "3dac510af08b3f3d",
+        "type": "group",
+        "z": "239bb88f8646fff4",
+        "name": "Öl-Zähler",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "91c2cddf67c80ae3",
+            "3b8a232eefad1449",
+            "aca9432f31e25322",
+            "486676b96069236f",
+            "28a8cbd0f70cbba8",
+            "88cd25b95db459b5",
+            "f43955c4116788ae",
+            "1012e60d137dd771",
+            "a9b264a4fd433004",
+            "47cb4289796bea90",
+            "ec5485ec21aef8d9",
+            "d25015d36dfbe5c8",
+            "f3b8133db0b0247f",
+            "44a4859cc20ea1f8"
+        ],
+        "x": 254,
+        "y": 99,
+        "w": 642,
+        "h": 242
+    },
+    {
+        "id": "cbf1b5f7222a47fa",
+        "type": "group",
+        "z": "27bed9da7de43cc4",
+        "g": "898c69c607394c92",
+        "name": "Öl-Zähler",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "dbbcf41b97a121e6",
+            "f0dd8b737ad7e2e5",
+            "b4ebbad983292808",
+            "5f2ca6d6f9d00c13",
+            "4f6db889edba67de",
+            "f4b4d4d93038e051",
+            "816a541e5e3b8324",
+            "b8f85cfa1b0df194",
+            "44e8cdc8d848852d",
+            "ebc80efdb0073b96",
+            "289ac3e2a7a6ddec",
+            "11bb279c4a111f44",
+            "13bd7f862588985a",
+            "3a7980260f9f21a3"
+        ],
+        "x": 754,
+        "y": 319,
+        "w": 332,
+        "h": 322
+    },
+    {
+        "id": "24872851a923b49a",
+        "type": "group",
+        "z": "27bed9da7de43cc4",
+        "g": "898c69c607394c92",
+        "name": "Tor-Bedienung",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1cf008a2d74cb052",
+            "92af62a5cfbf9412",
+            "102ef19d223bfac6",
+            "36de064e932c1e66",
+            "79d33fe3d1be3b58",
+            "d3e4d185621e8110",
+            "8e1c5ef3a23dec4c",
+            "bdd9474cc4d961f6"
+        ],
+        "x": 754,
+        "y": 39,
+        "w": 332,
+        "h": 202
+    },
+    {
+        "id": "42d6849f0a45a65f",
+        "type": "group",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "Tor-Bedienung",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1ca0ae33d6e1bb75",
+            "4eb05454d119fa3f",
+            "1493bcfdc89a3327",
+            "c3a1b8ef6a0ac59a",
+            "b3fcc71f7cc16c11",
+            "2e6f0daf82b27ce9",
+            "89bd2b36641c073f",
+            "b0f3026392b33b80",
+            "2dfb7ff480250ff1",
+            "b26e8c241907237d",
+            "ca95a0d826c87b1a",
+            "277601cb5aba1cc6"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 492,
+        "h": 282
+    },
+    {
+        "id": "f727b33e4afcb3fe",
+        "type": "group",
+        "z": "27bed9da7de43cc4",
+        "g": "3f154653a7a0dc76",
+        "name": "Öl-Zähler",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ce4fc77881eefd8e",
+            "aecad7d7893dc6e4",
+            "5055ef0db6593839"
+        ],
+        "x": 34,
+        "y": 359,
+        "w": 512,
+        "h": 82
     },
     {
         "id": "a96a0b6e98809ced",
@@ -322,11 +471,11 @@
     {
         "id": "9dc3709413bc9f20",
         "type": "ui_group",
-        "name": "Vebrauch",
+        "name": "Connection",
         "tab": "5a6744794b1fb199",
         "order": 1,
         "disp": true,
-        "width": "6",
+        "width": "7",
         "collapse": true,
         "className": ""
     },
@@ -345,7 +494,7 @@
         "tab": "4acb9b674af698c2",
         "order": 1,
         "disp": true,
-        "width": "6",
+        "width": 7,
         "collapse": false,
         "className": ""
     },
@@ -353,7 +502,7 @@
         "id": "5a6744794b1fb199",
         "type": "ui_tab",
         "name": "Chart",
-        "icon": "mi-chart",
+        "icon": "chart",
         "disabled": false,
         "hidden": false
     },
@@ -364,7 +513,7 @@
         "tab": "88c329bbb5a4c4be",
         "order": 1,
         "disp": true,
-        "width": 5,
+        "width": 7,
         "collapse": false,
         "className": ""
     },
@@ -375,7 +524,163 @@
         "tab": "88c329bbb5a4c4be",
         "order": 2,
         "disp": true,
-        "width": 5,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "edeb16da1cb6e6e7",
+        "type": "ui_spacer",
+        "z": "27bed9da7de43cc4",
+        "name": "spacer",
+        "group": "52847f51b22205df",
+        "order": 2,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "95a1ece5b2113474",
+        "type": "ui_spacer",
+        "z": "27bed9da7de43cc4",
+        "name": "spacer",
+        "group": "26624b45d4fcf481",
+        "order": 1,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "dc1d74561aeece38",
+        "type": "ui_spacer",
+        "z": "27bed9da7de43cc4",
+        "name": "spacer",
+        "group": "26624b45d4fcf481",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d98f7b442fdcbbed",
+        "type": "ui_spacer",
+        "z": "27bed9da7de43cc4",
+        "name": "spacer",
+        "group": "26624b45d4fcf481",
+        "order": 4,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "31408296adf02b60",
+        "type": "ui_spacer",
+        "z": "27bed9da7de43cc4",
+        "name": "spacer",
+        "group": "26624b45d4fcf481",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "2252c06a26f94422",
+        "type": "ui_spacer",
+        "z": "27bed9da7de43cc4",
+        "name": "spacer",
+        "group": "26624b45d4fcf481",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b1f280eade1a0a9f",
+        "type": "ui_spacer",
+        "z": "27bed9da7de43cc4",
+        "name": "spacer",
+        "group": "26624b45d4fcf481",
+        "order": 8,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "1d8f7f8bdabb2bf6",
+        "type": "ui_spacer",
+        "z": "27bed9da7de43cc4",
+        "name": "spacer",
+        "group": "26624b45d4fcf481",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "cf96043bdd5ab829",
+        "type": "ui_spacer",
+        "z": "27bed9da7de43cc4",
+        "name": "spacer",
+        "group": "26624b45d4fcf481",
+        "order": 11,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "492e5481c831e021",
+        "type": "ui_group",
+        "name": "Bestellte Mänge Öl",
+        "tab": "5375a955ad4fb362",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b86e7e1daea6b841",
+        "type": "ui_group",
+        "name": "Initialisierung Zähler",
+        "tab": "5375a955ad4fb362",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9c19b368643e9b47",
+        "type": "ui_group",
+        "name": "Initialisierung Tankfüllung",
+        "tab": "5375a955ad4fb362",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5375a955ad4fb362",
+        "type": "ui_tab",
+        "name": "Initialisierung",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a633581446679cd4",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "steinerapp",
+        "name": "InfluxdbConnection",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "ca2272c3.e8396",
+        "type": "ui_group",
+        "name": "Chart - Grafana",
+        "tab": "4acb9b674af698c2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
         "collapse": false,
         "className": ""
     },
@@ -386,9 +691,9 @@
         "g": "6937e8fa0d92889a",
         "name": "",
         "group": "26624b45d4fcf481",
-        "order": 3,
-        "width": 0,
-        "height": 0,
+        "order": 10,
+        "width": 3,
+        "height": 1,
         "passthru": true,
         "label": "Down button",
         "tooltip": "Tor-ab",
@@ -400,8 +705,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 310,
-        "y": 200,
+        "x": 530,
+        "y": 220,
         "wires": [
             [
                 "5d9f826f0f216ed3"
@@ -415,9 +720,9 @@
         "g": "6937e8fa0d92889a",
         "name": "",
         "group": "26624b45d4fcf481",
-        "order": 2,
-        "width": 0,
-        "height": 0,
+        "order": 6,
+        "width": 3,
+        "height": 1,
         "passthru": true,
         "label": "Stop button",
         "tooltip": "Tor-stopp",
@@ -429,8 +734,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 310,
-        "y": 140,
+        "x": 530,
+        "y": 160,
         "wires": [
             [
                 "5a5cea01d83b97ae"
@@ -444,9 +749,9 @@
         "g": "6937e8fa0d92889a",
         "name": "",
         "group": "26624b45d4fcf481",
-        "order": 1,
-        "width": 0,
-        "height": 0,
+        "order": 2,
+        "width": 3,
+        "height": 1,
         "passthru": true,
         "label": "Up button",
         "tooltip": "Tor-Auf",
@@ -458,8 +763,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 300,
-        "y": 80,
+        "x": 520,
+        "y": 100,
         "wires": [
             [
                 "07972ffa7fffa22c"
@@ -475,8 +780,8 @@
         "links": [
             "c3a1b8ef6a0ac59a"
         ],
-        "x": 205,
-        "y": 80,
+        "x": 425,
+        "y": 100,
         "wires": [
             [
                 "683a0dd88b9f1a1e"
@@ -492,8 +797,8 @@
         "links": [
             "b3fcc71f7cc16c11"
         ],
-        "x": 205,
-        "y": 140,
+        "x": 425,
+        "y": 160,
         "wires": [
             [
                 "ddeca750eb9f9d62"
@@ -509,8 +814,8 @@
         "links": [
             "2e6f0daf82b27ce9"
         ],
-        "x": 205,
-        "y": 200,
+        "x": 425,
+        "y": 220,
         "wires": [
             [
                 "5818d339c49cc5e9"
@@ -527,8 +832,8 @@
         "links": [
             "3ac1d7d890223928"
         ],
-        "x": 445,
-        "y": 80,
+        "x": 665,
+        "y": 100,
         "wires": []
     },
     {
@@ -541,8 +846,8 @@
         "links": [
             "124a3d53cf0efa92"
         ],
-        "x": 445,
-        "y": 140,
+        "x": 665,
+        "y": 160,
         "wires": []
     },
     {
@@ -555,8 +860,81 @@
         "links": [
             "b7e70d9c18ec500a"
         ],
-        "x": 445,
-        "y": 200,
+        "x": 665,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7f5248837f9bcab4",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "Text Tor Position in",
+        "links": [
+            "a0a12692f3b12cbb",
+            "fb0cd6efa5e7555a"
+        ],
+        "x": 425,
+        "y": 340,
+        "wires": [
+            [
+                "7854c790507380c2"
+            ]
+        ]
+    },
+    {
+        "id": "7d516493fe893cca",
+        "type": "ui_text",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "group": "52847f51b22205df",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Position in Prozent",
+        "label": "Tor ist",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 610,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c1f5f92421b1bc70",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "Text Torposition in % in",
+        "links": [
+            "904702cc397300e9"
+        ],
+        "x": 425,
+        "y": 280,
+        "wires": [
+            [
+                "7d516493fe893cca"
+            ]
+        ]
+    },
+    {
+        "id": "6ef7b5c675c1bd5e",
+        "type": "ui_toast",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 610,
+        "y": 400,
         "wires": []
     },
     {
@@ -573,62 +951,9 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 350,
-        "y": 320,
+        "x": 570,
+        "y": 340,
         "wires": []
-    },
-    {
-        "id": "7f5248837f9bcab4",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "Text Tor Position in",
-        "links": [
-            "a0a12692f3b12cbb",
-            "fb0cd6efa5e7555a"
-        ],
-        "x": 205,
-        "y": 320,
-        "wires": [
-            [
-                "7854c790507380c2"
-            ]
-        ]
-    },
-    {
-        "id": "7d516493fe893cca",
-        "type": "ui_text",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "group": "52847f51b22205df",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Tor in % Offen",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 380,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "c1f5f92421b1bc70",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "Text Torposition in % in",
-        "links": [
-            "904702cc397300e9"
-        ],
-        "x": 205,
-        "y": 260,
-        "wires": [
-            [
-                "7d516493fe893cca"
-            ]
-        ]
     },
     {
         "id": "f2395a2dc8f4284d",
@@ -977,9 +1302,9 @@
         "g": "6d43257abb473565",
         "name": "Toggle Door position",
         "onOffTopic": "",
-        "onValue": "Tor ist über 50% offen",
+        "onValue": "über 50% offen",
         "onType": "str",
-        "offValue": "Tor ist unter 50% offen",
+        "offValue": "unter 50% offen",
         "offType": "str",
         "toggleTopic": "",
         "toggleValue": "false",
@@ -1746,44 +2071,1115 @@
         "wires": []
     },
     {
-        "id": "fe86ae9f51486f5b",
-        "type": "ui_text",
-        "z": "239bb88f8646fff4",
+        "id": "194dba582c24a7d9",
+        "type": "ui_gauge",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "",
         "group": "bcf2a034187609c2",
-        "order": 0,
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Tankfüllung",
+        "label": "Liter",
+        "format": "{{msg.fuellstand}}",
+        "min": "-5000",
+        "max": "10000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 430,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "747760ddd014277e",
+        "type": "ui_text",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "group": "bcf2a034187609c2",
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "Impuls",
+        "label": "verbrauchte Liter",
+        "format": "{{msg.verbrauch}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 410,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "25b19d8d0f90da73",
+        "type": "ui_text",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "group": "bcf2a034187609c2",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Zählerstand",
+        "format": "{{msg.zaehlerstand}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 430,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "15d365a67894c0f8",
+        "type": "link in",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link in 22",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 215,
+        "y": 160,
+        "wires": [
+            [
+                "194dba582c24a7d9"
+            ]
+        ]
+    },
+    {
+        "id": "5df02341525b3fb5",
+        "type": "link in",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link in 23",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 215,
+        "y": 80,
+        "wires": [
+            [
+                "747760ddd014277e"
+            ]
+        ]
+    },
+    {
+        "id": "8dfd976f30ed9451",
+        "type": "link in",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link in 24",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 215,
+        "y": 120,
+        "wires": [
+            [
+                "25b19d8d0f90da73"
+            ]
+        ]
+    },
+    {
+        "id": "8e19868771bcb9a0",
+        "type": "ui_form",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "",
+        "label": "Bestellte Menge eingeben",
+        "group": "492e5481c831e021",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Öl",
+                "value": "liter",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "liter": ""
+        },
+        "payload": "",
+        "submit": "Ok",
+        "cancel": "Abbruch",
+        "topic": "setFuellung",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "befuellung",
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "744fda99c9cd08e1"
+            ]
+        ]
+    },
+    {
+        "id": "c5aa42967e57fa9f",
+        "type": "ui_form",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "",
+        "label": "Korrektur Zählerstand",
+        "group": "b86e7e1daea6b841",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Zählerstand",
+                "value": "set",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "set": ""
+        },
+        "payload": "",
+        "submit": "Ok",
+        "cancel": "Abbruch",
+        "topic": "setZaehler",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "zaehlerstand",
+        "x": 300,
+        "y": 200,
+        "wires": [
+            [
+                "ed7578714192d0f4"
+            ]
+        ]
+    },
+    {
+        "id": "19fb7bea7b73a682",
+        "type": "ui_form",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "",
+        "label": "Initialisierung Tank",
+        "group": "9c19b368643e9b47",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Öl",
+                "value": "liter",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "liter": ""
+        },
+        "payload": "",
+        "submit": "Ok",
+        "cancel": "Abbruch",
+        "topic": "setInitTank",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "initTank",
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "4780da5c792f79eb"
+            ]
+        ]
+    },
+    {
+        "id": "744fda99c9cd08e1",
+        "type": "link out",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link out 22",
+        "mode": "link",
+        "links": [
+            "a9b264a4fd433004",
+            "47cb4289796bea90"
+        ],
+        "x": 485,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4780da5c792f79eb",
+        "type": "link out",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link out 23",
+        "mode": "link",
+        "links": [
+            "a9b264a4fd433004",
+            "ec5485ec21aef8d9"
+        ],
+        "x": 485,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "ed7578714192d0f4",
+        "type": "link out",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link out 24",
+        "mode": "link",
+        "links": [
+            "a9b264a4fd433004",
+            "d25015d36dfbe5c8"
+        ],
+        "x": 485,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "18455fe9dcd205b8",
+        "type": "ui_text",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "group": "bcf2a034187609c2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Impuls Eingang",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 350,
-        "y": 80,
-        "wires": [],
-        "icon": "node-red/trigger.svg"
+        "x": 420,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "fa3f833e43ca4408",
+        "type": "link in",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link in 29",
+        "links": [
+            "5055ef0db6593839"
+        ],
+        "x": 215,
+        "y": 360,
+        "wires": [
+            [
+                "18455fe9dcd205b8"
+            ]
+        ]
+    },
+    {
+        "id": "f36718e13f9390d3",
+        "type": "link in",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link in 31",
+        "links": [
+            "44a4859cc20ea1f8"
+        ],
+        "x": 215,
+        "y": 320,
+        "wires": [
+            [
+                "18455fe9dcd205b8"
+            ]
+        ]
     },
     {
         "id": "91c2cddf67c80ae3",
         "type": "link in",
         "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
         "name": "impulse Eingang",
         "links": [
             "e4bf02a746d30178"
         ],
-        "x": 175,
-        "y": 80,
+        "x": 295,
+        "y": 140,
         "wires": [
             [
-                "fe86ae9f51486f5b"
+                "3b8a232eefad1449",
+                "44a4859cc20ea1f8"
             ]
         ]
+    },
+    {
+        "id": "3b8a232eefad1449",
+        "type": "rising-edge",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "",
+        "threshold": "0",
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "486676b96069236f"
+            ]
+        ]
+    },
+    {
+        "id": "aca9432f31e25322",
+        "type": "change",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "Zaehlerstand",
+        "rules": [
+            {
+                "t": "set",
+                "p": "zaehlerstand",
+                "pt": "global",
+                "to": "payload.set",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "486676b96069236f",
+        "type": "function",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "function 1",
+        "func": "//var reset = flow.get('reset') || false;\nvar impulse = flow.get(\"impulse\") || 0;\nvar verbrauch = flow.get('verbrauch') || 0;\n\n// Globale Variablen\nvar zaehlerstandGlobal = global.get('zaehlerstand');\nvar initTankGlobal = global.get('initTank') || 0;\nvar befuellungGlobal = global.get('befuellung');\nvar fuellstandGlobal = global.get('fuelstand') || 0;\n\n\n// ---------------verbrauch\nimpulse++;\n// verbrauchte liter\nverbrauch = impulse/10;\nflow.set('impulse', impulse);\n\n\n\n// ---------------Reset\n//if(reset == true){\n//    flow.set('impulse', 0);\n   // flow.set('verbrauch', 0);\n//    flow.set('reset', false);\n//    msg.verbrauch = flow.get('impulse');\n//    return msg;\n//}\n\n// ---------------Zähler\nvar zaehlerstandAnzeige = verbrauch + zaehlerstandGlobal;\n\n// ---------------Zähler Korrektur\nif(msg.topic == \"setZaehler\"){\n    flow.set('impulse', 0);\n    flow.set('verbrauch', 0);\n    msg.verbrauch = flow.get('impulse');\n    return msg;\n}\n\n// ---------------Tankfüllstand initialisieren\nif (msg.topic == \"setInitTank\"){\n    global.set(\"fuelstand\", 0)\n    initTankGlobal = global.get('initTank');\n}\n\n// ---------------Tankfüllung\nif (msg.topic == \"setFuellung\"){\n    fuellstandGlobal = global.set('fuelstand', global.get('befuellung') + fuellstandGlobal)\n    fuellstandGlobal = global.get(\"fuelstand\")\n} \n\n// ---------------Message Ausgabe\nmsg.verbrauch = verbrauch;\nmsg.fuellstand = initTankGlobal + fuellstandGlobal - verbrauch;\nmsg.zaehlerstand = zaehlerstandAnzeige;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 180,
+        "wires": [
+            [
+                "f43955c4116788ae",
+                "1012e60d137dd771"
+            ]
+        ]
+    },
+    {
+        "id": "28a8cbd0f70cbba8",
+        "type": "change",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "Initialisierung Tank",
+        "rules": [
+            {
+                "t": "set",
+                "p": "initTank",
+                "pt": "global",
+                "to": "payload.liter",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88cd25b95db459b5",
+        "type": "change",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "Befuellung",
+        "rules": [
+            {
+                "t": "set",
+                "p": "befuellung",
+                "pt": "global",
+                "to": "payload.liter",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f43955c4116788ae",
+        "type": "link out",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "link out 20",
+        "mode": "link",
+        "links": [
+            "11bb279c4a111f44",
+            "13bd7f862588985a",
+            "15d365a67894c0f8",
+            "289ac3e2a7a6ddec",
+            "3a7980260f9f21a3",
+            "44e8cdc8d848852d",
+            "5df02341525b3fb5",
+            "8dfd976f30ed9451",
+            "b8f85cfa1b0df194",
+            "ebc80efdb0073b96"
+        ],
+        "x": 855,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1012e60d137dd771",
+        "type": "link out",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "link out 21",
+        "mode": "link",
+        "links": [
+            "b5c18d7123d1fb98"
+        ],
+        "x": 855,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "a9b264a4fd433004",
+        "type": "link in",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "link in 25",
+        "links": [
+            "744fda99c9cd08e1",
+            "4780da5c792f79eb",
+            "ed7578714192d0f4"
+        ],
+        "x": 655,
+        "y": 220,
+        "wires": [
+            [
+                "486676b96069236f"
+            ]
+        ]
+    },
+    {
+        "id": "47cb4289796bea90",
+        "type": "link in",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "link in 26",
+        "links": [
+            "744fda99c9cd08e1"
+        ],
+        "x": 295,
+        "y": 300,
+        "wires": [
+            [
+                "88cd25b95db459b5"
+            ]
+        ]
+    },
+    {
+        "id": "ec5485ec21aef8d9",
+        "type": "link in",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "link in 27",
+        "links": [
+            "4780da5c792f79eb"
+        ],
+        "x": 295,
+        "y": 260,
+        "wires": [
+            [
+                "28a8cbd0f70cbba8"
+            ]
+        ]
+    },
+    {
+        "id": "d25015d36dfbe5c8",
+        "type": "link in",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "link in 28",
+        "links": [
+            "ed7578714192d0f4"
+        ],
+        "x": 295,
+        "y": 220,
+        "wires": [
+            [
+                "aca9432f31e25322"
+            ]
+        ]
+    },
+    {
+        "id": "f3b8133db0b0247f",
+        "type": "link in",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "link in 30",
+        "links": [
+            "5055ef0db6593839"
+        ],
+        "x": 295,
+        "y": 180,
+        "wires": [
+            [
+                "3b8a232eefad1449"
+            ]
+        ]
+    },
+    {
+        "id": "44a4859cc20ea1f8",
+        "type": "link out",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "link out 26",
+        "mode": "link",
+        "links": [
+            "f36718e13f9390d3"
+        ],
+        "x": 565,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b5c18d7123d1fb98",
+        "type": "link in",
+        "z": "43d56ff9e5378e0b",
+        "name": "link in 32",
+        "links": [
+            "1012e60d137dd771"
+        ],
+        "x": 385,
+        "y": 460,
+        "wires": [
+            [
+                "8ca560915367c2f1",
+                "9f74d1438a7da4b6",
+                "e74c506c5a42de58",
+                "e5f2e961fd33ab26"
+            ]
+        ]
+    },
+    {
+        "id": "9f74d1438a7da4b6",
+        "type": "change",
+        "z": "43d56ff9e5378e0b",
+        "name": "Verbrauch",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.verbrauch",
+                "pt": "msg",
+                "to": "verbrauch",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 420,
+        "wires": [
+            [
+                "91545fa223ef853c"
+            ]
+        ]
+    },
+    {
+        "id": "91545fa223ef853c",
+        "type": "influxdb out",
+        "z": "43d56ff9e5378e0b",
+        "influxdb": "a633581446679cd4",
+        "name": "Test write",
+        "measurement": "steinerMessung",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "Steiner",
+        "bucket": "steinerapp",
+        "x": 1020,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "ac3dcfc08df95899",
+        "type": "comment",
+        "z": "43d56ff9e5378e0b",
+        "name": "Write Operation",
+        "info": "",
+        "x": 340,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "5de9bd1cd371aea4",
+        "type": "comment",
+        "z": "43d56ff9e5378e0b",
+        "name": "Read Operation",
+        "info": "",
+        "x": 340,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "7bbb21bf8cddfdca",
+        "type": "comment",
+        "z": "43d56ff9e5378e0b",
+        "name": "Read Operation",
+        "info": "",
+        "x": 340,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "317d97494d81ec91",
+        "type": "influxdb in",
+        "z": "43d56ff9e5378e0b",
+        "influxdb": "a633581446679cd4",
+        "name": "Read",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "Steiner",
+        "x": 830,
+        "y": 640,
+        "wires": [
+            [
+                "d00a588f2072bf89"
+            ]
+        ]
+    },
+    {
+        "id": "d00a588f2072bf89",
+        "type": "debug",
+        "z": "43d56ff9e5378e0b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "e30578eacbce02f4",
+        "type": "inject",
+        "z": "43d56ff9e5378e0b",
+        "name": "Fetch",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 430,
+        "y": 640,
+        "wires": [
+            [
+                "c2798e7ae02c7565"
+            ]
+        ]
+    },
+    {
+        "id": "c2798e7ae02c7565",
+        "type": "function",
+        "z": "43d56ff9e5378e0b",
+        "name": "function 2",
+        "func": "msg.query=`from(bucket: \"steinerapp\")\n  |> range(start: -5h, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == \"steinerMessung\")\n  |> filter(fn: (r) => r[\"_field\"] == \"fuellstand\" or r[\"_field\"] == \"verbrauch\" or r[\"_field\"] == \"zaehlerstand\")`;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 640,
+        "wires": [
+            [
+                "317d97494d81ec91"
+            ]
+        ]
+    },
+    {
+        "id": "befc0c59d8d73348",
+        "type": "influxdb in",
+        "z": "43d56ff9e5378e0b",
+        "influxdb": "a633581446679cd4",
+        "name": "Read",
+        "query": "from(bucket: \"steinerapp\")\n  |> range(start: -40m, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == \"TestKerim\")\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "Steiner",
+        "x": 830,
+        "y": 780,
+        "wires": [
+            [
+                "02b093e8c256126e"
+            ]
+        ]
+    },
+    {
+        "id": "0e9419177c8f12e3",
+        "type": "inject",
+        "z": "43d56ff9e5378e0b",
+        "name": "Fetch",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 430,
+        "y": 780,
+        "wires": [
+            [
+                "15063be60e0ea1d3"
+            ]
+        ]
+    },
+    {
+        "id": "15063be60e0ea1d3",
+        "type": "function",
+        "z": "43d56ff9e5378e0b",
+        "name": "function 3",
+        "func": "msg.query=`from(bucket: \"steinerapp\")\n  |> range(start: -40m, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == \"TestKerim\")\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 780,
+        "wires": [
+            [
+                "befc0c59d8d73348"
+            ]
+        ]
+    },
+    {
+        "id": "02b093e8c256126e",
+        "type": "function",
+        "z": "43d56ff9e5378e0b",
+        "name": "function 4",
+        "func": "let temp=[]\nmsg.payload.forEach(function (data,index) {\n    let value={temperature:data[\"_value\"],time:data[\"timestamp\"]}\n    temp.push(value)\n});\nnode.warn(temp)\nmsg.payload=temp\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 780,
+        "wires": [
+            [
+                "29b3105f87f9a8eb"
+            ]
+        ]
+    },
+    {
+        "id": "29b3105f87f9a8eb",
+        "type": "ui_table",
+        "z": "43d56ff9e5378e0b",
+        "group": "9dc3709413bc9f20",
+        "name": "Influx Test",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "temperature",
+                "title": "Temperatur",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "time",
+                "title": "Time",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1200,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "8ca560915367c2f1",
+        "type": "debug",
+        "z": "43d56ff9e5378e0b",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e74c506c5a42de58",
+        "type": "change",
+        "z": "43d56ff9e5378e0b",
+        "name": "Füllstand",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.fuellstand",
+                "pt": "msg",
+                "to": "fuellstand",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 460,
+        "wires": [
+            [
+                "91545fa223ef853c"
+            ]
+        ]
+    },
+    {
+        "id": "e5f2e961fd33ab26",
+        "type": "change",
+        "z": "43d56ff9e5378e0b",
+        "name": "Füllstand",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.zaehlerstand",
+                "pt": "msg",
+                "to": "zaehlerstand",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 500,
+        "wires": [
+            [
+                "91545fa223ef853c"
+            ]
+        ]
+    },
+    {
+        "id": "7db57965.76d468",
+        "type": "ui_button",
+        "z": "43d56ff9e5378e0b",
+        "name": "",
+        "group": "ca2272c3.e8396",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "label": "Grafana-Chart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "Grafana",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 440,
+        "y": 900,
+        "wires": [
+            [
+                "ece06122.7e762"
+            ]
+        ]
+    },
+    {
+        "id": "5e1f0081.6dc3c",
+        "type": "ui_template",
+        "z": "43d56ff9e5378e0b",
+        "group": "ca2272c3.e8396",
+        "name": "window redirect",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(data) {\n        if (data == \"Grafana\") {\n          //window.open(\"https://www.nodered.org\");\n          window.location.href = \"http://192.168.1.121:3000/d/MPG5nt04k/steiner-dashboard?orgId=1&kiosk\", \"_blank\";\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 900,
+        "wires": [
+            [
+                "8582289.2d757d8"
+            ]
+        ]
+    },
+    {
+        "id": "ece06122.7e762",
+        "type": "trigger",
+        "z": "43d56ff9e5378e0b",
+        "name": "reset msg",
+        "op1": "",
+        "op2": "empty",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 600,
+        "y": 900,
+        "wires": [
+            [
+                "5e1f0081.6dc3c"
+            ]
+        ]
+    },
+    {
+        "id": "8582289.2d757d8",
+        "type": "debug",
+        "z": "43d56ff9e5378e0b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "da0de029ef9dc5cf",
+        "type": "comment",
+        "z": "43d56ff9e5378e0b",
+        "name": "Open Chart Window",
+        "info": "",
+        "x": 350,
+        "y": 840,
+        "wires": []
     },
     {
         "id": "1ca0ae33d6e1bb75",
         "type": "inject",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "Auf Befehl",
         "props": [
             {
@@ -1814,7 +3210,7 @@
         "id": "4eb05454d119fa3f",
         "type": "inject",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "Ab Befehl",
         "props": [
             {
@@ -1845,7 +3241,7 @@
         "id": "1493bcfdc89a3327",
         "type": "inject",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "Stop Befehl",
         "props": [
             {
@@ -1876,7 +3272,7 @@
         "id": "c3a1b8ef6a0ac59a",
         "type": "link out",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "Test auf out",
         "mode": "link",
         "links": [
@@ -1890,7 +3286,7 @@
         "id": "b3fcc71f7cc16c11",
         "type": "link out",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "Test stopp out",
         "mode": "link",
         "links": [
@@ -1904,7 +3300,7 @@
         "id": "2e6f0daf82b27ce9",
         "type": "link out",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "Test ab out",
         "mode": "link",
         "links": [
@@ -1918,7 +3314,7 @@
         "id": "89bd2b36641c073f",
         "type": "inject",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "Tor Position 50%",
         "props": [
             {
@@ -1948,7 +3344,7 @@
         "id": "b0f3026392b33b80",
         "type": "link out",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "Test input Tor 50% out",
         "mode": "link",
         "links": [
@@ -1962,12 +3358,12 @@
         "id": "1cf008a2d74cb052",
         "type": "link in",
         "z": "27bed9da7de43cc4",
-        "g": "898c69c607394c92",
+        "g": "24872851a923b49a",
         "name": "Debugg Text Position % in",
         "links": [
             "b4c223c7a1d98d7f"
         ],
-        "x": 675,
+        "x": 795,
         "y": 200,
         "wires": [
             [
@@ -1979,7 +3375,7 @@
         "id": "92af62a5cfbf9412",
         "type": "debug",
         "z": "27bed9da7de43cc4",
-        "g": "898c69c607394c92",
+        "g": "24872851a923b49a",
         "name": "position 50%",
         "active": false,
         "tosidebar": true,
@@ -1989,7 +3385,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
+        "x": 910,
         "y": 200,
         "wires": []
     },
@@ -1997,7 +3393,7 @@
         "id": "2dfb7ff480250ff1",
         "type": "inject",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "Tor Position Geschlossen",
         "props": [
             {
@@ -2027,13 +3423,13 @@
         "id": "102ef19d223bfac6",
         "type": "link in",
         "z": "27bed9da7de43cc4",
-        "g": "898c69c607394c92",
+        "g": "24872851a923b49a",
         "name": "link in 12",
         "links": [
             "6ddb19a93dfa59ae",
             "4c02978533a2d408"
         ],
-        "x": 675,
+        "x": 795,
         "y": 80,
         "wires": [
             [
@@ -2045,7 +3441,7 @@
         "id": "36de064e932c1e66",
         "type": "debug",
         "z": "27bed9da7de43cc4",
-        "g": "898c69c607394c92",
+        "g": "24872851a923b49a",
         "name": "Testing GPIO UP",
         "active": false,
         "tosidebar": true,
@@ -2055,7 +3451,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 800,
+        "x": 930,
         "y": 80,
         "wires": []
     },
@@ -2063,13 +3459,13 @@
         "id": "79d33fe3d1be3b58",
         "type": "link in",
         "z": "27bed9da7de43cc4",
-        "g": "898c69c607394c92",
+        "g": "24872851a923b49a",
         "name": "link in 13",
         "links": [
             "943e71717ce07ede",
             "edd5055ec58cadd3"
         ],
-        "x": 675,
+        "x": 795,
         "y": 120,
         "wires": [
             [
@@ -2081,7 +3477,7 @@
         "id": "d3e4d185621e8110",
         "type": "debug",
         "z": "27bed9da7de43cc4",
-        "g": "898c69c607394c92",
+        "g": "24872851a923b49a",
         "name": "Testing GPIO STOP",
         "active": false,
         "tosidebar": true,
@@ -2091,7 +3487,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 810,
+        "x": 940,
         "y": 120,
         "wires": []
     },
@@ -2099,13 +3495,13 @@
         "id": "8e1c5ef3a23dec4c",
         "type": "link in",
         "z": "27bed9da7de43cc4",
-        "g": "898c69c607394c92",
+        "g": "24872851a923b49a",
         "name": "link in 14",
         "links": [
             "03761f12106ecc48",
             "5097b1c94cae1e9d"
         ],
-        "x": 675,
+        "x": 795,
         "y": 160,
         "wires": [
             [
@@ -2117,7 +3513,7 @@
         "id": "bdd9474cc4d961f6",
         "type": "debug",
         "z": "27bed9da7de43cc4",
-        "g": "898c69c607394c92",
+        "g": "24872851a923b49a",
         "name": "Testing GPIO DOWN",
         "active": false,
         "tosidebar": true,
@@ -2127,7 +3523,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 810,
+        "x": 940,
         "y": 160,
         "wires": []
     },
@@ -2135,13 +3531,13 @@
         "id": "b26e8c241907237d",
         "type": "link out",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "Testing DoorIsClosed",
         "mode": "link",
         "links": [
             "2959a3cfb3ddf903"
         ],
-        "x": 475,
+        "x": 485,
         "y": 280,
         "wires": []
     },
@@ -2149,7 +3545,7 @@
         "id": "ca95a0d826c87b1a",
         "type": "toggle",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "",
         "onOffTopic": "",
         "onValue": "true",
@@ -2172,7 +3568,7 @@
         "id": "277601cb5aba1cc6",
         "type": "inject",
         "z": "27bed9da7de43cc4",
-        "g": "3f154653a7a0dc76",
+        "g": "42d6849f0a45a65f",
         "name": "Tor Position Offen",
         "props": [
             {
@@ -2197,6 +3593,318 @@
                 "ca95a0d826c87b1a"
             ]
         ]
+    },
+    {
+        "id": "dbbcf41b97a121e6",
+        "type": "debug",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "Zählerstand Korrektur",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "zaehlerstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f0dd8b737ad7e2e5",
+        "type": "debug",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "Initialisierung Tank",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "initTank",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b4ebbad983292808",
+        "type": "debug",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "Befüllung Tank",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "befuellung",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "5f2ca6d6f9d00c13",
+        "type": "debug",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "verbrauch",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "verbrauch",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4f6db889edba67de",
+        "type": "debug",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "msg.verbrauch",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "verbrauch",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "f4b4d4d93038e051",
+        "type": "debug",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "msg.fuellstand",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "fuellstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "816a541e5e3b8324",
+        "type": "debug",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "msg.zaehlerstand",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "zaehlerstand",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b8f85cfa1b0df194",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "link in 15",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 795,
+        "y": 360,
+        "wires": [
+            [
+                "dbbcf41b97a121e6"
+            ]
+        ]
+    },
+    {
+        "id": "44e8cdc8d848852d",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "link in 16",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 795,
+        "y": 400,
+        "wires": [
+            [
+                "f0dd8b737ad7e2e5"
+            ]
+        ]
+    },
+    {
+        "id": "ebc80efdb0073b96",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "link in 17",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 795,
+        "y": 440,
+        "wires": [
+            [
+                "b4ebbad983292808"
+            ]
+        ]
+    },
+    {
+        "id": "289ac3e2a7a6ddec",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "link in 18",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 795,
+        "y": 480,
+        "wires": [
+            [
+                "5f2ca6d6f9d00c13"
+            ]
+        ]
+    },
+    {
+        "id": "11bb279c4a111f44",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "link in 19",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 795,
+        "y": 520,
+        "wires": [
+            [
+                "816a541e5e3b8324"
+            ]
+        ]
+    },
+    {
+        "id": "13bd7f862588985a",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "link in 20",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 795,
+        "y": 600,
+        "wires": [
+            [
+                "f4b4d4d93038e051"
+            ]
+        ]
+    },
+    {
+        "id": "3a7980260f9f21a3",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "cbf1b5f7222a47fa",
+        "name": "link in 21",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 795,
+        "y": 560,
+        "wires": [
+            [
+                "4f6db889edba67de"
+            ]
+        ]
+    },
+    {
+        "id": "ce4fc77881eefd8e",
+        "type": "inject",
+        "z": "27bed9da7de43cc4",
+        "g": "f727b33e4afcb3fe",
+        "name": "5s interval",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "aecad7d7893dc6e4"
+            ]
+        ]
+    },
+    {
+        "id": "aecad7d7893dc6e4",
+        "type": "trigger",
+        "z": "27bed9da7de43cc4",
+        "g": "f727b33e4afcb3fe",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 340,
+        "y": 400,
+        "wires": [
+            [
+                "5055ef0db6593839"
+            ]
+        ]
+    },
+    {
+        "id": "5055ef0db6593839",
+        "type": "link out",
+        "z": "27bed9da7de43cc4",
+        "g": "f727b33e4afcb3fe",
+        "name": "link out 25",
+        "mode": "link",
+        "links": [
+            "fa3f833e43ca4408",
+            "f3b8133db0b0247f"
+        ],
+        "x": 505,
+        "y": 400,
+        "wires": []
     },
     {
         "id": "7fefb337b96dc93a",
