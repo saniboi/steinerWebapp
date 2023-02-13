@@ -80,7 +80,9 @@
             "7854c790507380c2"
         ],
         "x": 164,
-        "y": 59
+        "y": 59,
+        "w": 342,
+        "h": 382
     },
     {
         "id": "898c69c607394c92",
@@ -139,69 +141,9 @@
             "d91e309ade317d74"
         ],
         "x": 174,
-        "y": 39
-    },
-    {
-        "id": "6d43257abb473565",
-        "type": "group",
-        "z": "b88fb898bd6540cc",
-        "name": "Logic",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "f2395a2dc8f4284d",
-            "82a190df753051e4",
-            "d3e6f0ad23c48998",
-            "ce71c7124e32cabe",
-            "85d39265a738288d",
-            "3ac1d7d890223928",
-            "124a3d53cf0efa92",
-            "b7e70d9c18ec500a",
-            "77fb90fbfec9f1b4",
-            "042b0ce14dcaaaf6",
-            "e81459c8fffc1c55",
-            "dce0db5e7f112720",
-            "ea2bcd67c9157115",
-            "fb0cd6efa5e7555a",
-            "a0a12692f3b12cbb",
-            "2959a3cfb3ddf903",
-            "e1035a52fd0d665c",
-            "932084b5ed0deb47",
-            "ed1230ed8d6e3369",
-            "904702cc397300e9",
-            "b4c223c7a1d98d7f",
-            "05414fd5f5b780bc",
-            "1512c1599f30ef46",
-            "0c0c0abd75cb3b42",
-            "c77df1f144c4795f",
-            "d8f136016bdc66e4",
-            "106179da4f912592",
-            "93ccc9d2764ab811",
-            "868dcd6eaeb460ea",
-            "c4bdd00897dc53d8",
-            "cde917398030c7f5",
-            "51f935c8d643762c",
-            "52b5551d389ce5f6",
-            "718cde2f59de8f1d",
-            "2bfc5dfbefde4dad",
-            "c6093726cec3b701",
-            "c2bd9dd669db156f",
-            "e7973a176069d818",
-            "1847a2dc460be837",
-            "f944eb7e12431d64",
-            "7dd736897875e4a7",
-            "6ddb19a93dfa59ae",
-            "4c02978533a2d408",
-            "943e71717ce07ede",
-            "edd5055ec58cadd3",
-            "03761f12106ecc48",
-            "5097b1c94cae1e9d"
-        ],
-        "x": 164,
-        "y": 59,
-        "w": 1342,
-        "h": 662
+        "y": 39,
+        "w": 272,
+        "h": 382
     },
     {
         "id": "42a13c3d567c0107",
@@ -243,24 +185,88 @@
         },
         "nodes": [
             "91c2cddf67c80ae3",
-            "3b8a232eefad1449",
-            "aca9432f31e25322",
             "486676b96069236f",
-            "28a8cbd0f70cbba8",
-            "88cd25b95db459b5",
             "f43955c4116788ae",
             "1012e60d137dd771",
             "a9b264a4fd433004",
-            "47cb4289796bea90",
-            "ec5485ec21aef8d9",
-            "d25015d36dfbe5c8",
             "f3b8133db0b0247f",
-            "44a4859cc20ea1f8"
+            "44a4859cc20ea1f8",
+            "b37b334a1d5446b8"
         ],
-        "x": 164,
-        "y": 99,
-        "w": 642,
-        "h": 242
+        "x": 124,
+        "y": 59,
+        "w": 772,
+        "h": 182
+    },
+    {
+        "id": "d909d7087a6bb3ff",
+        "type": "group",
+        "z": "43d56ff9e5378e0b",
+        "name": "Spielumgebung",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5de9bd1cd371aea4",
+            "7bbb21bf8cddfdca",
+            "317d97494d81ec91",
+            "d00a588f2072bf89",
+            "e30578eacbce02f4",
+            "c2798e7ae02c7565",
+            "0e9419177c8f12e3",
+            "02b093e8c256126e",
+            "7a9b6f1d3c61c954",
+            "19c77b09ee9613b7",
+            "a1e296adeaf7ca25",
+            "ba22d13f5798ae5c",
+            "2ca88a3837ce22be",
+            "52780174f296187c",
+            "9655749eb3b50118",
+            "0d89adef00d31f08",
+            "1c478e5bef0648bc",
+            "b7bb4af7e377efc1",
+            "2b26b8dce26bd3db",
+            "5855704f78278715",
+            "10b309c9c602c970"
+        ],
+        "x": 254,
+        "y": 819,
+        "w": 1072,
+        "h": 482
+    },
+    {
+        "id": "46991b71b9736a61",
+        "type": "group",
+        "z": "43d56ff9e5378e0b",
+        "name": "DB schreiben/lesen - Chart",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b5c18d7123d1fb98",
+            "ac3dcfc08df95899",
+            "8ca560915367c2f1",
+            "e7ad1e6815b12b1c",
+            "ce1e27e064194cb2",
+            "26ec4a9949e19190",
+            "c2f2bd284b226b73",
+            "ff41d23056426aa7",
+            "fc8f9099852f02a8",
+            "914db66b9020c417",
+            "69e6a0ea48090bd8",
+            "9b2d5bfc9ca2adeb",
+            "0ac19abc6af6b3d5",
+            "e28e200feb3e3dd4",
+            "ccf8a84ea4d26f5e",
+            "56191ba0d112715a",
+            "e676965ee181a76f",
+            "950316089afb776c",
+            "5543a4ab9a95c2f2"
+        ],
+        "x": 64,
+        "y": 13,
+        "w": 1302,
+        "h": 548
     },
     {
         "id": "cbf1b5f7222a47fa",
@@ -332,8 +338,6 @@
             "c3a1b8ef6a0ac59a",
             "b3fcc71f7cc16c11",
             "2e6f0daf82b27ce9",
-            "89bd2b36641c073f",
-            "b0f3026392b33b80",
             "2dfb7ff480250ff1",
             "b26e8c241907237d",
             "ca95a0d826c87b1a",
@@ -364,70 +368,79 @@
         "h": 82
     },
     {
-        "id": "d909d7087a6bb3ff",
+        "id": "5543a4ab9a95c2f2",
         "type": "group",
         "z": "43d56ff9e5378e0b",
-        "name": "Spielumgebung",
+        "g": "46991b71b9736a61",
+        "name": "DB Tabelle erstellen",
         "style": {
             "label": true
         },
         "nodes": [
-            "5de9bd1cd371aea4",
-            "7bbb21bf8cddfdca",
-            "317d97494d81ec91",
-            "d00a588f2072bf89",
-            "e30578eacbce02f4",
-            "c2798e7ae02c7565",
-            "0e9419177c8f12e3",
-            "02b093e8c256126e",
-            "7a9b6f1d3c61c954",
-            "19c77b09ee9613b7",
-            "a1e296adeaf7ca25",
-            "ba22d13f5798ae5c",
-            "2ca88a3837ce22be",
-            "52780174f296187c",
-            "9655749eb3b50118",
-            "0d89adef00d31f08",
-            "1c478e5bef0648bc",
-            "b7bb4af7e377efc1",
-            "2b26b8dce26bd3db",
-            "5855704f78278715",
-            "10b309c9c602c970"
+            "58f866845f020cdd",
+            "0121872a20f5b9a5"
         ],
-        "x": 254,
-        "y": 819,
-        "w": 1072,
-        "h": 482
+        "x": 674,
+        "y": 39,
+        "w": 312,
+        "h": 82
     },
     {
-        "id": "46991b71b9736a61",
+        "id": "6d43257abb473565",
         "type": "group",
-        "z": "43d56ff9e5378e0b",
-        "name": "DB schreiben/lesen - Chart",
+        "z": "b88fb898bd6540cc",
+        "name": "Logic",
         "style": {
             "label": true
         },
         "nodes": [
-            "b5c18d7123d1fb98",
-            "9f74d1438a7da4b6",
-            "91545fa223ef853c",
-            "ac3dcfc08df95899",
-            "8ca560915367c2f1",
-            "e74c506c5a42de58",
-            "e5f2e961fd33ab26",
-            "f3b1499f38d8675a",
-            "724897aa74b814dc",
-            "9dedf2563af87e0e",
-            "a8b60cf447932879",
-            "e7ad1e6815b12b1c",
-            "ce1e27e064194cb2",
-            "26ec4a9949e19190",
-            "c2f2bd284b226b73"
+            "f2395a2dc8f4284d",
+            "82a190df753051e4",
+            "d3e6f0ad23c48998",
+            "ce71c7124e32cabe",
+            "85d39265a738288d",
+            "3ac1d7d890223928",
+            "124a3d53cf0efa92",
+            "b7e70d9c18ec500a",
+            "77fb90fbfec9f1b4",
+            "042b0ce14dcaaaf6",
+            "e81459c8fffc1c55",
+            "dce0db5e7f112720",
+            "ea2bcd67c9157115",
+            "fb0cd6efa5e7555a",
+            "a0a12692f3b12cbb",
+            "2959a3cfb3ddf903",
+            "05414fd5f5b780bc",
+            "1512c1599f30ef46",
+            "0c0c0abd75cb3b42",
+            "c77df1f144c4795f",
+            "d8f136016bdc66e4",
+            "106179da4f912592",
+            "93ccc9d2764ab811",
+            "868dcd6eaeb460ea",
+            "c4bdd00897dc53d8",
+            "cde917398030c7f5",
+            "51f935c8d643762c",
+            "52b5551d389ce5f6",
+            "718cde2f59de8f1d",
+            "2bfc5dfbefde4dad",
+            "c6093726cec3b701",
+            "c2bd9dd669db156f",
+            "e7973a176069d818",
+            "1847a2dc460be837",
+            "f944eb7e12431d64",
+            "7dd736897875e4a7",
+            "6ddb19a93dfa59ae",
+            "4c02978533a2d408",
+            "943e71717ce07ede",
+            "edd5055ec58cadd3",
+            "03761f12106ecc48",
+            "5097b1c94cae1e9d"
         ],
-        "x": 234,
-        "y": 339,
-        "w": 1092,
-        "h": 382
+        "x": 164,
+        "y": 59,
+        "w": 1342,
+        "h": 522
     },
     {
         "id": "a96a0b6e98809ced",
@@ -755,18 +768,14 @@
         "className": ""
     },
     {
-        "id": "199bd4273a187380",
-        "type": "influxdb",
-        "hostname": "127.0.0.1",
-        "port": "8086",
-        "protocol": "http",
-        "database": "database",
-        "name": "Test influx online",
-        "usetls": false,
-        "tls": "",
-        "influxdbVersion": "2.0",
-        "url": "https://us-central1-1.gcp.cloud2.influxdata.com",
-        "rejectUnauthorized": true
+        "id": "53286e202a920630",
+        "type": "MySQLdatabase",
+        "name": "DBSQL",
+        "host": "localhost",
+        "port": "3306",
+        "db": "sqlSteinerapp",
+        "tz": "",
+        "charset": "UTF8"
     },
     {
         "id": "5818d339c49cc5e9",
@@ -1268,7 +1277,7 @@
         "to": "",
         "reg": false,
         "x": 620,
-        "y": 640,
+        "y": 500,
         "wires": [
             [
                 "a0a12692f3b12cbb"
@@ -1285,17 +1294,21 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "true"
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
             },
             {
-                "t": "false"
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
             }
         ],
         "checkall": "false",
         "repair": false,
         "outputs": 2,
         "x": 300,
-        "y": 660,
+        "y": 520,
         "wires": [
             [
                 "e81459c8fffc1c55"
@@ -1326,7 +1339,7 @@
         "to": "",
         "reg": false,
         "x": 610,
-        "y": 680,
+        "y": 540,
         "wires": [
             [
                 "fb0cd6efa5e7555a"
@@ -1344,7 +1357,7 @@
             "7f5248837f9bcab4"
         ],
         "x": 785,
-        "y": 680,
+        "y": 540,
         "wires": []
     },
     {
@@ -1358,7 +1371,7 @@
             "7f5248837f9bcab4"
         ],
         "x": 785,
-        "y": 640,
+        "y": 500,
         "wires": []
     },
     {
@@ -1372,108 +1385,12 @@
             "b26e8c241907237d"
         ],
         "x": 205,
-        "y": 660,
+        "y": 520,
         "wires": [
             [
                 "dce0db5e7f112720"
             ]
         ]
-    },
-    {
-        "id": "e1035a52fd0d665c",
-        "type": "toggle",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "Toggle Door position",
-        "onOffTopic": "",
-        "onValue": "über 50% offen",
-        "onType": "str",
-        "offValue": "unter 50% offen",
-        "offType": "str",
-        "toggleTopic": "",
-        "toggleValue": "false",
-        "toggleType": "bool",
-        "passOnOff": "ifChanged",
-        "x": 640,
-        "y": 540,
-        "wires": [
-            [
-                "904702cc397300e9",
-                "b4c223c7a1d98d7f"
-            ]
-        ]
-    },
-    {
-        "id": "932084b5ed0deb47",
-        "type": "trigger",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "Trigger bool to impulse",
-        "op1": "1",
-        "op2": "0",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "500",
-        "extend": false,
-        "overrideDelay": false,
-        "units": "ms",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 340,
-        "y": 540,
-        "wires": [
-            [
-                "e1035a52fd0d665c"
-            ]
-        ]
-    },
-    {
-        "id": "ed1230ed8d6e3369",
-        "type": "link in",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "GPIO 50% in",
-        "links": [
-            "b0f3026392b33b80",
-            "d91e309ade317d74"
-        ],
-        "x": 205,
-        "y": 540,
-        "wires": [
-            [
-                "932084b5ed0deb47"
-            ]
-        ]
-    },
-    {
-        "id": "904702cc397300e9",
-        "type": "link out",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "Text Torposition in % out",
-        "mode": "link",
-        "links": [
-            "c1f5f92421b1bc70"
-        ],
-        "x": 785,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "b4c223c7a1d98d7f",
-        "type": "link out",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "Debugg Text Position % out",
-        "mode": "link",
-        "links": [
-            "1cf008a2d74cb052"
-        ],
-        "x": 785,
-        "y": 560,
-        "wires": []
     },
     {
         "id": "05414fd5f5b780bc",
@@ -1661,41 +1578,6 @@
         ]
     },
     {
-        "id": "868dcd6eaeb460ea",
-        "type": "change",
-        "z": "b88fb898bd6540cc",
-        "g": "6d43257abb473565",
-        "name": "Change MSG on",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "downLock",
-                "tot": "global"
-            },
-            {
-                "t": "set",
-                "p": "downLock",
-                "pt": "global",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 630,
-        "y": 400,
-        "wires": [
-            [
-                "51f935c8d643762c"
-            ]
-        ]
-    },
-    {
         "id": "93ccc9d2764ab811",
         "type": "change",
         "z": "b88fb898bd6540cc",
@@ -1724,6 +1606,41 @@
         "reg": false,
         "x": 630,
         "y": 440,
+        "wires": [
+            [
+                "51f935c8d643762c"
+            ]
+        ]
+    },
+    {
+        "id": "868dcd6eaeb460ea",
+        "type": "change",
+        "z": "b88fb898bd6540cc",
+        "g": "6d43257abb473565",
+        "name": "Change MSG on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "downLock",
+                "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "downLock",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 400,
         "wires": [
             [
                 "51f935c8d643762c"
@@ -2167,7 +2084,7 @@
         "gtype": "wave",
         "title": "Tankfüllung",
         "label": "Liter",
-        "format": "{{msg.fuellstand}}",
+        "format": "{{msg.tank}}",
         "min": "-5000",
         "max": "10000",
         "colors": [
@@ -2194,7 +2111,7 @@
         "height": 0,
         "name": "",
         "label": "verbrauchte Liter",
-        "format": "{{msg.verbrauch}}",
+        "format": "{{msg.impulse}}",
         "layout": "row-spread",
         "className": "",
         "x": 390,
@@ -2212,7 +2129,7 @@
         "height": 0,
         "name": "",
         "label": "Zählerstand",
-        "format": "{{msg.zaehlerstand}}",
+        "format": "{{msg.zaehler}}",
         "layout": "row-spread",
         "className": "",
         "x": 410,
@@ -2296,7 +2213,7 @@
         "payload": "",
         "submit": "Ok",
         "cancel": "Abbruch",
-        "topic": "setFuellung",
+        "topic": "fuellung",
         "topicType": "str",
         "splitLayout": false,
         "className": "befuellung",
@@ -2334,7 +2251,7 @@
         "payload": "",
         "submit": "Ok",
         "cancel": "Abbruch",
-        "topic": "setZaehler",
+        "topic": "zaehler",
         "topicType": "str",
         "splitLayout": false,
         "className": "zaehlerstand",
@@ -2372,7 +2289,7 @@
         "payload": "",
         "submit": "Ok",
         "cancel": "Abbruch",
-        "topic": "setInitTank",
+        "topic": "initialisierungTank",
         "topicType": "str",
         "splitLayout": false,
         "className": "initTank",
@@ -2490,54 +2407,13 @@
         "links": [
             "e4bf02a746d30178"
         ],
-        "x": 205,
-        "y": 140,
+        "x": 165,
+        "y": 100,
         "wires": [
             [
-                "3b8a232eefad1449",
-                "44a4859cc20ea1f8"
+                "44a4859cc20ea1f8",
+                "b37b334a1d5446b8"
             ]
-        ]
-    },
-    {
-        "id": "3b8a232eefad1449",
-        "type": "rising-edge",
-        "z": "239bb88f8646fff4",
-        "g": "3dac510af08b3f3d",
-        "name": "",
-        "threshold": "0",
-        "x": 420,
-        "y": 180,
-        "wires": [
-            [
-                "486676b96069236f"
-            ]
-        ]
-    },
-    {
-        "id": "aca9432f31e25322",
-        "type": "change",
-        "z": "239bb88f8646fff4",
-        "g": "3dac510af08b3f3d",
-        "name": "Zaehlerstand",
-        "rules": [
-            {
-                "t": "set",
-                "p": "zaehlerstand",
-                "pt": "global",
-                "to": "payload.set",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 420,
-        "y": 220,
-        "wires": [
-            []
         ]
     },
     {
@@ -2546,71 +2422,19 @@
         "z": "239bb88f8646fff4",
         "g": "3dac510af08b3f3d",
         "name": "function 1",
-        "func": "//var reset = flow.get('reset') || false;\nvar impulse = flow.get(\"impulse\") || 0;\nvar verbrauch = flow.get('verbrauch') || 0;\n\n// Globale Variablen\nvar zaehlerstandGlobal = global.get('zaehlerstand');\nvar initTankGlobal = global.get('initTank') || 0;\nvar befuellungGlobal = global.get('befuellung');\nvar fuellstandGlobal = global.get('fuelstand') || 0;\n\n\n// ---------------verbrauch\nimpulse++;\n// verbrauchte liter\nverbrauch = impulse/10;\nflow.set('impulse', impulse);\n\n\n\n// ---------------Reset\n//if(reset == true){\n//    flow.set('impulse', 0);\n   // flow.set('verbrauch', 0);\n//    flow.set('reset', false);\n//    msg.verbrauch = flow.get('impulse');\n//    return msg;\n//}\n\n// ---------------Zähler\nvar zaehlerstandAnzeige = verbrauch + zaehlerstandGlobal;\n\n// ---------------Zähler Korrektur\nif(msg.topic == \"setZaehler\"){\n    flow.set('impulse', 0);\n    flow.set('verbrauch', 0);\n    msg.verbrauch = flow.get('impulse');\n    return msg;\n}\n\n// ---------------Tankfüllstand initialisieren\nif (msg.topic == \"setInitTank\"){\n    global.set(\"fuelstand\", 0)\n    initTankGlobal = global.get('initTank');\n}\n\n// ---------------Tankfüllung\nif (msg.topic == \"setFuellung\"){\n    fuellstandGlobal = global.set('fuelstand', global.get('befuellung') + fuellstandGlobal)\n    fuellstandGlobal = global.get(\"fuelstand\")\n} \n\n// ---------------Message Ausgabe\nmsg.verbrauch = verbrauch;\nmsg.fuellstand = initTankGlobal + fuellstandGlobal - verbrauch;\nmsg.zaehlerstand = zaehlerstandAnzeige;\nreturn msg;",
+        "func": "// ---------------Zähler\nvar impulse = flow.get(\"impulse\") || 0\nvar counterdefault = flow.get(\"counterdefault\") || 0\n\n\n// ---------------Tankfüllung\nvar startdefault = flow.get(\"startdefault\") || 0\nvar tankfuellung = flow.get(\"tankfuellung\") || 0\n\n// ---------------Zähler\nif (msg.topic == \"zaehler\"){\n    impulse = 0\n    flow.set(\"counterdefault\", msg.payload.set)\n    \n} else {\n    impulse ++\n}\n\n// ---------------Tankfüllung\nif (msg.topic == \"fuellung\"){\n    tankfuellung = flow.set(\"tankfuellung\", msg.payload.liter + tankfuellung)\n    tankfuellung = flow.get(\"tankfuellung\")\n    } \n\nif (msg.topic == \"initialisierungTank\"){\n    flow.set(\"startdefault\", msg.payload.liter)\n    flow.set(\"tankfuellung\", 0)\n    startdefault = flow.get(\"startdefault\")\n}\n\nvar counter = counterdefault + (impulse/10)\n\nflow.set(\"impulse\", impulse)\n\n// ---------------Message Ausgabe\nmsg.impulse = impulse/10\nmsg.zaehler = counter\nmsg.tank = tankfuellung + startdefault - impulse/10\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
-        "y": 180,
+        "x": 640,
+        "y": 160,
         "wires": [
             [
                 "f43955c4116788ae",
                 "1012e60d137dd771"
             ]
-        ]
-    },
-    {
-        "id": "28a8cbd0f70cbba8",
-        "type": "change",
-        "z": "239bb88f8646fff4",
-        "g": "3dac510af08b3f3d",
-        "name": "Initialisierung Tank",
-        "rules": [
-            {
-                "t": "set",
-                "p": "initTank",
-                "pt": "global",
-                "to": "payload.liter",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 400,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "88cd25b95db459b5",
-        "type": "change",
-        "z": "239bb88f8646fff4",
-        "g": "3dac510af08b3f3d",
-        "name": "Befuellung",
-        "rules": [
-            {
-                "t": "set",
-                "p": "befuellung",
-                "pt": "global",
-                "to": "payload.liter",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 420,
-        "y": 300,
-        "wires": [
-            []
         ]
     },
     {
@@ -2632,8 +2456,8 @@
             "b8f85cfa1b0df194",
             "ebc80efdb0073b96"
         ],
-        "x": 765,
-        "y": 220,
+        "x": 855,
+        "y": 180,
         "wires": []
     },
     {
@@ -2647,8 +2471,8 @@
             "b5c18d7123d1fb98",
             "ce1e27e064194cb2"
         ],
-        "x": 765,
-        "y": 180,
+        "x": 855,
+        "y": 140,
         "wires": []
     },
     {
@@ -2662,62 +2486,11 @@
             "4780da5c792f79eb",
             "ed7578714192d0f4"
         ],
-        "x": 565,
-        "y": 220,
+        "x": 165,
+        "y": 200,
         "wires": [
             [
                 "486676b96069236f"
-            ]
-        ]
-    },
-    {
-        "id": "47cb4289796bea90",
-        "type": "link in",
-        "z": "239bb88f8646fff4",
-        "g": "3dac510af08b3f3d",
-        "name": "link in 26",
-        "links": [
-            "744fda99c9cd08e1"
-        ],
-        "x": 205,
-        "y": 300,
-        "wires": [
-            [
-                "88cd25b95db459b5"
-            ]
-        ]
-    },
-    {
-        "id": "ec5485ec21aef8d9",
-        "type": "link in",
-        "z": "239bb88f8646fff4",
-        "g": "3dac510af08b3f3d",
-        "name": "link in 27",
-        "links": [
-            "4780da5c792f79eb"
-        ],
-        "x": 205,
-        "y": 260,
-        "wires": [
-            [
-                "28a8cbd0f70cbba8"
-            ]
-        ]
-    },
-    {
-        "id": "d25015d36dfbe5c8",
-        "type": "link in",
-        "z": "239bb88f8646fff4",
-        "g": "3dac510af08b3f3d",
-        "name": "link in 28",
-        "links": [
-            "ed7578714192d0f4"
-        ],
-        "x": 205,
-        "y": 220,
-        "wires": [
-            [
-                "aca9432f31e25322"
             ]
         ]
     },
@@ -2730,11 +2503,11 @@
         "links": [
             "5055ef0db6593839"
         ],
-        "x": 205,
-        "y": 180,
+        "x": 165,
+        "y": 140,
         "wires": [
             [
-                "3b8a232eefad1449"
+                "b37b334a1d5446b8"
             ]
         ]
     },
@@ -2748,9 +2521,24 @@
         "links": [
             "f36718e13f9390d3"
         ],
-        "x": 475,
-        "y": 140,
+        "x": 435,
+        "y": 100,
         "wires": []
+    },
+    {
+        "id": "b37b334a1d5446b8",
+        "type": "rising-edge",
+        "z": "239bb88f8646fff4",
+        "g": "3dac510af08b3f3d",
+        "name": "",
+        "threshold": "0",
+        "x": 380,
+        "y": 140,
+        "wires": [
+            [
+                "486676b96069236f"
+            ]
+        ]
     },
     {
         "id": "b5c18d7123d1fb98",
@@ -2761,78 +2549,14 @@
         "links": [
             "1012e60d137dd771"
         ],
-        "x": 385,
-        "y": 460,
+        "x": 215,
+        "y": 160,
         "wires": [
             [
                 "8ca560915367c2f1",
-                "9f74d1438a7da4b6",
-                "e74c506c5a42de58",
-                "e5f2e961fd33ab26"
+                "ff41d23056426aa7"
             ]
         ]
-    },
-    {
-        "id": "9f74d1438a7da4b6",
-        "type": "change",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "name": "Verbrauch",
-        "rules": [
-            {
-                "t": "set",
-                "p": "fields.verbrauch",
-                "pt": "msg",
-                "to": "verbrauch",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "tags.timestampVerbrauch",
-                "pt": "msg",
-                "to": "",
-                "tot": "date"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "$append(fields,tags)",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 690,
-        "y": 420,
-        "wires": [
-            [
-                "91545fa223ef853c",
-                "724897aa74b814dc"
-            ]
-        ]
-    },
-    {
-        "id": "91545fa223ef853c",
-        "type": "influxdb out",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "influxdb": "a633581446679cd4",
-        "name": "Test write",
-        "measurement": "steinerMessung",
-        "precision": "",
-        "retentionPolicy": "",
-        "database": "database",
-        "precisionV18FluxV20": "ms",
-        "retentionPolicyV18Flux": "",
-        "org": "Steiner",
-        "bucket": "steinerapp",
-        "x": 1040,
-        "y": 460,
-        "wires": []
     },
     {
         "id": "ac3dcfc08df95899",
@@ -2841,8 +2565,8 @@
         "g": "46991b71b9736a61",
         "name": "Write Operation",
         "info": "",
-        "x": 340,
-        "y": 400,
+        "x": 170,
+        "y": 100,
         "wires": []
     },
     {
@@ -3013,95 +2737,9 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 380,
+        "x": 510,
+        "y": 80,
         "wires": []
-    },
-    {
-        "id": "e74c506c5a42de58",
-        "type": "change",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "name": "Füllstand",
-        "rules": [
-            {
-                "t": "set",
-                "p": "fields.fuellstand",
-                "pt": "msg",
-                "to": "fuellstand",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "tags.timestampFuellstand",
-                "pt": "msg",
-                "to": "",
-                "tot": "date"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "$append(fields,tags)",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 680,
-        "y": 460,
-        "wires": [
-            [
-                "91545fa223ef853c",
-                "724897aa74b814dc"
-            ]
-        ]
-    },
-    {
-        "id": "e5f2e961fd33ab26",
-        "type": "change",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "name": "Zählerstand",
-        "rules": [
-            {
-                "t": "set",
-                "p": "fields.zaehlerstand",
-                "pt": "msg",
-                "to": "zaehlerstand",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "tags.timestampZaehler",
-                "pt": "msg",
-                "to": "",
-                "tot": "date"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "$append(fields,tags)",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 690,
-        "y": 500,
-        "wires": [
-            [
-                "91545fa223ef853c",
-                "724897aa74b814dc"
-            ]
-        ]
     },
     {
         "id": "7a9b6f1d3c61c954",
@@ -3320,92 +2958,6 @@
         "wires": []
     },
     {
-        "id": "f3b1499f38d8675a",
-        "type": "influxdb in",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "influxdb": "a633581446679cd4",
-        "name": "Read",
-        "query": "from(bucket: \"steinerapp\")\n  |> range(start: -10s, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == \"steinerMessung\")\n  |> filter(fn: (r) => r[\"_field\"] == \"verbrauch\")\n  |> yield(name: \"last\")",
-        "rawOutput": false,
-        "precision": "",
-        "retentionPolicy": "",
-        "org": "Steiner",
-        "x": 670,
-        "y": 620,
-        "wires": [
-            [
-                "a8b60cf447932879"
-            ]
-        ]
-    },
-    {
-        "id": "724897aa74b814dc",
-        "type": "influxdb out",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "influxdb": "199bd4273a187380",
-        "name": "",
-        "measurement": "steinerMessung",
-        "precision": "",
-        "retentionPolicy": "",
-        "database": "database",
-        "precisionV18FluxV20": "ms",
-        "retentionPolicyV18Flux": "",
-        "org": "Steiner",
-        "bucket": "steineronline",
-        "x": 1140,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "9dedf2563af87e0e",
-        "type": "debug",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "name": "debug 5",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1140,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "a8b60cf447932879",
-        "type": "change",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload[0]._value",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 870,
-        "y": 620,
-        "wires": [
-            [
-                "e7ad1e6815b12b1c",
-                "9dedf2563af87e0e"
-            ]
-        ]
-    },
-    {
         "id": "e7ad1e6815b12b1c",
         "type": "ui_chart",
         "z": "43d56ff9e5378e0b",
@@ -3415,16 +2967,16 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "label": "chart",
+        "label": "Verbrauch",
         "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
+        "legend": "true",
+        "xformat": "auto",
         "interpolate": "linear",
         "nodata": "",
         "dot": true,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "1",
         "removeOlderPoints": "",
         "removeOlderUnit": "604800",
         "cutout": 0,
@@ -3444,10 +2996,12 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1130,
-        "y": 620,
+        "x": 1110,
+        "y": 280,
         "wires": [
-            []
+            [
+                "e676965ee181a76f"
+            ]
         ]
     },
     {
@@ -3532,8 +3086,8 @@
         "links": [
             "1012e60d137dd771"
         ],
-        "x": 385,
-        "y": 620,
+        "x": 215,
+        "y": 280,
         "wires": [
             [
                 "26ec4a9949e19190"
@@ -3558,11 +3112,11 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 520,
-        "y": 620,
+        "x": 350,
+        "y": 280,
         "wires": [
             [
-                "f3b1499f38d8675a"
+                "ccf8a84ea4d26f5e"
             ]
         ]
     },
@@ -3573,14 +3127,287 @@
         "g": "46991b71b9736a61",
         "name": "Read Operation",
         "info": "",
-        "x": 340,
-        "y": 580,
+        "x": 170,
+        "y": 220,
         "wires": []
+    },
+    {
+        "id": "fc8f9099852f02a8",
+        "type": "mysql",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "mydb": "53286e202a920630",
+        "name": "",
+        "x": 1060,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58f866845f020cdd",
+        "type": "function",
+        "z": "43d56ff9e5378e0b",
+        "d": true,
+        "g": "5543a4ab9a95c2f2",
+        "name": "function 2",
+        "func": "msg.topic = `CREATE TABLE steinerMessungen (\n    verbrauch varchar(255),\n    zaehler varchar(255),\n    fuellstand varchar(255),\n    Datum TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP\n    );`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 80,
+        "wires": [
+            [
+                "fc8f9099852f02a8"
+            ]
+        ]
+    },
+    {
+        "id": "0121872a20f5b9a5",
+        "type": "inject",
+        "z": "43d56ff9e5378e0b",
+        "d": true,
+        "g": "5543a4ab9a95c2f2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 770,
+        "y": 80,
+        "wires": [
+            [
+                "58f866845f020cdd"
+            ]
+        ]
+    },
+    {
+        "id": "ff41d23056426aa7",
+        "type": "function",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "name": "function 3",
+        "func": "var verbrauch = msg.impulse;\nvar zaehler = msg.zaehler;\nvar fuellstand = msg.tank;\nvar topic = `INSERT INTO steinerMessungen (verbrauch, zaehler, fuellstand)\n    VALUES (${verbrauch}, ${zaehler}, ${fuellstand});`\nmsg.topic = topic;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 160,
+        "wires": [
+            [
+                "fc8f9099852f02a8"
+            ]
+        ]
+    },
+    {
+        "id": "9b2d5bfc9ca2adeb",
+        "type": "function",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "name": "SELECT verbrauch",
+        "func": "msg.topic = 'SELECT verbrauch FROM steinerMessungen'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 340,
+        "wires": [
+            [
+                "e28e200feb3e3dd4"
+            ]
+        ]
+    },
+    {
+        "id": "914db66b9020c417",
+        "type": "inject",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "name": "t",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 480,
+        "wires": [
+            [
+                "9b2d5bfc9ca2adeb"
+            ]
+        ]
+    },
+    {
+        "id": "e28e200feb3e3dd4",
+        "type": "mysql",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "mydb": "53286e202a920630",
+        "name": "",
+        "x": 760,
+        "y": 280,
+        "wires": [
+            [
+                "950316089afb776c"
+            ]
+        ]
+    },
+    {
+        "id": "0ac19abc6af6b3d5",
+        "type": "function",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "name": "SELECT LAST",
+        "func": "msg.topic = 'SELECT * FROM steinerMessungen ORDER BY datum DESC LIMIT 1;'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 380,
+        "wires": [
+            [
+                "e28e200feb3e3dd4"
+            ]
+        ]
+    },
+    {
+        "id": "69e6a0ea48090bd8",
+        "type": "inject",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "name": "t",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 520,
+        "wires": [
+            [
+                "0ac19abc6af6b3d5"
+            ]
+        ]
+    },
+    {
+        "id": "ccf8a84ea4d26f5e",
+        "type": "function",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "name": "SELECT * Month",
+        "func": "msg.topic = `SELECT * FROM steinerMessungen \n            WHERE MONTH(Datum) = MONTH(now()) AND\n            YEAR(Datum) = YEAR(now());`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 280,
+        "wires": [
+            [
+                "e28e200feb3e3dd4"
+            ]
+        ]
+    },
+    {
+        "id": "56191ba0d112715a",
+        "type": "inject",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "name": "t",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "ccf8a84ea4d26f5e"
+            ]
+        ]
+    },
+    {
+        "id": "e676965ee181a76f",
+        "type": "debug",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "950316089afb776c",
+        "type": "function",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "name": "Data to Chart",
+        "func": "var payload=msg.payload;\nvar data_out=[];\nvar a1=[];\n\nfor(let i=0;i<payload.length;i++)\n{\n    \nvar verb={ \"x\": payload[i][\"Datum\"], \"y\":payload[i][\"verbrauch\"] };\n\na1.push(verb);\n}\n\ndata_out=[a1];\nmsg.payload=[{\n\"series\": [\"Verbrauch\"],\n\"data\":data_out,\n\"labels\": [\"Verbrauch\"]\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 280,
+        "wires": [
+            [
+                "e7ad1e6815b12b1c"
+            ]
+        ]
     },
     {
         "id": "1ca0ae33d6e1bb75",
         "type": "inject",
         "z": "27bed9da7de43cc4",
+        "d": true,
         "g": "42d6849f0a45a65f",
         "name": "Auf Befehl",
         "props": [
@@ -3612,6 +3439,7 @@
         "id": "4eb05454d119fa3f",
         "type": "inject",
         "z": "27bed9da7de43cc4",
+        "d": true,
         "g": "42d6849f0a45a65f",
         "name": "Ab Befehl",
         "props": [
@@ -3643,6 +3471,7 @@
         "id": "1493bcfdc89a3327",
         "type": "inject",
         "z": "27bed9da7de43cc4",
+        "d": true,
         "g": "42d6849f0a45a65f",
         "name": "Stop Befehl",
         "props": [
@@ -3710,50 +3539,6 @@
         ],
         "x": 275,
         "y": 160,
-        "wires": []
-    },
-    {
-        "id": "89bd2b36641c073f",
-        "type": "inject",
-        "z": "27bed9da7de43cc4",
-        "g": "42d6849f0a45a65f",
-        "name": "Tor Position 50%",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 160,
-        "y": 200,
-        "wires": [
-            [
-                "b0f3026392b33b80"
-            ]
-        ]
-    },
-    {
-        "id": "b0f3026392b33b80",
-        "type": "link out",
-        "z": "27bed9da7de43cc4",
-        "g": "42d6849f0a45a65f",
-        "name": "Test input Tor 50% out",
-        "mode": "link",
-        "links": [
-            "ed1230ed8d6e3369"
-        ],
-        "x": 275,
-        "y": 200,
         "wires": []
     },
     {
@@ -4273,8 +4058,8 @@
         "z": "27bed9da7de43cc4",
         "g": "f727b33e4afcb3fe",
         "name": "",
-        "op1": "1",
-        "op2": "0",
+        "op1": "0",
+        "op2": "1",
         "op1type": "str",
         "op2type": "str",
         "duration": "500",
@@ -4465,9 +4250,9 @@
         "z": "3a841c7cacf5e875",
         "g": "5ec4de0559b4272d",
         "name": "Impuls Öl Zähler",
-        "pin": "26",
-        "intype": "down",
-        "debounce": "100",
+        "pin": "17",
+        "intype": "tri",
+        "debounce": "25",
         "read": true,
         "bcm": true,
         "x": 280,
