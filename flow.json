@@ -74,15 +74,13 @@
             "5a5cea01d83b97ae",
             "5d9f826f0f216ed3",
             "7f5248837f9bcab4",
-            "7d516493fe893cca",
-            "c1f5f92421b1bc70",
             "6ef7b5c675c1bd5e",
             "7854c790507380c2"
         ],
         "x": 164,
         "y": 59,
-        "w": 342,
-        "h": 382
+        "w": 322,
+        "h": 322
     },
     {
         "id": "898c69c607394c92",
@@ -710,20 +708,6 @@
         "hidden": false
     },
     {
-        "id": "a633581446679cd4",
-        "type": "influxdb",
-        "hostname": "127.0.0.1",
-        "port": "8086",
-        "protocol": "http",
-        "database": "steinerapp",
-        "name": "InfluxdbConnection",
-        "usetls": false,
-        "tls": "",
-        "influxdbVersion": "2.0",
-        "url": "http://localhost:8086",
-        "rejectUnauthorized": true
-    },
-    {
         "id": "36c9717aed63c0f4",
         "type": "ui_link",
         "name": "Chart - Grafana",
@@ -944,67 +928,12 @@
             "fb0cd6efa5e7555a"
         ],
         "x": 205,
-        "y": 340,
+        "y": 280,
         "wires": [
             [
                 "7854c790507380c2"
             ]
         ]
-    },
-    {
-        "id": "7d516493fe893cca",
-        "type": "ui_text",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "group": "52847f51b22205df",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "name": "Position in Prozent",
-        "label": "Tor ist",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 390,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "c1f5f92421b1bc70",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "Text Torposition in % in",
-        "links": [
-            "904702cc397300e9"
-        ],
-        "x": 205,
-        "y": 280,
-        "wires": [
-            [
-                "7d516493fe893cca"
-            ]
-        ]
-    },
-    {
-        "id": "6ef7b5c675c1bd5e",
-        "type": "ui_toast",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "",
-        "x": 390,
-        "y": 400,
-        "wires": []
     },
     {
         "id": "7854c790507380c2",
@@ -1020,8 +949,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 350,
-        "y": 340,
+        "x": 330,
+        "y": 280,
         "wires": []
     },
     {
