@@ -116,7 +116,7 @@
         ],
         "x": 8,
         "y": 13,
-        "w": 564,
+        "w": 544,
         "h": 454
     },
     {
@@ -358,7 +358,7 @@
         ],
         "x": 34,
         "y": 359,
-        "w": 512,
+        "w": 492,
         "h": 82
     },
     {
@@ -3888,6 +3888,7 @@
         "id": "ce4fc77881eefd8e",
         "type": "inject",
         "z": "27bed9da7de43cc4",
+        "d": true,
         "g": "f727b33e4afcb3fe",
         "name": "5s interval",
         "props": [
@@ -3914,6 +3915,7 @@
         "id": "aecad7d7893dc6e4",
         "type": "trigger",
         "z": "27bed9da7de43cc4",
+        "d": true,
         "g": "f727b33e4afcb3fe",
         "name": "",
         "op1": "0",
@@ -3928,7 +3930,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 340,
+        "x": 320,
         "y": 400,
         "wires": [
             [
@@ -3947,7 +3949,7 @@
             "fa3f833e43ca4408",
             "f3b8133db0b0247f"
         ],
-        "x": 505,
+        "x": 485,
         "y": 400,
         "wires": []
     },
