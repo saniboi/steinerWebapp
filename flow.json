@@ -94,12 +94,13 @@
         },
         "nodes": [
             "cbf1b5f7222a47fa",
-            "24872851a923b49a"
+            "24872851a923b49a",
+            "9f9a086cc7d2d88e"
         ],
         "x": 728,
         "y": 13,
         "w": 384,
-        "h": 654
+        "h": 694
     },
     {
         "id": "3f154653a7a0dc76",
@@ -252,21 +253,16 @@
             "c2f2bd284b226b73",
             "ff41d23056426aa7",
             "fc8f9099852f02a8",
-            "914db66b9020c417",
-            "69e6a0ea48090bd8",
-            "9b2d5bfc9ca2adeb",
-            "0ac19abc6af6b3d5",
             "e28e200feb3e3dd4",
             "ccf8a84ea4d26f5e",
-            "56191ba0d112715a",
-            "e676965ee181a76f",
             "950316089afb776c",
-            "5543a4ab9a95c2f2"
+            "5543a4ab9a95c2f2",
+            "cc0eb5d385ef4602"
         ],
         "x": 64,
         "y": 13,
-        "w": 1302,
-        "h": 548
+        "w": 1192,
+        "h": 308
     },
     {
         "id": "cbf1b5f7222a47fa",
@@ -294,7 +290,7 @@
             "3a7980260f9f21a3"
         ],
         "x": 754,
-        "y": 319,
+        "y": 239,
         "w": 332,
         "h": 322
     },
@@ -308,8 +304,6 @@
             "label": true
         },
         "nodes": [
-            "1cf008a2d74cb052",
-            "92af62a5cfbf9412",
             "102ef19d223bfac6",
             "36de064e932c1e66",
             "79d33fe3d1be3b58",
@@ -320,7 +314,7 @@
         "x": 754,
         "y": 39,
         "w": 332,
-        "h": 202
+        "h": 162
     },
     {
         "id": "42d6849f0a45a65f",
@@ -380,7 +374,7 @@
             "58f866845f020cdd",
             "0121872a20f5b9a5"
         ],
-        "x": 674,
+        "x": 654,
         "y": 39,
         "w": 312,
         "h": 82
@@ -441,6 +435,24 @@
         "y": 59,
         "w": 1342,
         "h": 522
+    },
+    {
+        "id": "9f9a086cc7d2d88e",
+        "type": "group",
+        "z": "27bed9da7de43cc4",
+        "g": "898c69c607394c92",
+        "name": "Chart",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e676965ee181a76f",
+            "9269267e203949db"
+        ],
+        "x": 754,
+        "y": 599,
+        "w": 292,
+        "h": 82
     },
     {
         "id": "a96a0b6e98809ced",
@@ -3000,7 +3012,7 @@
         "y": 280,
         "wires": [
             [
-                "e676965ee181a76f"
+                "cc0eb5d385ef4602"
             ]
         ]
     },
@@ -3157,7 +3169,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
+        "x": 880,
         "y": 80,
         "wires": [
             [
@@ -3184,7 +3196,7 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 770,
+        "x": 750,
         "y": 80,
         "wires": [
             [
@@ -3213,52 +3225,6 @@
         ]
     },
     {
-        "id": "9b2d5bfc9ca2adeb",
-        "type": "function",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "name": "SELECT verbrauch",
-        "func": "msg.topic = 'SELECT verbrauch FROM steinerMessungen'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 570,
-        "y": 340,
-        "wires": [
-            [
-                "e28e200feb3e3dd4"
-            ]
-        ]
-    },
-    {
-        "id": "914db66b9020c417",
-        "type": "inject",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "name": "t",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 250,
-        "y": 480,
-        "wires": [
-            [
-                "9b2d5bfc9ca2adeb"
-            ]
-        ]
-    },
-    {
         "id": "e28e200feb3e3dd4",
         "type": "mysql",
         "z": "43d56ff9e5378e0b",
@@ -3270,52 +3236,6 @@
         "wires": [
             [
                 "950316089afb776c"
-            ]
-        ]
-    },
-    {
-        "id": "0ac19abc6af6b3d5",
-        "type": "function",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "name": "SELECT LAST",
-        "func": "msg.topic = 'SELECT * FROM steinerMessungen ORDER BY datum DESC LIMIT 1;'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 380,
-        "wires": [
-            [
-                "e28e200feb3e3dd4"
-            ]
-        ]
-    },
-    {
-        "id": "69e6a0ea48090bd8",
-        "type": "inject",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "name": "t",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 250,
-        "y": 520,
-        "wires": [
-            [
-                "0ac19abc6af6b3d5"
             ]
         ]
     },
@@ -3340,50 +3260,6 @@
         ]
     },
     {
-        "id": "56191ba0d112715a",
-        "type": "inject",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "name": "t",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 250,
-        "y": 440,
-        "wires": [
-            [
-                "ccf8a84ea4d26f5e"
-            ]
-        ]
-    },
-    {
-        "id": "e676965ee181a76f",
-        "type": "debug",
-        "z": "43d56ff9e5378e0b",
-        "g": "46991b71b9736a61",
-        "name": "debug 7",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1260,
-        "y": 380,
-        "wires": []
-    },
-    {
         "id": "950316089afb776c",
         "type": "function",
         "z": "43d56ff9e5378e0b",
@@ -3402,6 +3278,20 @@
                 "e7ad1e6815b12b1c"
             ]
         ]
+    },
+    {
+        "id": "cc0eb5d385ef4602",
+        "type": "link out",
+        "z": "43d56ff9e5378e0b",
+        "g": "46991b71b9736a61",
+        "name": "link out 27",
+        "mode": "link",
+        "links": [
+            "9269267e203949db"
+        ],
+        "x": 1215,
+        "y": 280,
+        "wires": []
     },
     {
         "id": "1ca0ae33d6e1bb75",
@@ -3542,44 +3432,10 @@
         "wires": []
     },
     {
-        "id": "1cf008a2d74cb052",
-        "type": "link in",
-        "z": "27bed9da7de43cc4",
-        "g": "24872851a923b49a",
-        "name": "Debugg Text Position % in",
-        "links": [
-            "b4c223c7a1d98d7f"
-        ],
-        "x": 795,
-        "y": 200,
-        "wires": [
-            [
-                "92af62a5cfbf9412"
-            ]
-        ]
-    },
-    {
-        "id": "92af62a5cfbf9412",
-        "type": "debug",
-        "z": "27bed9da7de43cc4",
-        "g": "24872851a923b49a",
-        "name": "position 50%",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 910,
-        "y": 200,
-        "wires": []
-    },
-    {
         "id": "2dfb7ff480250ff1",
         "type": "inject",
         "z": "27bed9da7de43cc4",
+        "d": true,
         "g": "42d6849f0a45a65f",
         "name": "Tor Position Geschlossen",
         "props": [
@@ -3732,6 +3588,7 @@
         "id": "ca95a0d826c87b1a",
         "type": "toggle",
         "z": "27bed9da7de43cc4",
+        "d": true,
         "g": "42d6849f0a45a65f",
         "name": "",
         "onOffTopic": "",
@@ -3755,6 +3612,7 @@
         "id": "277601cb5aba1cc6",
         "type": "inject",
         "z": "27bed9da7de43cc4",
+        "d": true,
         "g": "42d6849f0a45a65f",
         "name": "Tor Position Offen",
         "props": [
@@ -3796,7 +3654,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 940,
-        "y": 360,
+        "y": 280,
         "wires": []
     },
     {
@@ -3814,7 +3672,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 930,
-        "y": 400,
+        "y": 320,
         "wires": []
     },
     {
@@ -3832,7 +3690,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 920,
-        "y": 440,
+        "y": 360,
         "wires": []
     },
     {
@@ -3850,7 +3708,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 900,
-        "y": 480,
+        "y": 400,
         "wires": []
     },
     {
@@ -3868,7 +3726,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 920,
-        "y": 560,
+        "y": 480,
         "wires": []
     },
     {
@@ -3886,7 +3744,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 920,
-        "y": 600,
+        "y": 520,
         "wires": []
     },
     {
@@ -3904,7 +3762,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 930,
-        "y": 520,
+        "y": 440,
         "wires": []
     },
     {
@@ -3917,7 +3775,7 @@
             "f43955c4116788ae"
         ],
         "x": 795,
-        "y": 360,
+        "y": 280,
         "wires": [
             [
                 "dbbcf41b97a121e6"
@@ -3934,7 +3792,7 @@
             "f43955c4116788ae"
         ],
         "x": 795,
-        "y": 400,
+        "y": 320,
         "wires": [
             [
                 "f0dd8b737ad7e2e5"
@@ -3951,7 +3809,7 @@
             "f43955c4116788ae"
         ],
         "x": 795,
-        "y": 440,
+        "y": 360,
         "wires": [
             [
                 "b4ebbad983292808"
@@ -3968,7 +3826,7 @@
             "f43955c4116788ae"
         ],
         "x": 795,
-        "y": 480,
+        "y": 400,
         "wires": [
             [
                 "5f2ca6d6f9d00c13"
@@ -3985,7 +3843,7 @@
             "f43955c4116788ae"
         ],
         "x": 795,
-        "y": 520,
+        "y": 440,
         "wires": [
             [
                 "816a541e5e3b8324"
@@ -4002,7 +3860,7 @@
             "f43955c4116788ae"
         ],
         "x": 795,
-        "y": 600,
+        "y": 520,
         "wires": [
             [
                 "f4b4d4d93038e051"
@@ -4019,7 +3877,7 @@
             "f43955c4116788ae"
         ],
         "x": 795,
-        "y": 560,
+        "y": 480,
         "wires": [
             [
                 "4f6db889edba67de"
@@ -4092,6 +3950,41 @@
         "x": 505,
         "y": 400,
         "wires": []
+    },
+    {
+        "id": "e676965ee181a76f",
+        "type": "debug",
+        "z": "27bed9da7de43cc4",
+        "g": "9f9a086cc7d2d88e",
+        "name": "Chart Ausgabe",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "9269267e203949db",
+        "type": "link in",
+        "z": "27bed9da7de43cc4",
+        "g": "9f9a086cc7d2d88e",
+        "name": "link in 34",
+        "links": [
+            "cc0eb5d385ef4602"
+        ],
+        "x": 795,
+        "y": 640,
+        "wires": [
+            [
+                "e676965ee181a76f"
+            ]
+        ]
     },
     {
         "id": "7fefb337b96dc93a",
