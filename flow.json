@@ -1,24 +1,8 @@
 [
     {
-        "id": "ba7a781f2b9fb93c",
-        "type": "tab",
-        "label": "Torsteuerung - UI",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "b88fb898bd6540cc",
         "type": "tab",
         "label": "Torsteuerung - Logic",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "592587e2ebab5ef8",
-        "type": "tab",
-        "label": "Öl-Zähler - UI",
         "disabled": false,
         "info": "",
         "env": []
@@ -43,6 +27,22 @@
         "id": "27bed9da7de43cc4",
         "type": "tab",
         "label": "Testing",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ba7a781f2b9fb93c",
+        "type": "tab",
+        "label": "Torsteuerung - UI",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "592587e2ebab5ef8",
+        "type": "tab",
+        "label": "Öl-Zähler - UI",
         "disabled": false,
         "info": "",
         "env": []
@@ -95,7 +95,9 @@
             "9f9a086cc7d2d88e"
         ],
         "x": 728,
-        "y": 13
+        "y": 13,
+        "w": 384,
+        "h": 694
     },
     {
         "id": "3f154653a7a0dc76",
@@ -110,7 +112,9 @@
             "f727b33e4afcb3fe"
         ],
         "x": 8,
-        "y": 13
+        "y": 13,
+        "w": 544,
+        "h": 454
     },
     {
         "id": "5ec4de0559b4272d",
@@ -135,7 +139,9 @@
             "d91e309ade317d74"
         ],
         "x": 174,
-        "y": 39
+        "y": 39,
+        "w": 272,
+        "h": 382
     },
     {
         "id": "42a13c3d567c0107",
@@ -345,7 +351,9 @@
             "3a7980260f9f21a3"
         ],
         "x": 754,
-        "y": 239
+        "y": 239,
+        "w": 332,
+        "h": 322
     },
     {
         "id": "24872851a923b49a",
@@ -365,7 +373,9 @@
             "bdd9474cc4d961f6"
         ],
         "x": 754,
-        "y": 39
+        "y": 39,
+        "w": 332,
+        "h": 162
     },
     {
         "id": "42d6849f0a45a65f",
@@ -389,7 +399,9 @@
             "277601cb5aba1cc6"
         ],
         "x": 34,
-        "y": 39
+        "y": 39,
+        "w": 492,
+        "h": 282
     },
     {
         "id": "f727b33e4afcb3fe",
@@ -406,7 +418,9 @@
             "5055ef0db6593839"
         ],
         "x": 34,
-        "y": 359
+        "y": 359,
+        "w": 492,
+        "h": 82
     },
     {
         "id": "5543a4ab9a95c2f2",
@@ -440,7 +454,9 @@
             "9269267e203949db"
         ],
         "x": 754,
-        "y": 599
+        "y": 599,
+        "w": 292,
+        "h": 82
     },
     {
         "id": "a96a0b6e98809ced",
@@ -864,222 +880,6 @@
         "order": 9,
         "width": "3",
         "height": "1"
-    },
-    {
-        "id": "5818d339c49cc5e9",
-        "type": "ui_button",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "Down Button",
-        "group": "26624b45d4fcf481",
-        "order": 12,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "label": "",
-        "tooltip": "",
-        "color": "grey",
-        "bgcolor": "white",
-        "className": "",
-        "icon": "arrow_downward",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 310,
-        "y": 220,
-        "wires": [
-            [
-                "5d9f826f0f216ed3"
-            ]
-        ]
-    },
-    {
-        "id": "ddeca750eb9f9d62",
-        "type": "ui_button",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "Stop Button",
-        "group": "26624b45d4fcf481",
-        "order": 8,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "label": "",
-        "tooltip": "",
-        "color": "grey",
-        "bgcolor": "white",
-        "className": "",
-        "icon": "close",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 310,
-        "y": 160,
-        "wires": [
-            [
-                "5a5cea01d83b97ae"
-            ]
-        ]
-    },
-    {
-        "id": "683a0dd88b9f1a1e",
-        "type": "ui_button",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "Up Button",
-        "group": "26624b45d4fcf481",
-        "order": 4,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "label": "",
-        "tooltip": "",
-        "color": "grey",
-        "bgcolor": "white",
-        "className": "",
-        "icon": "arrow_upwards",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 300,
-        "y": 100,
-        "wires": [
-            [
-                "07972ffa7fffa22c"
-            ]
-        ]
-    },
-    {
-        "id": "587d67b8d7b4e365",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "Test auf in",
-        "links": [
-            "c3a1b8ef6a0ac59a"
-        ],
-        "x": 205,
-        "y": 100,
-        "wires": [
-            [
-                "683a0dd88b9f1a1e"
-            ]
-        ]
-    },
-    {
-        "id": "ccf1e3d46ae49f5f",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "Test stopp in",
-        "links": [
-            "b3fcc71f7cc16c11"
-        ],
-        "x": 205,
-        "y": 160,
-        "wires": [
-            [
-                "ddeca750eb9f9d62"
-            ]
-        ]
-    },
-    {
-        "id": "7917cec46f752804",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "Test ab in",
-        "links": [
-            "2e6f0daf82b27ce9"
-        ],
-        "x": 205,
-        "y": 220,
-        "wires": [
-            [
-                "5818d339c49cc5e9"
-            ]
-        ]
-    },
-    {
-        "id": "07972ffa7fffa22c",
-        "type": "link out",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "link out 11",
-        "mode": "link",
-        "links": [
-            "3ac1d7d890223928"
-        ],
-        "x": 445,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "5a5cea01d83b97ae",
-        "type": "link out",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "link out 12",
-        "mode": "link",
-        "links": [
-            "124a3d53cf0efa92"
-        ],
-        "x": 445,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "5d9f826f0f216ed3",
-        "type": "link out",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "link out 13",
-        "mode": "link",
-        "links": [
-            "b7e70d9c18ec500a"
-        ],
-        "x": 445,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "7f5248837f9bcab4",
-        "type": "link in",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "name": "Text Tor Position in",
-        "links": [
-            "a0a12692f3b12cbb",
-            "fb0cd6efa5e7555a"
-        ],
-        "x": 205,
-        "y": 280,
-        "wires": [
-            [
-                "7854c790507380c2"
-            ]
-        ]
-    },
-    {
-        "id": "7854c790507380c2",
-        "type": "ui_text",
-        "z": "ba7a781f2b9fb93c",
-        "g": "6937e8fa0d92889a",
-        "group": "26624b45d4fcf481",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Tor ist",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 410,
-        "y": 280,
-        "wires": []
     },
     {
         "id": "f2395a2dc8f4284d",
@@ -2105,333 +1905,6 @@
         "wires": []
     },
     {
-        "id": "194dba582c24a7d9",
-        "type": "ui_gauge",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "",
-        "group": "bcf2a034187609c2",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "gtype": "wave",
-        "title": "Tankfüllung",
-        "label": "Liter",
-        "format": "{{msg.tank}}",
-        "min": "-5000",
-        "max": "10000",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "diff": false,
-        "className": "",
-        "x": 410,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "747760ddd014277e",
-        "type": "ui_text",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "group": "bcf2a034187609c2",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "verbrauchte Liter",
-        "format": "{{msg.impulse}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 390,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "25b19d8d0f90da73",
-        "type": "ui_text",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "group": "bcf2a034187609c2",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Zählerstand",
-        "format": "{{msg.zaehler}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 410,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "15d365a67894c0f8",
-        "type": "link in",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "link in 22",
-        "links": [
-            "f43955c4116788ae"
-        ],
-        "x": 195,
-        "y": 160,
-        "wires": [
-            [
-                "194dba582c24a7d9"
-            ]
-        ]
-    },
-    {
-        "id": "5df02341525b3fb5",
-        "type": "link in",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "link in 23",
-        "links": [
-            "f43955c4116788ae"
-        ],
-        "x": 195,
-        "y": 80,
-        "wires": [
-            [
-                "747760ddd014277e"
-            ]
-        ]
-    },
-    {
-        "id": "8dfd976f30ed9451",
-        "type": "link in",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "link in 24",
-        "links": [
-            "f43955c4116788ae"
-        ],
-        "x": 195,
-        "y": 120,
-        "wires": [
-            [
-                "25b19d8d0f90da73"
-            ]
-        ]
-    },
-    {
-        "id": "8e19868771bcb9a0",
-        "type": "ui_form",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "",
-        "label": "Bestellte Menge eingeben",
-        "group": "492e5481c831e021",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "label": "Öl",
-                "value": "liter",
-                "type": "number",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "liter": ""
-        },
-        "payload": "",
-        "submit": "Ok",
-        "cancel": "Abbruch",
-        "topic": "fuellung",
-        "topicType": "str",
-        "splitLayout": false,
-        "className": "befuellung",
-        "x": 290,
-        "y": 280,
-        "wires": [
-            [
-                "744fda99c9cd08e1"
-            ]
-        ]
-    },
-    {
-        "id": "c5aa42967e57fa9f",
-        "type": "ui_form",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "",
-        "label": "Korrektur Zählerstand",
-        "group": "b86e7e1daea6b841",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "label": "Zählerstand",
-                "value": "set",
-                "type": "number",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "set": ""
-        },
-        "payload": "",
-        "submit": "Ok",
-        "cancel": "Abbruch",
-        "topic": "zaehler",
-        "topicType": "str",
-        "splitLayout": false,
-        "className": "zaehlerstand",
-        "x": 280,
-        "y": 200,
-        "wires": [
-            [
-                "ed7578714192d0f4"
-            ]
-        ]
-    },
-    {
-        "id": "19fb7bea7b73a682",
-        "type": "ui_form",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "",
-        "label": "Initialisierung Tank",
-        "group": "9c19b368643e9b47",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "label": "Öl",
-                "value": "liter",
-                "type": "number",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "liter": ""
-        },
-        "payload": "",
-        "submit": "Ok",
-        "cancel": "Abbruch",
-        "topic": "initialisierungTank",
-        "topicType": "str",
-        "splitLayout": false,
-        "className": "initTank",
-        "x": 270,
-        "y": 240,
-        "wires": [
-            [
-                "4780da5c792f79eb"
-            ]
-        ]
-    },
-    {
-        "id": "744fda99c9cd08e1",
-        "type": "link out",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "link out 22",
-        "mode": "link",
-        "links": [
-            "a9b264a4fd433004",
-            "47cb4289796bea90"
-        ],
-        "x": 465,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "4780da5c792f79eb",
-        "type": "link out",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "link out 23",
-        "mode": "link",
-        "links": [
-            "a9b264a4fd433004",
-            "ec5485ec21aef8d9"
-        ],
-        "x": 465,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "ed7578714192d0f4",
-        "type": "link out",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "link out 24",
-        "mode": "link",
-        "links": [
-            "a9b264a4fd433004",
-            "d25015d36dfbe5c8"
-        ],
-        "x": 465,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "18455fe9dcd205b8",
-        "type": "ui_text",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "group": "bcf2a034187609c2",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Impuls Eingang",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 400,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "fa3f833e43ca4408",
-        "type": "link in",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "link in 29",
-        "links": [
-            "5055ef0db6593839"
-        ],
-        "x": 195,
-        "y": 360,
-        "wires": [
-            [
-                "18455fe9dcd205b8"
-            ]
-        ]
-    },
-    {
-        "id": "f36718e13f9390d3",
-        "type": "link in",
-        "z": "592587e2ebab5ef8",
-        "g": "42a13c3d567c0107",
-        "name": "link in 31",
-        "links": [
-            "44a4859cc20ea1f8"
-        ],
-        "x": 195,
-        "y": 320,
-        "wires": [
-            [
-                "18455fe9dcd205b8"
-            ]
-        ]
-    },
-    {
         "id": "91c2cddf67c80ae3",
         "type": "link in",
         "z": "239bb88f8646fff4",
@@ -2454,14 +1927,14 @@
         "type": "function",
         "z": "239bb88f8646fff4",
         "g": "3dac510af08b3f3d",
-        "name": "function 1",
-        "func": "// ---------------Zähler\nvar impulse = flow.get(\"impulse\") || 0\nvar counterdefault = flow.get(\"counterdefault\") || 0\n\n\n// ---------------Tankfüllung\nvar startdefault = flow.get(\"startdefault\") || 0\nvar tankfuellung = flow.get(\"tankfuellung\") || 0\n\n// ---------------Zähler\nif (msg.topic == \"zaehler\"){\n    impulse = 0\n    flow.set(\"counterdefault\", msg.payload.set)\n    \n} else {\n    impulse ++\n}\n\n// ---------------Tankfüllung\nif (msg.topic == \"fuellung\"){\n    tankfuellung = flow.set(\"tankfuellung\", msg.payload.liter + tankfuellung)\n    tankfuellung = flow.get(\"tankfuellung\")\n    } \n\nif (msg.topic == \"initialisierungTank\"){\n    flow.set(\"startdefault\", msg.payload.liter)\n    flow.set(\"tankfuellung\", 0)\n    startdefault = flow.get(\"startdefault\")\n}\n\nvar counter = counterdefault + (impulse/10)\n\nflow.set(\"impulse\", impulse)\n\n// ---------------Message Ausgabe\nmsg.impulse = impulse/10\nmsg.zaehler = counter\nmsg.tank = tankfuellung + startdefault - impulse/10\n\nreturn msg;",
+        "name": "Öl - Zähler logik",
+        "func": "// ---------------Zähler\nvar impulse = global.get(\"impulse\") || 0\nvar counterdefault = global.get(\"counterdefault\") || 0\n\n\n// ---------------Tankfüllung\nvar startdefault = global.get(\"startdefault\") || 0\nvar tankfuellung = global.get(\"tankfuellung\") || 0\n\n// ---------------Zähler\nif (msg.topic == \"zaehler\"){\n    impulse = 0\n    global.set(\"counterdefault\", msg.payload.set)\n    \n} else {\n    impulse ++\n}\n\n// ---------------Tankfüllung\nif (msg.topic == \"fuellung\"){\n    tankfuellung = global.set(\"tankfuellung\", msg.payload.liter + tankfuellung)\n    tankfuellung = global.get(\"tankfuellung\")\n    } \n\nif (msg.topic == \"initialisierungTank\"){\n    global.set(\"startdefault\", msg.payload.liter)\n    global.set(\"tankfuellung\", 0)\n    startdefault = global.get(\"startdefault\")\n}\n\nvar counter = counterdefault + (impulse/10)\n\nglobal.set(\"impulse\", impulse)\n\n// ---------------Message Ausgabe\nmsg.impulse = impulse/10\nmsg.zaehler = counter\nmsg.tank = tankfuellung + startdefault - impulse/10\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 640,
+        "x": 660,
         "y": 160,
         "wires": [
             [
@@ -2564,9 +2037,9 @@
         "type": "rising-edge",
         "z": "239bb88f8646fff4",
         "g": "3dac510af08b3f3d",
-        "name": "",
+        "name": "Steigende 0 Flanke",
         "threshold": "0",
-        "x": 380,
+        "x": 370,
         "y": 140,
         "wires": [
             [
@@ -4690,6 +4163,549 @@
         "wires": [
             [
                 "e676965ee181a76f"
+            ]
+        ]
+    },
+    {
+        "id": "5818d339c49cc5e9",
+        "type": "ui_button",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "Down Button",
+        "group": "26624b45d4fcf481",
+        "order": 12,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "",
+        "tooltip": "",
+        "color": "grey",
+        "bgcolor": "white",
+        "className": "",
+        "icon": "arrow_downward",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "5d9f826f0f216ed3"
+            ]
+        ]
+    },
+    {
+        "id": "ddeca750eb9f9d62",
+        "type": "ui_button",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "Stop Button",
+        "group": "26624b45d4fcf481",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "",
+        "tooltip": "",
+        "color": "grey",
+        "bgcolor": "white",
+        "className": "",
+        "icon": "close",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "5a5cea01d83b97ae"
+            ]
+        ]
+    },
+    {
+        "id": "683a0dd88b9f1a1e",
+        "type": "ui_button",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "Up Button",
+        "group": "26624b45d4fcf481",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "",
+        "tooltip": "",
+        "color": "grey",
+        "bgcolor": "white",
+        "className": "",
+        "icon": "arrow_upwards",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "07972ffa7fffa22c"
+            ]
+        ]
+    },
+    {
+        "id": "587d67b8d7b4e365",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "Test auf in",
+        "links": [
+            "c3a1b8ef6a0ac59a"
+        ],
+        "x": 205,
+        "y": 100,
+        "wires": [
+            [
+                "683a0dd88b9f1a1e"
+            ]
+        ]
+    },
+    {
+        "id": "ccf1e3d46ae49f5f",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "Test stopp in",
+        "links": [
+            "b3fcc71f7cc16c11"
+        ],
+        "x": 205,
+        "y": 160,
+        "wires": [
+            [
+                "ddeca750eb9f9d62"
+            ]
+        ]
+    },
+    {
+        "id": "7917cec46f752804",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "Test ab in",
+        "links": [
+            "2e6f0daf82b27ce9"
+        ],
+        "x": 205,
+        "y": 220,
+        "wires": [
+            [
+                "5818d339c49cc5e9"
+            ]
+        ]
+    },
+    {
+        "id": "07972ffa7fffa22c",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link out 11",
+        "mode": "link",
+        "links": [
+            "3ac1d7d890223928"
+        ],
+        "x": 445,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5a5cea01d83b97ae",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link out 12",
+        "mode": "link",
+        "links": [
+            "124a3d53cf0efa92"
+        ],
+        "x": 445,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5d9f826f0f216ed3",
+        "type": "link out",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "link out 13",
+        "mode": "link",
+        "links": [
+            "b7e70d9c18ec500a"
+        ],
+        "x": 445,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7f5248837f9bcab4",
+        "type": "link in",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "name": "Text Tor Position in",
+        "links": [
+            "a0a12692f3b12cbb",
+            "fb0cd6efa5e7555a"
+        ],
+        "x": 205,
+        "y": 280,
+        "wires": [
+            [
+                "7854c790507380c2"
+            ]
+        ]
+    },
+    {
+        "id": "7854c790507380c2",
+        "type": "ui_text",
+        "z": "ba7a781f2b9fb93c",
+        "g": "6937e8fa0d92889a",
+        "group": "26624b45d4fcf481",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Tor ist",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 410,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "194dba582c24a7d9",
+        "type": "ui_gauge",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "",
+        "group": "bcf2a034187609c2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Tankfüllung",
+        "label": "Liter",
+        "format": "{{msg.tank}}",
+        "min": "-5000",
+        "max": "10000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 410,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "747760ddd014277e",
+        "type": "ui_text",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "group": "bcf2a034187609c2",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "verbrauchte Liter",
+        "format": "{{msg.impulse}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 390,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "25b19d8d0f90da73",
+        "type": "ui_text",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "group": "bcf2a034187609c2",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Zählerstand",
+        "format": "{{msg.zaehler}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 410,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "15d365a67894c0f8",
+        "type": "link in",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link in 22",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 195,
+        "y": 160,
+        "wires": [
+            [
+                "194dba582c24a7d9"
+            ]
+        ]
+    },
+    {
+        "id": "5df02341525b3fb5",
+        "type": "link in",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link in 23",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 195,
+        "y": 80,
+        "wires": [
+            [
+                "747760ddd014277e"
+            ]
+        ]
+    },
+    {
+        "id": "8dfd976f30ed9451",
+        "type": "link in",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link in 24",
+        "links": [
+            "f43955c4116788ae"
+        ],
+        "x": 195,
+        "y": 120,
+        "wires": [
+            [
+                "25b19d8d0f90da73"
+            ]
+        ]
+    },
+    {
+        "id": "8e19868771bcb9a0",
+        "type": "ui_form",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "",
+        "label": "Bestellte Menge eingeben",
+        "group": "492e5481c831e021",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Öl",
+                "value": "liter",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "liter": ""
+        },
+        "payload": "",
+        "submit": "Ok",
+        "cancel": "Abbruch",
+        "topic": "fuellung",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "befuellung",
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "744fda99c9cd08e1"
+            ]
+        ]
+    },
+    {
+        "id": "c5aa42967e57fa9f",
+        "type": "ui_form",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "",
+        "label": "Korrektur Zählerstand",
+        "group": "b86e7e1daea6b841",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Zählerstand",
+                "value": "set",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "set": ""
+        },
+        "payload": "",
+        "submit": "Ok",
+        "cancel": "Abbruch",
+        "topic": "zaehler",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "zaehlerstand",
+        "x": 280,
+        "y": 200,
+        "wires": [
+            [
+                "ed7578714192d0f4"
+            ]
+        ]
+    },
+    {
+        "id": "19fb7bea7b73a682",
+        "type": "ui_form",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "",
+        "label": "Initialisierung Tank",
+        "group": "9c19b368643e9b47",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Öl",
+                "value": "liter",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "liter": ""
+        },
+        "payload": "",
+        "submit": "Ok",
+        "cancel": "Abbruch",
+        "topic": "initialisierungTank",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "initTank",
+        "x": 270,
+        "y": 240,
+        "wires": [
+            [
+                "4780da5c792f79eb"
+            ]
+        ]
+    },
+    {
+        "id": "744fda99c9cd08e1",
+        "type": "link out",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link out 22",
+        "mode": "link",
+        "links": [
+            "a9b264a4fd433004",
+            "47cb4289796bea90"
+        ],
+        "x": 465,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4780da5c792f79eb",
+        "type": "link out",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link out 23",
+        "mode": "link",
+        "links": [
+            "a9b264a4fd433004",
+            "ec5485ec21aef8d9"
+        ],
+        "x": 465,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "ed7578714192d0f4",
+        "type": "link out",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link out 24",
+        "mode": "link",
+        "links": [
+            "a9b264a4fd433004",
+            "d25015d36dfbe5c8"
+        ],
+        "x": 465,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "18455fe9dcd205b8",
+        "type": "ui_text",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "group": "bcf2a034187609c2",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Impuls Eingang",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 400,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "fa3f833e43ca4408",
+        "type": "link in",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link in 29",
+        "links": [
+            "5055ef0db6593839"
+        ],
+        "x": 195,
+        "y": 360,
+        "wires": [
+            [
+                "18455fe9dcd205b8"
+            ]
+        ]
+    },
+    {
+        "id": "f36718e13f9390d3",
+        "type": "link in",
+        "z": "592587e2ebab5ef8",
+        "g": "42a13c3d567c0107",
+        "name": "link in 31",
+        "links": [
+            "44a4859cc20ea1f8"
+        ],
+        "x": 195,
+        "y": 320,
+        "wires": [
+            [
+                "18455fe9dcd205b8"
             ]
         ]
     },
