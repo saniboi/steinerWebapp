@@ -746,7 +746,7 @@
     {
         "id": "8e30cbea3b1b6c80",
         "type": "ui_tab",
-        "name": "Chart mit Zeitangabe",
+        "name": "Chart mit Intervall",
         "icon": "timeline",
         "order": 4,
         "disabled": false,
@@ -770,7 +770,7 @@
         "tab": "8e30cbea3b1b6c80",
         "order": 3,
         "disp": true,
-        "width": 20,
+        "width": "20",
         "collapse": false,
         "className": ""
     },
